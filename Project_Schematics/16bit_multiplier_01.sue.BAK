@@ -1,0 +1,1058 @@
+proc SCHEMATIC_16bit_multiplier_01 {} {
+make 16bit_and -name xi0 -origin {-140 -130}
+make 16bit_and -name xi1 -origin {-140 210}
+make 16bit_fa_01 -name xi2 -origin {120 50}
+make input -name A0 -origin {-240 -280}
+make name_net -orient R270 -name B0 -origin {-240 -260}
+make name_net -orient R270 -name B1 -origin {-240 -240}
+make name_net -orient R270 -name B2 -origin {-240 -220}
+make name_net -orient R270 -name B3 -origin {-240 -200}
+make name_net -orient R270 -name B4 -origin {-240 -180}
+make name_net -orient R270 -name B5 -origin {-240 -160}
+make name_net -orient R270 -name B6 -origin {-240 -140}
+make name_net -orient R270 -name B7 -origin {-240 -120}
+make name_net -orient R270 -name B8 -origin {-240 -100}
+make name_net -orient R270 -name B9 -origin {-240 -80}
+make name_net -orient R270 -name B10 -origin {-240 -60}
+make name_net -orient R270 -name B11 -origin {-240 -40}
+make name_net -orient R270 -name B12 -origin {-240 -20}
+make name_net -orient R270 -name B13 -origin {-240 0}
+make name_net -orient R270 -name B14 -origin {-240 20}
+make name_net -orient R270 -name B15 -origin {-240 40}
+make name_net -orient R270 -name B0 -origin {-240 80}
+make name_net -orient R270 -name B1 -origin {-240 100}
+make name_net -orient R270 -name B2 -origin {-240 120}
+make name_net -orient R270 -name B3 -origin {-240 140}
+make name_net -orient R270 -name B4 -origin {-240 160}
+make name_net -orient R270 -name B5 -origin {-240 180}
+make name_net -orient R270 -name B6 -origin {-240 200}
+make name_net -orient R270 -name B7 -origin {-240 220}
+make name_net -orient R270 -name B8 -origin {-240 240}
+make name_net -orient R270 -name B9 -origin {-240 260}
+make name_net -orient R270 -name B10 -origin {-240 280}
+make name_net -orient R270 -name B11 -origin {-240 300}
+make name_net -orient R270 -name B12 -origin {-240 320}
+make name_net -orient R270 -name B13 -origin {-240 340}
+make name_net -orient R270 -name B14 -origin {-240 360}
+make name_net -orient R270 -name B15 -origin {-240 380}
+make input -name A1 -origin {-240 60}
+make 16bit_and -name xi3 -origin {190 230}
+make 16bit_fa_01 -name xi4 -origin {450 70}
+make name_net -orient R270 -name B0 -origin {90 100}
+make name_net -orient R270 -name B1 -origin {90 120}
+make name_net -orient R270 -name B2 -origin {90 140}
+make name_net -orient R270 -name B3 -origin {90 160}
+make name_net -orient R270 -name B4 -origin {90 180}
+make name_net -orient R270 -name B5 -origin {90 200}
+make name_net -orient R270 -name B6 -origin {90 220}
+make name_net -orient R270 -name B7 -origin {90 240}
+make name_net -orient R270 -name B8 -origin {90 260}
+make name_net -orient R270 -name B9 -origin {90 280}
+make name_net -orient R270 -name B10 -origin {90 300}
+make name_net -orient R270 -name B11 -origin {90 320}
+make name_net -orient R270 -name B12 -origin {90 340}
+make name_net -orient R270 -name B13 -origin {90 360}
+make name_net -orient R270 -name B14 -origin {90 380}
+make name_net -orient R270 -name B15 -origin {90 400}
+make input -name A2 -origin {90 80}
+make global -name gnd -origin {-30 40}
+make global -name gnd -origin {-30 380}
+make global -name gnd -origin {300 400}
+make 16bit_fa_01 -name xi5 -origin {780 90}
+make 16bit_and -name xi6 -origin {520 250}
+make name_net -orient R270 -name B0 -origin {420 120}
+make name_net -orient R270 -name B1 -origin {420 140}
+make name_net -orient R270 -name B2 -origin {420 160}
+make name_net -orient R270 -name B3 -origin {420 180}
+make name_net -orient R270 -name B4 -origin {420 200}
+make name_net -orient R270 -name B5 -origin {420 220}
+make name_net -orient R270 -name B6 -origin {420 240}
+make name_net -orient R270 -name B7 -origin {420 260}
+make name_net -orient R270 -name B8 -origin {420 280}
+make name_net -orient R270 -name B9 -origin {420 300}
+make name_net -orient R270 -name B10 -origin {420 320}
+make name_net -orient R270 -name B11 -origin {420 340}
+make name_net -orient R270 -name B12 -origin {420 360}
+make name_net -orient R270 -name B13 -origin {420 380}
+make name_net -orient R270 -name B14 -origin {420 400}
+make name_net -orient R270 -name B15 -origin {420 420}
+make input -name A3 -origin {420 100}
+make 16bit_fa_01 -name xi7 -origin {1110 110}
+make 16bit_and -name xi8 -origin {850 270}
+make name_net -orient R270 -name B0 -origin {750 140}
+make name_net -orient R270 -name B1 -origin {750 160}
+make name_net -orient R270 -name B2 -origin {750 180}
+make name_net -orient R270 -name B3 -origin {750 200}
+make name_net -orient R270 -name B4 -origin {750 220}
+make name_net -orient R270 -name B5 -origin {750 240}
+make name_net -orient R270 -name B6 -origin {750 260}
+make name_net -orient R270 -name B7 -origin {750 280}
+make name_net -orient R270 -name B8 -origin {750 300}
+make name_net -orient R270 -name B9 -origin {750 320}
+make name_net -orient R270 -name B10 -origin {750 340}
+make name_net -orient R270 -name B11 -origin {750 360}
+make name_net -orient R270 -name B12 -origin {750 380}
+make name_net -orient R270 -name B13 -origin {750 400}
+make name_net -orient R270 -name B14 -origin {750 420}
+make name_net -orient R270 -name B15 -origin {750 440}
+make input -name A4 -origin {750 120}
+make 16bit_fa_01 -name xi9 -origin {1440 130}
+make 16bit_and -name xi10 -origin {1180 290}
+make name_net -orient R270 -name B0 -origin {1080 160}
+make name_net -orient R270 -name B1 -origin {1080 180}
+make name_net -orient R270 -name B2 -origin {1080 200}
+make name_net -orient R270 -name B3 -origin {1080 220}
+make name_net -orient R270 -name B4 -origin {1080 240}
+make name_net -orient R270 -name B5 -origin {1080 260}
+make name_net -orient R270 -name B6 -origin {1080 280}
+make name_net -orient R270 -name B7 -origin {1080 300}
+make name_net -orient R270 -name B8 -origin {1080 320}
+make name_net -orient R270 -name B9 -origin {1080 340}
+make name_net -orient R270 -name B10 -origin {1080 360}
+make name_net -orient R270 -name B11 -origin {1080 380}
+make name_net -orient R270 -name B12 -origin {1080 400}
+make name_net -orient R270 -name B13 -origin {1080 420}
+make name_net -orient R270 -name B14 -origin {1080 440}
+make name_net -orient R270 -name B15 -origin {1080 460}
+make input -name A5 -origin {1080 140}
+make 16bit_fa_01 -name xi11 -origin {1770 150}
+make 16bit_and -name xi12 -origin {1510 310}
+make name_net -orient R270 -name B0 -origin {1410 180}
+make name_net -orient R270 -name B1 -origin {1410 200}
+make name_net -orient R270 -name B2 -origin {1410 220}
+make name_net -orient R270 -name B3 -origin {1410 240}
+make name_net -orient R270 -name B4 -origin {1410 260}
+make name_net -orient R270 -name B5 -origin {1410 280}
+make name_net -orient R270 -name B6 -origin {1410 300}
+make name_net -orient R270 -name B7 -origin {1410 320}
+make name_net -orient R270 -name B8 -origin {1410 340}
+make name_net -orient R270 -name B9 -origin {1410 360}
+make name_net -orient R270 -name B10 -origin {1410 380}
+make name_net -orient R270 -name B11 -origin {1410 400}
+make name_net -orient R270 -name B12 -origin {1410 420}
+make name_net -orient R270 -name B13 -origin {1410 440}
+make name_net -orient R270 -name B14 -origin {1410 460}
+make name_net -orient R270 -name B15 -origin {1410 480}
+make input -name A6 -origin {1410 160}
+make 16bit_fa_01 -name xi13 -origin {2100 170}
+make 16bit_and -name xi14 -origin {1840 330}
+make name_net -orient R270 -name B0 -origin {2400 240}
+make name_net -orient R270 -name B1 -origin {2400 260}
+make name_net -orient R270 -name B2 -origin {2400 280}
+make name_net -orient R270 -name B3 -origin {2400 300}
+make name_net -orient R270 -name B4 -origin {2400 320}
+make name_net -orient R270 -name B5 -origin {2400 340}
+make name_net -orient R270 -name B6 -origin {2400 360}
+make name_net -orient R270 -name B7 -origin {2400 380}
+make name_net -orient R270 -name B8 -origin {2400 400}
+make name_net -orient R270 -name B9 -origin {2400 420}
+make name_net -orient R270 -name B10 -origin {2400 440}
+make name_net -orient R270 -name B11 -origin {2400 460}
+make name_net -orient R270 -name B12 -origin {2400 480}
+make name_net -orient R270 -name B13 -origin {2400 500}
+make name_net -orient R270 -name B14 -origin {2400 520}
+make name_net -orient R270 -name B15 -origin {2400 540}
+make global -name gnd -origin {2610 540}
+make name_net -orient R270 -name B0 -origin {2730 260}
+make name_net -orient R270 -name B1 -origin {2730 280}
+make name_net -orient R270 -name B2 -origin {2730 300}
+make name_net -orient R270 -name B3 -origin {2730 320}
+make name_net -orient R270 -name B4 -origin {2730 340}
+make name_net -orient R270 -name B5 -origin {2730 360}
+make name_net -orient R270 -name B6 -origin {2730 380}
+make name_net -orient R270 -name B7 -origin {2730 400}
+make name_net -orient R270 -name B8 -origin {2730 420}
+make name_net -orient R270 -name B9 -origin {2730 440}
+make name_net -orient R270 -name B10 -origin {2730 460}
+make name_net -orient R270 -name B11 -origin {2730 480}
+make name_net -orient R270 -name B12 -origin {2730 500}
+make name_net -orient R270 -name B13 -origin {2730 520}
+make name_net -orient R270 -name B14 -origin {2730 540}
+make name_net -orient R270 -name B15 -origin {2730 560}
+make name_net -orient R270 -name B0 -origin {3060 280}
+make name_net -orient R270 -name B1 -origin {3060 300}
+make name_net -orient R270 -name B2 -origin {3060 320}
+make name_net -orient R270 -name B3 -origin {3060 340}
+make name_net -orient R270 -name B4 -origin {3060 360}
+make name_net -orient R270 -name B5 -origin {3060 380}
+make name_net -orient R270 -name B6 -origin {3060 400}
+make name_net -orient R270 -name B7 -origin {3060 420}
+make name_net -orient R270 -name B8 -origin {3060 440}
+make name_net -orient R270 -name B9 -origin {3060 460}
+make name_net -orient R270 -name B10 -origin {3060 480}
+make name_net -orient R270 -name B11 -origin {3060 500}
+make name_net -orient R270 -name B12 -origin {3060 520}
+make name_net -orient R270 -name B13 -origin {3060 540}
+make name_net -orient R270 -name B14 -origin {3060 560}
+make name_net -orient R270 -name B15 -origin {3060 580}
+make name_net -orient R270 -name B0 -origin {3390 300}
+make name_net -orient R270 -name B1 -origin {3390 320}
+make name_net -orient R270 -name B2 -origin {3390 340}
+make name_net -orient R270 -name B3 -origin {3390 360}
+make name_net -orient R270 -name B4 -origin {3390 380}
+make name_net -orient R270 -name B5 -origin {3390 400}
+make name_net -orient R270 -name B6 -origin {3390 420}
+make name_net -orient R270 -name B7 -origin {3390 440}
+make name_net -orient R270 -name B8 -origin {3390 460}
+make name_net -orient R270 -name B9 -origin {3390 480}
+make name_net -orient R270 -name B10 -origin {3390 500}
+make name_net -orient R270 -name B11 -origin {3390 520}
+make name_net -orient R270 -name B12 -origin {3390 540}
+make name_net -orient R270 -name B13 -origin {3390 560}
+make name_net -orient R270 -name B14 -origin {3390 580}
+make name_net -orient R270 -name B15 -origin {3390 600}
+make name_net -orient R270 -name B0 -origin {3720 320}
+make name_net -orient R270 -name B1 -origin {3720 340}
+make name_net -orient R270 -name B2 -origin {3720 360}
+make name_net -orient R270 -name B3 -origin {3720 380}
+make name_net -orient R270 -name B4 -origin {3720 400}
+make name_net -orient R270 -name B5 -origin {3720 420}
+make name_net -orient R270 -name B6 -origin {3720 440}
+make name_net -orient R270 -name B7 -origin {3720 460}
+make name_net -orient R270 -name B8 -origin {3720 480}
+make name_net -orient R270 -name B9 -origin {3720 500}
+make name_net -orient R270 -name B10 -origin {3720 520}
+make name_net -orient R270 -name B11 -origin {3720 540}
+make name_net -orient R270 -name B12 -origin {3720 560}
+make name_net -orient R270 -name B13 -origin {3720 580}
+make name_net -orient R270 -name B14 -origin {3720 600}
+make name_net -orient R270 -name B15 -origin {3720 620}
+make global -name gnd -origin {2280 520}
+make name_net -orient R270 -name B0 -origin {1740 200}
+make name_net -orient R270 -name B1 -origin {1740 220}
+make name_net -orient R270 -name B2 -origin {1740 240}
+make name_net -orient R270 -name B3 -origin {1740 260}
+make name_net -orient R270 -name B4 -origin {1740 280}
+make name_net -orient R270 -name B5 -origin {1740 300}
+make name_net -orient R270 -name B6 -origin {1740 320}
+make name_net -orient R270 -name B7 -origin {1740 340}
+make name_net -orient R270 -name B8 -origin {1740 360}
+make name_net -orient R270 -name B9 -origin {1740 380}
+make name_net -orient R270 -name B10 -origin {1740 400}
+make name_net -orient R270 -name B11 -origin {1740 420}
+make name_net -orient R270 -name B12 -origin {1740 440}
+make name_net -orient R270 -name B13 -origin {1740 460}
+make name_net -orient R270 -name B14 -origin {1740 480}
+make name_net -orient R270 -name B15 -origin {1740 500}
+make name_net -orient R270 -name B0 -origin {2070 220}
+make name_net -orient R270 -name B1 -origin {2070 240}
+make name_net -orient R270 -name B2 -origin {2070 260}
+make name_net -orient R270 -name B3 -origin {2070 280}
+make name_net -orient R270 -name B4 -origin {2070 300}
+make name_net -orient R270 -name B5 -origin {2070 320}
+make name_net -orient R270 -name B6 -origin {2070 340}
+make name_net -orient R270 -name B7 -origin {2070 360}
+make name_net -orient R270 -name B8 -origin {2070 380}
+make name_net -orient R270 -name B9 -origin {2070 400}
+make name_net -orient R270 -name B10 -origin {2070 420}
+make name_net -orient R270 -name B11 -origin {2070 440}
+make name_net -orient R270 -name B12 -origin {2070 460}
+make name_net -orient R270 -name B13 -origin {2070 480}
+make name_net -orient R270 -name B14 -origin {2070 500}
+make name_net -orient R270 -name B15 -origin {2070 520}
+make global -name gnd -origin {1950 500}
+make input -name A7 -origin {1740 180}
+make input -name A8 -origin {2070 200}
+make input -name A10 -origin {2730 240}
+make input -name A11 -origin {3060 260}
+make input -name A12 -origin {3390 280}
+make input -name A13 -origin {3720 300}
+make input -name A14 -origin {4050 320}
+make name_net -orient R270 -name B0 -origin {4050 340}
+make name_net -orient R270 -name B1 -origin {4050 360}
+make name_net -orient R270 -name B2 -origin {4050 380}
+make name_net -orient R270 -name B3 -origin {4050 400}
+make name_net -orient R270 -name B4 -origin {4050 420}
+make name_net -orient R270 -name B5 -origin {4050 440}
+make name_net -orient R270 -name B6 -origin {4050 460}
+make name_net -orient R270 -name B7 -origin {4050 480}
+make name_net -orient R270 -name B8 -origin {4050 500}
+make name_net -orient R270 -name B9 -origin {4050 520}
+make name_net -orient R270 -name B10 -origin {4050 540}
+make name_net -orient R270 -name B11 -origin {4050 560}
+make name_net -orient R270 -name B12 -origin {4050 580}
+make name_net -orient R270 -name B13 -origin {4050 600}
+make name_net -orient R270 -name B14 -origin {4050 620}
+make name_net -orient R270 -name B15 -origin {4050 640}
+make name_net -orient R270 -name B0 -origin {4380 360}
+make name_net -orient R270 -name B1 -origin {4380 380}
+make name_net -orient R270 -name B2 -origin {4380 400}
+make name_net -orient R270 -name B3 -origin {4380 420}
+make name_net -orient R270 -name B4 -origin {4380 440}
+make name_net -orient R270 -name B5 -origin {4380 460}
+make name_net -orient R270 -name B6 -origin {4380 480}
+make name_net -orient R270 -name B7 -origin {4380 500}
+make name_net -orient R270 -name B8 -origin {4380 520}
+make name_net -orient R270 -name B9 -origin {4380 540}
+make name_net -orient R270 -name B10 -origin {4380 560}
+make name_net -orient R270 -name B11 -origin {4380 580}
+make name_net -orient R270 -name B12 -origin {4380 600}
+make name_net -orient R270 -name B13 -origin {4380 620}
+make name_net -orient R270 -name B14 -origin {4380 640}
+make name_net -orient R270 -name B15 -origin {4380 660}
+make input -name A15 -origin {4380 340}
+make output -name Z0 -origin {0 -370}
+make output -name Z1 -origin {270 -350}
+make output -name Z2 -origin {590 -330}
+make output -name Z3 -origin {930 -300}
+make output -name Z4 -origin {1250 -270}
+make output -name Z5 -origin {1580 -250}
+make output -name Z6 -origin {1900 -240}
+make output -name Z7 -origin {2230 -210}
+make output -name Z8 -origin {2570 -190}
+make output -name Z9 -origin {2900 -170}
+make output -name Z10 -origin {3220 -140}
+make output -name Z11 -origin {3550 -130}
+make output -name Z12 -origin {3890 -100}
+make output -name Z13 -origin {4200 -80}
+make output -name Z14 -origin {4530 -60}
+make 16bit_fa_01 -name xi15 -origin {2430 190}
+make 16bit_and -name xi16 -origin {2500 370}
+make 16bit_fa_01 -name xi17 -origin {2760 210}
+make 16bit_fa_01 -name xi18 -origin {3090 230}
+make 16bit_and -name xi19 -origin {2830 390}
+make 16bit_fa_01 -name xi20 -origin {3420 250}
+make 16bit_and -name xi21 -origin {3160 410}
+make 16bit_fa_01 -name xi22 -origin {3750 270}
+make 16bit_and -name xi23 -origin {3490 430}
+make 16bit_fa_01 -name xi24 -origin {4080 290}
+make 16bit_and -name xi25 -origin {3820 450}
+make 16bit_fa_01 -name xi26 -origin {4410 310}
+make 16bit_and -name xi27 -origin {4150 470}
+make 16bit_and -name xi28 -origin {2170 350}
+make 16bit_and -name xi29 -origin {4480 490}
+make 16bit_fa_01 -name xi30 -origin {4740 330}
+make output -name Z15 -origin {4840 20}
+make output -name Z16 -origin {4840 40}
+make output -name Z18 -origin {4840 80}
+make output -name Z17 -origin {4840 60}
+make output -name Z19 -origin {4840 100}
+make output -name Z20 -origin {4840 120}
+make output -name Z21 -origin {4840 140}
+make output -name Z22 -origin {4840 160}
+make output -name Z23 -origin {4840 180}
+make output -name Z24 -origin {4840 200}
+make output -name Z25 -origin {4840 220}
+make output -name Z26 -origin {4840 240}
+make output -name Z27 -origin {4840 260}
+make output -name Z28 -origin {4840 280}
+make output -name Z29 -origin {4840 300}
+make output -name Z30 -origin {4840 320}
+make output -name Z31 -origin {4840 340}
+make global -name gnd -origin {4610 700}
+make global -name gnd -origin {4280 680}
+make global -name gnd -origin {3960 660}
+make global -name gnd -origin {3620 640}
+make global -name gnd -origin {3290 620}
+make global -name gnd -origin {2960 600}
+make input -name B0 -origin {-880 -80}
+make input -name B1 -origin {-880 -60}
+make input -name B2 -origin {-880 -40}
+make input -name B3 -origin {-880 -20}
+make input -name B4 -origin {-880 0}
+make input -name B5 -origin {-880 20}
+make input -name B6 -origin {-880 40}
+make input -name B7 -origin {-880 60}
+make input -name B8 -origin {-880 80}
+make input -name B9 -origin {-880 100}
+make input -name B10 -origin {-880 120}
+make input -name B11 -origin {-880 140}
+make input -name B12 -origin {-880 160}
+make input -name B13 -origin {-880 180}
+make input -name B14 -origin {-880 200}
+make input -name B15 -origin {-880 220}
+make input -name A9 -origin {2400 220}
+make global -name gnd -origin {640 450}
+make global -name gnd -origin {990 480}
+make global -name gnd -origin {1320 480}
+make global -name gnd -origin {1650 510}
+  make_wire -40 -260 20 -260
+  make_wire -40 -240 20 -240
+  make_wire -40 -220 20 -220
+  make_wire -40 -200 20 -200
+  make_wire -40 -180 20 -180
+  make_wire -40 -160 20 -160
+  make_wire -40 -140 20 -140
+  make_wire -40 -120 20 -120
+  make_wire -40 220 20 220
+  make_wire -40 240 20 240
+  make_wire -40 260 20 260
+  make_wire -40 280 20 280
+  make_wire -40 300 20 300
+  make_wire -40 320 20 320
+  make_wire -40 340 20 340
+  make_wire -40 360 20 360
+  make_wire -40 -280 -20 -280
+  make_wire -20 -280 -20 -370
+  make_wire -20 -370 0 -370
+  make_wire 20 0 -40 0
+  make_wire 20 -100 -40 -100
+  make_wire 20 200 -40 200
+  make_wire 20 -80 -40 -80
+  make_wire 20 120 -40 120
+  make_wire 20 100 -40 100
+  make_wire 20 180 -40 180
+  make_wire 20 -60 -40 -60
+  make_wire 20 -40 -40 -40
+  make_wire 20 80 -40 80
+  make_wire 20 160 -40 160
+  make_wire 20 140 -40 140
+  make_wire 20 -20 -40 -20
+  make_wire 20 60 -40 60
+  make_wire 20 20 -40 20
+  make_wire 350 -240 220 -240
+  make_wire 350 -220 220 -220
+  make_wire 350 -200 220 -200
+  make_wire 350 -180 220 -180
+  make_wire 350 -160 220 -160
+  make_wire 350 -140 220 -140
+  make_wire 350 -120 220 -120
+  make_wire 350 -100 220 -100
+  make_wire 350 -80 220 -80
+  make_wire 350 -60 220 -60
+  make_wire 350 -40 220 -40
+  make_wire 220 -20 350 -20
+  make_wire 350 0 220 0
+  make_wire 220 20 350 20
+  make_wire 350 40 220 40
+  make_wire 290 80 350 80
+  make_wire 290 100 350 100
+  make_wire 290 120 350 120
+  make_wire 290 140 350 140
+  make_wire 290 160 350 160
+  make_wire 290 180 350 180
+  make_wire 290 200 350 200
+  make_wire 290 220 350 220
+  make_wire 350 340 290 340
+  make_wire 350 240 290 240
+  make_wire 350 260 290 260
+  make_wire 350 280 290 280
+  make_wire 350 300 290 300
+  make_wire 350 320 290 320
+  make_wire 350 360 290 360
+  make_wire 290 380 350 380
+  make_wire 220 60 350 60
+  make_wire 220 -260 250 -260
+  make_wire 250 -260 250 -350
+  make_wire 250 -350 270 -350
+  make_wire 20 40 -30 40
+  make_wire 20 380 -30 380
+  make_wire 350 400 300 400
+  make_wire 680 -220 550 -220
+  make_wire 680 -200 550 -200
+  make_wire 680 -180 550 -180
+  make_wire 680 -160 550 -160
+  make_wire 680 -140 550 -140
+  make_wire 680 -120 550 -120
+  make_wire 680 -100 550 -100
+  make_wire 550 -60 680 -60
+  make_wire 550 -40 680 -40
+  make_wire 550 -20 680 -20
+  make_wire 680 0 550 0
+  make_wire 550 60 680 60
+  make_wire 680 40 550 40
+  make_wire 550 -80 680 -80
+  make_wire 550 20 680 20
+  make_wire 550 80 680 80
+  make_wire 620 100 680 100
+  make_wire 620 120 680 120
+  make_wire 620 140 680 140
+  make_wire 620 160 680 160
+  make_wire 620 180 680 180
+  make_wire 620 200 680 200
+  make_wire 620 220 680 220
+  make_wire 620 240 680 240
+  make_wire 680 360 620 360
+  make_wire 680 260 620 260
+  make_wire 680 280 620 280
+  make_wire 680 300 620 300
+  make_wire 680 320 620 320
+  make_wire 680 340 620 340
+  make_wire 680 380 620 380
+  make_wire 620 400 680 400
+  make_wire 550 -240 570 -240
+  make_wire 570 -240 570 -330
+  make_wire 570 -330 590 -330
+  make_wire 950 120 1010 120
+  make_wire 950 140 1010 140
+  make_wire 950 160 1010 160
+  make_wire 950 180 1010 180
+  make_wire 950 200 1010 200
+  make_wire 950 220 1010 220
+  make_wire 950 240 1010 240
+  make_wire 950 260 1010 260
+  make_wire 1010 380 950 380
+  make_wire 1010 280 950 280
+  make_wire 1010 300 950 300
+  make_wire 1010 340 950 340
+  make_wire 1010 360 950 360
+  make_wire 1010 400 950 400
+  make_wire 1010 -200 880 -200
+  make_wire 1010 -180 880 -180
+  make_wire 1010 -160 880 -160
+  make_wire 1010 -140 880 -140
+  make_wire 1010 -120 880 -120
+  make_wire 1010 -100 880 -100
+  make_wire 880 -220 900 -220
+  make_wire 900 -220 900 -300
+  make_wire 900 -300 930 -300
+  make_wire 880 20 1010 20
+  make_wire 1010 100 880 100
+  make_wire 880 -80 1010 -80
+  make_wire 1010 0 880 0
+  make_wire 1010 80 880 80
+  make_wire 1010 -60 880 -60
+  make_wire 880 60 1010 60
+  make_wire 1010 -40 880 -40
+  make_wire 1010 40 880 40
+  make_wire 1010 -20 880 -20
+  make_wire 1340 -180 1210 -180
+  make_wire 1340 -160 1210 -160
+  make_wire 1340 -140 1210 -140
+  make_wire 1340 -120 1210 -120
+  make_wire 1340 -100 1210 -100
+  make_wire 1340 -80 1210 -80
+  make_wire 1340 -60 1210 -60
+  make_wire 1210 -20 1340 -20
+  make_wire 1210 0 1340 0
+  make_wire 1210 -40 1340 -40
+  make_wire 1340 20 1210 20
+  make_wire 1340 40 1210 40
+  make_wire 1340 60 1210 60
+  make_wire 1340 80 1210 80
+  make_wire 1340 100 1210 100
+  make_wire 1340 120 1210 120
+  make_wire 1280 140 1340 140
+  make_wire 1280 160 1340 160
+  make_wire 1280 180 1340 180
+  make_wire 1280 200 1340 200
+  make_wire 1280 220 1340 220
+  make_wire 1280 240 1340 240
+  make_wire 1280 260 1340 260
+  make_wire 1280 280 1340 280
+  make_wire 1340 400 1280 400
+  make_wire 1340 300 1280 300
+  make_wire 1340 320 1280 320
+  make_wire 1340 340 1280 340
+  make_wire 1340 360 1280 360
+  make_wire 1340 380 1280 380
+  make_wire 1340 420 1280 420
+  make_wire 1280 440 1340 440
+  make_wire 1210 -200 1230 -200
+  make_wire 1230 -200 1230 -270
+  make_wire 1230 -270 1250 -270
+  make_wire 1670 -160 1540 -160
+  make_wire 1670 -140 1540 -140
+  make_wire 1670 -120 1540 -120
+  make_wire 1670 -100 1540 -100
+  make_wire 1670 -80 1540 -80
+  make_wire 1540 100 1670 100
+  make_wire 1540 -60 1670 -60
+  make_wire 1540 40 1670 40
+  make_wire 1670 0 1540 0
+  make_wire 1540 -40 1670 -40
+  make_wire 1670 20 1540 20
+  make_wire 1540 140 1670 140
+  make_wire 1540 80 1670 80
+  make_wire 1670 -20 1540 -20
+  make_wire 1540 120 1670 120
+  make_wire 1540 60 1670 60
+  make_wire 1610 160 1670 160
+  make_wire 1610 180 1670 180
+  make_wire 1610 200 1670 200
+  make_wire 1610 220 1670 220
+  make_wire 1610 240 1670 240
+  make_wire 1610 260 1670 260
+  make_wire 1610 280 1670 280
+  make_wire 1610 300 1670 300
+  make_wire 1670 420 1610 420
+  make_wire 1670 320 1610 320
+  make_wire 1670 340 1610 340
+  make_wire 1670 360 1610 360
+  make_wire 1670 380 1610 380
+  make_wire 1670 400 1610 400
+  make_wire 1670 440 1610 440
+  make_wire 1610 460 1670 460
+  make_wire 2000 -140 1870 -140
+  make_wire 2000 -120 1870 -120
+  make_wire 2000 -100 1870 -100
+  make_wire 2000 -80 1870 -80
+  make_wire 2000 -60 1870 -60
+  make_wire 1870 120 2000 120
+  make_wire 1870 -40 2000 -40
+  make_wire 1870 60 2000 60
+  make_wire 2000 20 1870 20
+  make_wire 1870 -20 2000 -20
+  make_wire 2000 40 1870 40
+  make_wire 1870 160 2000 160
+  make_wire 1870 100 2000 100
+  make_wire 2000 0 1870 0
+  make_wire 1870 140 2000 140
+  make_wire 1870 80 2000 80
+  make_wire 2530 -120 2560 -120
+  make_wire 2560 -190 2570 -190
+  make_wire 2660 540 2610 540
+  make_wire 2990 -80 2860 -80
+  make_wire 2990 -60 2860 -60
+  make_wire 2990 -40 2860 -40
+  make_wire 2990 -20 2860 -20
+  make_wire 2990 0 2860 0
+  make_wire 2990 20 2860 20
+  make_wire 2990 40 2860 40
+  make_wire 2860 80 2990 80
+  make_wire 2860 100 2990 100
+  make_wire 2860 120 2990 120
+  make_wire 2990 140 2860 140
+  make_wire 2860 200 2990 200
+  make_wire 2990 180 2860 180
+  make_wire 2860 60 2990 60
+  make_wire 2860 160 2990 160
+  make_wire 2860 220 2990 220
+  make_wire 2930 240 2990 240
+  make_wire 2930 260 2990 260
+  make_wire 2930 280 2990 280
+  make_wire 2930 300 2990 300
+  make_wire 2930 320 2990 320
+  make_wire 2930 340 2990 340
+  make_wire 2930 360 2990 360
+  make_wire 2930 380 2990 380
+  make_wire 2990 500 2930 500
+  make_wire 2990 400 2930 400
+  make_wire 2990 420 2930 420
+  make_wire 2990 440 2930 440
+  make_wire 2990 460 2930 460
+  make_wire 2990 480 2930 480
+  make_wire 2990 520 2930 520
+  make_wire 2930 540 2990 540
+  make_wire 2860 -100 2880 -100
+  make_wire 2880 -170 2900 -170
+  make_wire 3260 260 3320 260
+  make_wire 3260 280 3320 280
+  make_wire 3260 300 3320 300
+  make_wire 3260 320 3320 320
+  make_wire 3260 340 3320 340
+  make_wire 3260 360 3320 360
+  make_wire 3260 380 3320 380
+  make_wire 3260 400 3320 400
+  make_wire 3320 520 3260 520
+  make_wire 3320 420 3260 420
+  make_wire 3320 440 3260 440
+  make_wire 3320 460 3260 460
+  make_wire 3320 480 3260 480
+  make_wire 3320 500 3260 500
+  make_wire 3320 540 3260 540
+  make_wire 3260 560 3320 560
+  make_wire 3320 -60 3190 -60
+  make_wire 3320 -40 3190 -40
+  make_wire 3320 -20 3190 -20
+  make_wire 3320 0 3190 0
+  make_wire 3320 20 3190 20
+  make_wire 3320 40 3190 40
+  make_wire 3190 -80 3210 -80
+  make_wire 3210 -140 3220 -140
+  make_wire 3190 160 3320 160
+  make_wire 3320 240 3190 240
+  make_wire 3190 60 3320 60
+  make_wire 3320 140 3190 140
+  make_wire 3320 220 3190 220
+  make_wire 3320 80 3190 80
+  make_wire 3190 200 3320 200
+  make_wire 3320 100 3190 100
+  make_wire 3320 180 3190 180
+  make_wire 3320 120 3190 120
+  make_wire 3650 -40 3520 -40
+  make_wire 3650 -20 3520 -20
+  make_wire 3650 0 3520 0
+  make_wire 3650 20 3520 20
+  make_wire 3650 40 3520 40
+  make_wire 3650 60 3520 60
+  make_wire 3650 80 3520 80
+  make_wire 3520 120 3650 120
+  make_wire 3520 140 3650 140
+  make_wire 3520 100 3650 100
+  make_wire 3650 160 3520 160
+  make_wire 3650 180 3520 180
+  make_wire 3650 200 3520 200
+  make_wire 3650 220 3520 220
+  make_wire 3650 240 3520 240
+  make_wire 3650 260 3520 260
+  make_wire 3590 280 3650 280
+  make_wire 3590 300 3650 300
+  make_wire 3590 320 3650 320
+  make_wire 3590 340 3650 340
+  make_wire 3590 360 3650 360
+  make_wire 3590 380 3650 380
+  make_wire 3590 400 3650 400
+  make_wire 3590 420 3650 420
+  make_wire 3650 540 3590 540
+  make_wire 3650 440 3590 440
+  make_wire 3650 460 3590 460
+  make_wire 3650 480 3590 480
+  make_wire 3650 500 3590 500
+  make_wire 3650 520 3590 520
+  make_wire 3650 560 3590 560
+  make_wire 3590 580 3650 580
+  make_wire 3520 -60 3540 -60
+  make_wire 3540 -130 3550 -130
+  make_wire 3980 -20 3850 -20
+  make_wire 3980 0 3850 0
+  make_wire 3980 20 3850 20
+  make_wire 3980 40 3850 40
+  make_wire 3980 60 3850 60
+  make_wire 3850 240 3980 240
+  make_wire 3850 80 3980 80
+  make_wire 3850 180 3980 180
+  make_wire 3980 140 3850 140
+  make_wire 3850 100 3980 100
+  make_wire 3980 160 3850 160
+  make_wire 3850 280 3980 280
+  make_wire 3850 220 3980 220
+  make_wire 3980 120 3850 120
+  make_wire 3850 260 3980 260
+  make_wire 3850 200 3980 200
+  make_wire 3920 300 3980 300
+  make_wire 3920 320 3980 320
+  make_wire 3920 340 3980 340
+  make_wire 3920 360 3980 360
+  make_wire 3920 380 3980 380
+  make_wire 3920 400 3980 400
+  make_wire 3920 420 3980 420
+  make_wire 3920 440 3980 440
+  make_wire 3980 560 3920 560
+  make_wire 3980 460 3920 460
+  make_wire 3980 480 3920 480
+  make_wire 3980 500 3920 500
+  make_wire 3980 520 3920 520
+  make_wire 3980 540 3920 540
+  make_wire 3980 580 3920 580
+  make_wire 3920 600 3980 600
+  make_wire 4310 0 4180 0
+  make_wire 4310 20 4180 20
+  make_wire 4310 40 4180 40
+  make_wire 4310 60 4180 60
+  make_wire 4310 80 4180 80
+  make_wire 4180 260 4310 260
+  make_wire 4180 100 4310 100
+  make_wire 4180 200 4310 200
+  make_wire 4310 160 4180 160
+  make_wire 4180 120 4310 120
+  make_wire 4310 180 4180 180
+  make_wire 4180 300 4310 300
+  make_wire 4180 240 4310 240
+  make_wire 4310 140 4180 140
+  make_wire 4180 280 4310 280
+  make_wire 4180 220 4310 220
+  make_wire 2660 520 2600 520
+  make_wire 2530 -40 2660 -40
+  make_wire 2530 180 2660 180
+  make_wire 2600 400 2660 400
+  make_wire 2600 380 2660 380
+  make_wire 2660 240 2600 240
+  make_wire 2530 60 2660 60
+  make_wire 2530 -60 2660 -60
+  make_wire 2600 420 2660 420
+  make_wire 2660 260 2600 260
+  make_wire 2530 80 2660 80
+  make_wire 2530 -80 2660 -80
+  make_wire 2600 440 2660 440
+  make_wire 2600 500 2660 500
+  make_wire 2660 280 2600 280
+  make_wire 2530 100 2660 100
+  make_wire 2530 -100 2660 -100
+  make_wire 2600 460 2660 460
+  make_wire 2660 300 2600 300
+  make_wire 2660 120 2530 120
+  make_wire 2600 480 2660 480
+  make_wire 2660 320 2600 320
+  make_wire 2530 140 2660 140
+  make_wire 2660 340 2600 340
+  make_wire 2660 160 2530 160
+  make_wire 2530 0 2660 0
+  make_wire 2530 200 2660 200
+  make_wire 2530 20 2660 20
+  make_wire 2530 -20 2660 -20
+  make_wire 2660 360 2600 360
+  make_wire 2660 220 2600 220
+  make_wire 2530 40 2660 40
+  make_wire 2330 -120 2200 -120
+  make_wire 2330 -100 2200 -100
+  make_wire 2330 -80 2200 -80
+  make_wire 2330 -60 2200 -60
+  make_wire 2330 -40 2200 -40
+  make_wire 2330 -20 2200 -20
+  make_wire 2330 0 2200 0
+  make_wire 2330 20 2200 20
+  make_wire 2330 40 2200 40
+  make_wire 2330 60 2200 60
+  make_wire 2330 80 2200 80
+  make_wire 2200 100 2330 100
+  make_wire 2330 120 2200 120
+  make_wire 2200 140 2330 140
+  make_wire 2330 160 2200 160
+  make_wire 2270 200 2330 200
+  make_wire 2270 220 2330 220
+  make_wire 2270 240 2330 240
+  make_wire 2270 260 2330 260
+  make_wire 2270 280 2330 280
+  make_wire 2270 300 2330 300
+  make_wire 2270 320 2330 320
+  make_wire 2270 340 2330 340
+  make_wire 2330 460 2270 460
+  make_wire 2330 360 2270 360
+  make_wire 2330 380 2270 380
+  make_wire 2330 400 2270 400
+  make_wire 2330 420 2270 420
+  make_wire 2330 440 2270 440
+  make_wire 2330 480 2270 480
+  make_wire 2270 500 2330 500
+  make_wire 2200 180 2330 180
+  make_wire 2330 520 2280 520
+  make_wire 1940 180 2000 180
+  make_wire 1940 200 2000 200
+  make_wire 1940 220 2000 220
+  make_wire 1940 240 2000 240
+  make_wire 1940 260 2000 260
+  make_wire 1940 280 2000 280
+  make_wire 1940 300 2000 300
+  make_wire 1940 320 2000 320
+  make_wire 2000 440 1940 440
+  make_wire 2000 340 1940 340
+  make_wire 2000 360 1940 360
+  make_wire 2000 380 1940 380
+  make_wire 2000 400 1940 400
+  make_wire 2000 420 1940 420
+  make_wire 2000 460 1940 460
+  make_wire 1940 480 2000 480
+  make_wire 2000 500 1950 500
+  make_wire 4250 320 4310 320
+  make_wire 4250 340 4310 340
+  make_wire 4250 360 4310 360
+  make_wire 4250 380 4310 380
+  make_wire 4250 400 4310 400
+  make_wire 4250 420 4310 420
+  make_wire 4250 440 4310 440
+  make_wire 4250 460 4310 460
+  make_wire 4310 580 4250 580
+  make_wire 4310 480 4250 480
+  make_wire 4310 500 4250 500
+  make_wire 4310 520 4250 520
+  make_wire 4310 540 4250 540
+  make_wire 4310 560 4250 560
+  make_wire 4310 600 4250 600
+  make_wire 4250 620 4310 620
+  make_wire 4580 340 4640 340
+  make_wire 4580 360 4640 360
+  make_wire 4580 380 4640 380
+  make_wire 4580 400 4640 400
+  make_wire 4580 420 4640 420
+  make_wire 4580 440 4640 440
+  make_wire 4580 460 4640 460
+  make_wire 4580 480 4640 480
+  make_wire 4640 600 4580 600
+  make_wire 4640 500 4580 500
+  make_wire 4640 520 4580 520
+  make_wire 4640 540 4580 540
+  make_wire 4640 560 4580 560
+  make_wire 4640 580 4580 580
+  make_wire 4640 620 4580 620
+  make_wire 4580 640 4640 640
+  make_wire 4640 20 4510 20
+  make_wire 4640 40 4510 40
+  make_wire 4640 60 4510 60
+  make_wire 4640 80 4510 80
+  make_wire 4640 100 4510 100
+  make_wire 4510 280 4640 280
+  make_wire 4510 120 4640 120
+  make_wire 4510 220 4640 220
+  make_wire 4640 180 4510 180
+  make_wire 4510 140 4640 140
+  make_wire 4640 200 4510 200
+  make_wire 4510 320 4640 320
+  make_wire 4510 260 4640 260
+  make_wire 4640 160 4510 160
+  make_wire 4510 300 4640 300
+  make_wire 4510 240 4640 240
+  make_wire 1540 -180 1560 -180
+  make_wire 1560 -180 1560 -250
+  make_wire 1560 -250 1580 -250
+  make_wire 1870 -160 1880 -160
+  make_wire 1880 -160 1880 -240
+  make_wire 1880 -240 1900 -240
+  make_wire 2200 -140 2210 -140
+  make_wire 2210 -140 2210 -210
+  make_wire 2210 -210 2230 -210
+  make_wire 2560 -190 2560 -120
+  make_wire 2880 -170 2880 -100
+  make_wire 3210 -140 3210 -80
+  make_wire 3540 -130 3540 -60
+  make_wire 3850 -40 3870 -40
+  make_wire 3870 -100 3890 -100
+  make_wire 3870 -100 3870 -40
+  make_wire 4180 -20 4190 -20
+  make_wire 4190 -80 4200 -80
+  make_wire 4510 0 4520 0
+  make_wire 4520 -60 4530 -60
+  make_wire 4520 -60 4520 0
+  make_wire 4190 -80 4190 -20
+  make_wire 3290 620 3290 580
+  make_wire 3290 580 3320 580
+  make_wire 3620 640 3620 600
+  make_wire 3620 600 3650 600
+  make_wire 2990 560 2960 560
+  make_wire 2960 560 2960 600
+  make_wire 3980 620 3960 620
+  make_wire 3960 620 3960 660
+  make_wire 4310 640 4280 640
+  make_wire 4280 640 4280 680
+  make_wire 4640 660 4610 660
+  make_wire 4610 660 4610 700
+  make_wire 640 450 640 420
+  make_wire 640 420 680 420
+  make_wire 1010 420 950 420
+  make_wire 1010 320 950 320
+  make_wire 1010 440 990 440
+  make_wire 990 440 990 480
+  make_wire 1340 460 1320 460
+  make_wire 1320 460 1320 480
+  make_wire 1670 480 1650 480
+  make_wire 1650 480 1650 510
+}
+
+proc ICON_16bit_multiplier_01 args {
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -300} -name A0
+icon_term -type input -origin {-100 -280} -name A1
+icon_term -type input -origin {-100 -260} -name A2
+icon_term -type input -origin {-100 -240} -name A3
+icon_term -type input -origin {-100 -220} -name A4
+icon_term -type input -origin {-100 -200} -name A5
+icon_term -type input -origin {-100 -180} -name A6
+icon_term -type input -origin {-100 -160} -name A7
+icon_term -type input -origin {-100 -140} -name A8
+icon_term -type input -origin {-100 -100} -name A10
+icon_term -type input -origin {-100 -80} -name A11
+icon_term -type input -origin {-100 -60} -name A12
+icon_term -type input -origin {-100 -40} -name A13
+icon_term -type input -origin {-100 -20} -name A14
+icon_term -type input -origin {-100 0} -name A15
+icon_term -type input -origin {-100 20} -name B0
+icon_term -type input -origin {-100 40} -name B1
+icon_term -type input -origin {-100 60} -name B2
+icon_term -type input -origin {-100 80} -name B3
+icon_term -type input -origin {-100 100} -name B4
+icon_term -type input -origin {-100 120} -name B5
+icon_term -type input -origin {-100 140} -name B6
+icon_term -type input -origin {-100 160} -name B7
+icon_term -type input -origin {-100 180} -name B8
+icon_term -type input -origin {-100 200} -name B9
+icon_term -type input -origin {-100 220} -name B10
+icon_term -type input -origin {-100 240} -name B11
+icon_term -type input -origin {-100 260} -name B12
+icon_term -type input -origin {-100 280} -name B13
+icon_term -type input -origin {-100 300} -name B14
+icon_term -type input -origin {-100 320} -name B15
+icon_term -type output -origin {100 -300} -name Z0
+icon_term -type output -origin {100 -280} -name Z1
+icon_term -type output -origin {100 -260} -name Z2
+icon_term -type output -origin {100 -240} -name Z3
+icon_term -type output -origin {100 -220} -name Z4
+icon_term -type output -origin {100 -200} -name Z5
+icon_term -type output -origin {100 -180} -name Z6
+icon_term -type output -origin {100 -160} -name Z7
+icon_term -type output -origin {100 -140} -name Z8
+icon_term -type output -origin {100 -120} -name Z9
+icon_term -type output -origin {100 -100} -name Z10
+icon_term -type output -origin {100 -80} -name Z11
+icon_term -type output -origin {100 -60} -name Z12
+icon_term -type output -origin {100 -40} -name Z13
+icon_term -type output -origin {100 -20} -name Z14
+icon_term -type output -origin {100 0} -name Z15
+icon_term -type output -origin {100 20} -name Z16
+icon_term -type output -origin {100 40} -name Z18
+icon_term -type output -origin {100 60} -name Z17
+icon_term -type output -origin {100 80} -name Z19
+icon_term -type output -origin {100 100} -name Z20
+icon_term -type output -origin {100 120} -name Z21
+icon_term -type output -origin {100 140} -name Z22
+icon_term -type output -origin {100 160} -name Z23
+icon_term -type output -origin {100 180} -name Z24
+icon_term -type output -origin {100 200} -name Z25
+icon_term -type output -origin {100 220} -name Z26
+icon_term -type output -origin {100 240} -name Z27
+icon_term -type output -origin {100 260} -name Z28
+icon_term -type output -origin {100 280} -name Z29
+icon_term -type output -origin {100 300} -name Z30
+icon_term -type output -origin {100 320} -name Z31
+icon_term -type input -origin {-100 -120} -name A9
+icon_property -origin {-90 -300} -label A0
+icon_property -origin {-90 -280} -label A1
+icon_property -origin {-90 -260} -label A2
+icon_property -origin {-90 -240} -label A3
+icon_property -origin {-90 -220} -label A4
+icon_property -origin {-90 -200} -label A5
+icon_property -origin {-90 -180} -label A6
+icon_property -origin {-90 -160} -label A7
+icon_property -origin {-90 -140} -label A8
+icon_property -origin {-90 -120} -label A9
+icon_property -origin {-90 -100} -label A10
+icon_property -origin {-90 -80} -label A11
+icon_property -origin {-90 -60} -label A12
+icon_property -origin {-90 -40} -label A13
+icon_property -origin {-90 -20} -label A14
+icon_property -origin {-90 0} -label A15
+icon_property -origin {-90 20} -label B0
+icon_property -origin {-90 40} -label B1
+icon_property -origin {-90 60} -label B2
+icon_property -origin {-90 80} -label B3
+icon_property -origin {-90 100} -label B4
+icon_property -origin {-90 120} -label B5
+icon_property -origin {-90 140} -label B6
+icon_property -origin {-90 160} -label B7
+icon_property -origin {-90 180} -label B8
+icon_property -origin {-90 200} -label B9
+icon_property -origin {-90 220} -label B10
+icon_property -origin {-90 240} -label B11
+icon_property -origin {-90 260} -label B12
+icon_property -origin {-90 280} -label B13
+icon_property -origin {-90 300} -label B14
+icon_property -origin {-90 320} -label B15
+icon_property -origin {90 -300} -anchor e -label Z0
+icon_property -origin {90 -280} -anchor e -label Z1
+icon_property -origin {90 -260} -anchor e -label Z2
+icon_property -origin {90 -240} -anchor e -label Z3
+icon_property -origin {90 -220} -anchor e -label Z4
+icon_property -origin {90 -200} -anchor e -label Z5
+icon_property -origin {90 -180} -anchor e -label Z6
+icon_property -origin {90 -160} -anchor e -label Z7
+icon_property -origin {90 -140} -anchor e -label Z8
+icon_property -origin {90 -120} -anchor e -label Z9
+icon_property -origin {90 -100} -anchor e -label Z10
+icon_property -origin {90 -80} -anchor e -label Z11
+icon_property -origin {90 -60} -anchor e -label Z12
+icon_property -origin {90 -40} -anchor e -label Z13
+icon_property -origin {90 -20} -anchor e -label Z14
+icon_property -origin {90 0} -anchor e -label Z15
+icon_property -origin {90 20} -anchor e -label Z16
+icon_property -origin {90 40} -anchor e -label Z18
+icon_property -origin {90 60} -anchor e -label Z17
+icon_property -origin {90 80} -anchor e -label Z19
+icon_property -origin {90 100} -anchor e -label Z20
+icon_property -origin {90 120} -anchor e -label Z21
+icon_property -origin {90 140} -anchor e -label Z22
+icon_property -origin {90 160} -anchor e -label Z23
+icon_property -origin {90 180} -anchor e -label Z24
+icon_property -origin {90 200} -anchor e -label Z25
+icon_property -origin {90 220} -anchor e -label Z26
+icon_property -origin {90 240} -anchor e -label Z27
+icon_property -origin {90 260} -anchor e -label Z28
+icon_property -origin {90 280} -anchor e -label Z29
+icon_property -origin {90 300} -anchor e -label Z30
+icon_property -origin {90 320} -anchor e -label Z31
+icon_property -origin {-90 -350} -label {$name}
+icon_property -origin {-90 -330} -label 16bit_multiplier_01
+  icon_line -100 -340 100 -340 100 340 -100 340 -100 -340
+  icon_property -origin {-100 350} -type user -name name -default x
+
+}
+

@@ -1,0 +1,158 @@
+proc SCHEMATIC_16bit_and {} {
+make input -name B0 -origin {110 -550}
+make input -name B1 -origin {110 -470}
+make input -name B2 -origin {110 -390}
+make input -name B3 -origin {110 -310}
+make input -name B4 -origin {110 -230}
+make input -name B5 -origin {110 -150}
+make input -name B6 -origin {110 -70}
+make input -name B7 -origin {110 10}
+make input -name B8 -origin {110 90}
+make input -name B9 -origin {110 170}
+make input -name B10 -origin {110 250}
+make input -name B11 -origin {110 330}
+make input -name B12 -origin {110 410}
+make input -name B13 -origin {110 490}
+make input -name B14 -origin {110 570}
+make input -name B15 -origin {110 650}
+make output -name M0 -origin {310 -570}
+make output -name M1 -origin {310 -490}
+make output -name M2 -origin {310 -410}
+make output -name M3 -origin {310 -330}
+make output -name M4 -origin {310 -250}
+make output -name M5 -origin {310 -170}
+make output -name M6 -origin {310 -90}
+make output -name M7 -origin {310 -10}
+make output -name M8 -origin {310 70}
+make output -name M9 -origin {310 150}
+make output -name M10 -origin {310 230}
+make output -name M11 -origin {310 310}
+make output -name M12 -origin {310 390}
+make output -name M13 -origin {310 470}
+make output -name M14 -origin {310 550}
+make output -name M15 -origin {310 630}
+make input -name A0 -origin {-30 -570}
+make and_01 -name xi0 -origin {210 -570}
+make and_01 -name xi1 -origin {210 -490}
+make and_01 -name xi2 -origin {210 -410}
+make and_01 -name xi3 -origin {210 -330}
+make and_01 -name xi4 -origin {210 -250}
+make and_01 -name xi5 -origin {210 -170}
+make and_01 -name xi6 -origin {210 -90}
+make and_01 -name xi7 -origin {210 -10}
+make and_01 -name xi8 -origin {210 70}
+make and_01 -name xi9 -origin {210 150}
+make and_01 -name xi10 -origin {210 230}
+make and_01 -name xi11 -origin {210 310}
+make and_01 -name xi12 -origin {210 390}
+make and_01 -name xi13 -origin {210 470}
+make and_01 -name xi14 -origin {210 550}
+make and_01 -name xi15 -origin {210 630}
+  make_wire 10 310 10 390
+  make_wire 10 390 10 470
+  make_wire 10 390 110 390
+  make_wire 10 470 110 470
+  make_wire 10 -410 10 -330
+  make_wire 10 -410 110 -410
+  make_wire 10 -330 110 -330
+  make_wire 10 -490 110 -490
+  make_wire 10 470 10 550
+  make_wire 10 550 10 630
+  make_wire 10 550 110 550
+  make_wire 10 630 110 630
+  make_wire 10 -330 10 -250
+  make_wire 10 -250 10 -170
+  make_wire 10 -250 110 -250
+  make_wire 10 -170 110 -170
+  make_wire 10 -170 10 -90
+  make_wire 10 -90 10 -10
+  make_wire 10 -90 110 -90
+  make_wire 10 -10 110 -10
+  make_wire 10 -10 10 70
+  make_wire 10 70 10 150
+  make_wire 10 70 110 70
+  make_wire 10 150 110 150
+  make_wire 10 150 10 230
+  make_wire 10 230 10 310
+  make_wire 10 230 110 230
+  make_wire 10 310 110 310
+  make_wire 10 -570 10 -490
+  make_wire 10 -570 110 -570
+  make_wire 10 -570 -30 -570
+  make_wire 10 -490 10 -410
+}
+
+proc ICON_16bit_and args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -130} -name B0
+icon_term -type input -origin {-100 -110} -name B1
+icon_term -type input -origin {-100 -90} -name B2
+icon_term -type input -origin {-100 -70} -name B3
+icon_term -type input -origin {-100 -50} -name B4
+icon_term -type input -origin {-100 -30} -name B5
+icon_term -type input -origin {-100 -10} -name B6
+icon_term -type input -origin {-100 10} -name B7
+icon_term -type input -origin {-100 30} -name B8
+icon_term -type input -origin {-100 50} -name B9
+icon_term -type input -origin {-100 70} -name B10
+icon_term -type input -origin {-100 90} -name B11
+icon_term -type input -origin {-100 110} -name B12
+icon_term -type input -origin {-100 130} -name B13
+icon_term -type input -origin {-100 150} -name B14
+icon_term -type input -origin {-100 170} -name B15
+icon_term -type input -origin {-100 -150} -name A0
+icon_term -type output -origin {100 -150} -name M0
+icon_term -type output -origin {100 -130} -name M1
+icon_term -type output -origin {100 -110} -name M2
+icon_term -type output -origin {100 -90} -name M3
+icon_term -type output -origin {100 -70} -name M4
+icon_term -type output -origin {100 -50} -name M5
+icon_term -type output -origin {100 -30} -name M6
+icon_term -type output -origin {100 -10} -name M7
+icon_term -type output -origin {100 10} -name M8
+icon_term -type output -origin {100 30} -name M9
+icon_term -type output -origin {100 50} -name M10
+icon_term -type output -origin {100 70} -name M11
+icon_term -type output -origin {100 90} -name M12
+icon_term -type output -origin {100 110} -name M13
+icon_term -type output -origin {100 130} -name M14
+icon_term -type output -origin {100 150} -name M15
+icon_property -origin {-90 -130} -label B0
+icon_property -origin {-90 -110} -label B1
+icon_property -origin {-90 -90} -label B2
+icon_property -origin {-90 -70} -label B3
+icon_property -origin {-90 -50} -label B4
+icon_property -origin {-90 -30} -label B5
+icon_property -origin {-90 -10} -label B6
+icon_property -origin {-90 10} -label B7
+icon_property -origin {-90 30} -label B8
+icon_property -origin {-90 50} -label B9
+icon_property -origin {-90 70} -label B10
+icon_property -origin {-90 90} -label B11
+icon_property -origin {-90 110} -label B12
+icon_property -origin {-90 130} -label B13
+icon_property -origin {-90 150} -label B14
+icon_property -origin {-90 170} -label B15
+icon_property -origin {-90 -150} -label A0
+icon_property -origin {90 -150} -anchor e -label M0
+icon_property -origin {90 -130} -anchor e -label M1
+icon_property -origin {90 -110} -anchor e -label M2
+icon_property -origin {90 -90} -anchor e -label M3
+icon_property -origin {90 -70} -anchor e -label M4
+icon_property -origin {90 -50} -anchor e -label M5
+icon_property -origin {90 -30} -anchor e -label M6
+icon_property -origin {90 -10} -anchor e -label M7
+icon_property -origin {90 10} -anchor e -label M8
+icon_property -origin {90 30} -anchor e -label M9
+icon_property -origin {90 50} -anchor e -label M10
+icon_property -origin {90 70} -anchor e -label M11
+icon_property -origin {90 90} -anchor e -label M12
+icon_property -origin {90 110} -anchor e -label M13
+icon_property -origin {90 130} -anchor e -label M14
+icon_property -origin {90 150} -anchor e -label M15
+icon_property -origin {-90 -200} -label {$name}
+icon_property -origin {-90 -180} -label 16bit_and
+  icon_line -100 -190 100 -190 100 190 -100 190 -100 -190
+  icon_property -origin {-90 210} -type user -name name -default x
+}
+
