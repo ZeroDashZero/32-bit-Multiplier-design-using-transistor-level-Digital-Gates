@@ -1,0 +1,45 @@
+proc SCHEMATIC_proj_xor1x {} {
+
+make input -name vin_a -origin {380 170}
+make input -name vin_b -origin {380 360}
+make proj_nand1x -name xi0 -origin {550 270}
+make proj_nand1x -name xi1 -origin {810 190}
+make proj_nand1x -name xi2 -origin {800 350}
+make proj_nand1x -name xi3 -origin {1060 270}
+make output -name vout -origin {1150 270}
+  make_wire 640 270 670 270
+  make_wire 670 270 670 200
+  make_wire 670 200 740 200
+  make_wire 670 270 670 330
+  make_wire 670 330 730 330
+  make_wire 460 170 460 250
+  make_wire 460 250 480 250
+  make_wire 460 170 740 170
+  make_wire 460 170 380 170
+  make_wire 460 360 460 280
+  make_wire 480 280 460 280
+  make_wire 460 360 380 360
+  make_wire 460 360 730 360
+  make_wire 900 190 910 190
+  make_wire 910 190 910 250
+  make_wire 910 250 990 250
+  make_wire 890 350 910 350
+  make_wire 910 350 910 280
+  make_wire 910 280 990 280
+
+}
+
+proc ICON_proj_xor1x args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -10} -name vin_a
+icon_term -type input -origin {-100 10} -name vin_b
+icon_term -type output -origin {100 0} -name vout
+icon_property -origin {-90 -10} -label vin_a
+icon_property -origin {-90 10} -label vin_b
+icon_property -origin {90 0} -anchor e -label vout
+icon_property -origin {-90 -50} -label {$name}
+icon_property -origin {-90 -30} -label proj_xor1x
+  icon_line -100 -40 100 -40 100 40 -100 40 -100 -40
+  icon_property -origin {-90 60} -type user -name name -default x
+}
+

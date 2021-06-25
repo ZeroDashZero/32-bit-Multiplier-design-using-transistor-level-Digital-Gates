@@ -1,0 +1,22 @@
+proc SCHEMATIC_proj_buff1x {} {
+make proj_inv1x -name xi0 -origin {690 250}
+make proj_inv1x -name xi1 -origin {910 250}
+make input -name vin -origin {580 250}
+make output -name vout -origin {1000 250}
+  make_wire 750 250 830 250
+  make_wire 610 250 580 250
+  make_wire 970 250 1000 250
+}
+
+proc ICON_proj_buff1x args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 0} -name vin
+icon_term -type output -origin {0 0} -name vout
+icon_property -origin {-90 0} -label vin
+icon_property -origin {-10 0} -anchor e -label vout
+icon_property -origin {-90 -40} -label {$name}
+icon_property -origin {-90 -20} -label proj_buff1x
+  icon_property -origin {-90 100} -type user -name name -default x
+  icon_line -100 -30 -100 50 0 0 -100 -40 -100 -30
+}
+

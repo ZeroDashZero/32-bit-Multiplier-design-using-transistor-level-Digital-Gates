@@ -1,0 +1,42 @@
+proc SCHEMATIC_proj_mux_2to1_1x {} {
+make proj_nand1x -name xi0 -origin {1570 380}
+make proj_nand1x -name xi1 -origin {1580 560}
+make proj_nand1x -name xi2 -origin {1810 470}
+make input -name vin_0 -origin {1160 360}
+make input -name vin_1 -origin {1160 570}
+make proj_inv1x -name xi3 -origin {1370 460}
+make input -name S -origin {1160 460}
+make output -name vout -origin {1900 470}
+  make_wire 1500 360 1160 360
+  make_wire 1510 570 1160 570
+  make_wire 1230 460 1230 540
+  make_wire 1230 540 1510 540
+  make_wire 1230 460 1160 460
+  make_wire 1230 460 1290 460
+  make_wire 1430 460 1450 460
+  make_wire 1450 460 1450 390
+  make_wire 1450 390 1500 390
+  make_wire 1660 380 1710 380
+  make_wire 1710 380 1710 450
+  make_wire 1710 450 1740 450
+  make_wire 1670 560 1710 560
+  make_wire 1710 560 1710 480
+  make_wire 1710 480 1740 480
+}
+
+proc ICON_proj_mux_2to1_1x args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -10} -name vin_0
+icon_term -type input -origin {-100 10} -name vin_1
+icon_term -type output -origin {100 0} -name vout
+icon_term -type input -origin {30 -50} -orient R90 -name S
+icon_property -origin {-90 -10} -label vin_0
+icon_property -origin {-90 10} -label vin_1
+icon_property -origin {30 -40} -label S
+icon_property -origin {90 0} -anchor e -label vout
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label proj_mux_2to1_1x
+  icon_line -100 -50 100 -50 100 50 -100 50 -100 -50
+  icon_property -origin {-90 120} -type user -name name -default x
+}
+

@@ -1,0 +1,11 @@
+proc SCHEMATIC_proj_and1x {} {
+make proj_nand1x -name xi0 -origin {3430 1940}
+make proj_inv1x -name xi1 -origin {3640 1940}
+make input -name vin_a -origin {3330 1920}
+make input -name vin_b -origin {3330 1950}
+make output -name vout -origin {3700 1940}
+  make_wire 3520 1940 3560 1940
+  make_wire 3360 1920 3330 1920
+  make_wire 3360 1950 3330 1950
+}
+

@@ -1,0 +1,41 @@
+proc SCHEMATIC_proj_nor1x {} {
+
+make nmos -name M0 -origin {670 550}
+make nmos -name M1 -origin {860 550}
+make name_net -name vin_a -origin {610 550}
+make name_net -name vin_b -origin {800 550}
+make global -name gnd -origin {760 590}
+make name_net -name vin_a -origin {700 300}
+make name_net -name vin_b -origin {700 380}
+make pmos -name M2 -origin {760 300}
+make pmos -name M3 -origin {760 380}
+make global -orient RXY -name vdd -origin {760 260}
+make input -name vin_a -origin {520 440}
+make input -name vin_b -origin {520 470}
+make output -name vout -origin {760 460}
+  make_wire 760 590 670 590
+  make_wire 760 590 860 590
+  make_wire 760 510 670 510
+  make_wire 760 510 860 510
+  make_wire 760 460 760 420
+  make_wire 760 460 760 510
+
+}
+
+proc ICON_proj_nor1x args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-50 -10} -name vin_a
+icon_term -type input -origin {-50 10} -name vin_b
+icon_term -type output -origin {60 0} -name vout
+icon_property -origin {-50 -10} -label vin_a
+icon_property -origin {-50 10} -label vin_b
+icon_property -origin {30 0} -anchor e -label vout
+icon_property -origin {-60 -40} -label {$name}
+icon_property -origin {-60 -30} -label proj_nor1x
+  icon_property -origin {-90 40} -type user -name name -default x
+  icon_arc -90 -20 -50 20 -start 333 -extent 65
+  icon_arc -60 -20 40 20 -start 5 -extent 147
+  icon_arc -60 -20 40 20 -start 355 -extent -147
+  icon_arc 30 -10 60 10 -start 271 -extent 359
+}
+

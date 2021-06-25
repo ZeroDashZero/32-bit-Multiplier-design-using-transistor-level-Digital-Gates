@@ -1,0 +1,85 @@
+proc SCHEMATIC_8bit_and_01 {} {
+make input -name in1_01 -origin {460 -40}
+make input -name in2_01 -origin {460 -20}
+make input -name in1_02 -origin {460 0}
+make input -name in2_02 -origin {460 20}
+make input -name in1_03 -origin {460 40}
+make input -name in2_03 -origin {460 60}
+make input -name in1_04 -origin {460 80}
+make input -name in2_04 -origin {460 100}
+make output -name op_01 -origin {660 -40}
+make output -name op_02 -origin {660 -20}
+make output -name op_03 -origin {660 0}
+make output -name op_04 -origin {660 20}
+make input -name in1_05 -origin {830 -40}
+make input -name in2_05 -origin {830 -20}
+make input -name in1_06 -origin {830 0}
+make input -name in2_06 -origin {830 20}
+make input -name in1_07 -origin {830 40}
+make input -name in2_07 -origin {830 60}
+make input -name in1_08 -origin {830 80}
+make input -name in2_08 -origin {830 100}
+make output -name op_05 -origin {1030 -40}
+make output -name op_06 -origin {1030 -20}
+make output -name op_07 -origin {1030 0}
+make output -name op_08 -origin {1030 20}
+make 4_bit_and_01 -name xi0 -origin {560 20}
+make 4_bit_and_01 -name xi1 -origin {930 20}
+}
+
+proc ICON_8bit_and_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -140} -name in1_01
+icon_term -type input -origin {-100 -120} -name in2_01
+icon_term -type input -origin {-100 -100} -name in1_02
+icon_term -type input -origin {-100 -80} -name in2_02
+icon_term -type input -origin {-100 -60} -name in1_03
+icon_term -type input -origin {-100 -40} -name in2_03
+icon_term -type input -origin {-100 -20} -name in1_04
+icon_term -type input -origin {-100 0} -name in2_04
+icon_term -type input -origin {-100 20} -name in1_05
+icon_term -type input -origin {-100 40} -name in2_05
+icon_term -type input -origin {-100 60} -name in1_06
+icon_term -type input -origin {-100 80} -name in2_06
+icon_term -type input -origin {-100 100} -name in1_07
+icon_term -type input -origin {-100 120} -name in2_07
+icon_term -type input -origin {-100 140} -name in1_08
+icon_term -type input -origin {-100 160} -name in2_08
+icon_term -type output -origin {100 -140} -name op_01
+icon_term -type output -origin {100 -120} -name op_02
+icon_term -type output -origin {100 -100} -name op_03
+icon_term -type output -origin {100 -80} -name op_04
+icon_term -type output -origin {100 -60} -name op_05
+icon_term -type output -origin {100 -40} -name op_06
+icon_term -type output -origin {100 -20} -name op_07
+icon_term -type output -origin {100 0} -name op_08
+icon_property -origin {-90 -140} -label in1_01
+icon_property -origin {-90 -120} -label in2_01
+icon_property -origin {-90 -100} -label in1_02
+icon_property -origin {-90 -80} -label in2_02
+icon_property -origin {-90 -60} -label in1_03
+icon_property -origin {-90 -40} -label in2_03
+icon_property -origin {-90 -20} -label in1_04
+icon_property -origin {-90 0} -label in2_04
+icon_property -origin {-90 20} -label in1_05
+icon_property -origin {-90 40} -label in2_05
+icon_property -origin {-90 60} -label in1_06
+icon_property -origin {-90 80} -label in2_06
+icon_property -origin {-90 100} -label in1_07
+icon_property -origin {-90 120} -label in2_07
+icon_property -origin {-90 140} -label in1_08
+icon_property -origin {-90 160} -label in2_08
+icon_property -origin {90 -140} -anchor e -label op_01
+icon_property -origin {90 -120} -anchor e -label op_02
+icon_property -origin {90 -100} -anchor e -label op_03
+icon_property -origin {90 -80} -anchor e -label op_04
+icon_property -origin {90 -60} -anchor e -label op_05
+icon_property -origin {90 -40} -anchor e -label op_06
+icon_property -origin {90 -20} -anchor e -label op_07
+icon_property -origin {90 0} -anchor e -label op_08
+icon_property -origin {-90 -190} -label {$name}
+icon_property -origin {-90 -170} -label 8bit_and_01
+  icon_line -100 -180 100 -180 100 180 -100 180 -100 -180
+  icon_property -origin {-90 190} -type user -name name -default x
+}
+

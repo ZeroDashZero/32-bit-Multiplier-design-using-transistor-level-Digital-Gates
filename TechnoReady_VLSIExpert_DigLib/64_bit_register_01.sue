@@ -1,0 +1,414 @@
+proc SCHEMATIC_64_bit_register_01 {} {
+make 32_bit_reg_01 -name xi0 -origin {1540 -40}
+make 32_bit_reg_01 -name xi1 -origin {1960 -40}
+make input -name reset_b -origin {1360 300}
+make input -name clk -origin {1140 -360}
+make input -name D_0 -origin {1440 -340}
+make input -name D_1 -origin {1440 -320}
+make input -name D_2 -origin {1440 -300}
+make input -name D_3 -origin {1440 -280}
+make input -name D_4 -origin {1440 -260}
+make input -name D_5 -origin {1440 -240}
+make input -name D_6 -origin {1440 -220}
+make input -name D_7 -origin {1440 -200}
+make input -name D_8 -origin {1440 -180}
+make input -name D_9 -origin {1440 -160}
+make input -name D_10 -origin {1440 -140}
+make input -name D_11 -origin {1440 -120}
+make input -name D_12 -origin {1440 -100}
+make input -name D_13 -origin {1440 -80}
+make input -name D_14 -origin {1440 -60}
+make input -name D_15 -origin {1440 -40}
+make input -name D_16 -origin {1440 -20}
+make input -name D_17 -origin {1440 0}
+make input -name D_18 -origin {1440 20}
+make input -name D_19 -origin {1440 40}
+make input -name D_20 -origin {1440 60}
+make input -name D_21 -origin {1440 80}
+make input -name D_22 -origin {1440 100}
+make input -name D_23 -origin {1440 120}
+make input -name D_24 -origin {1440 140}
+make input -name D_25 -origin {1440 160}
+make input -name D_26 -origin {1440 180}
+make input -name D_27 -origin {1440 200}
+make input -name D_28 -origin {1440 220}
+make input -name D_29 -origin {1440 240}
+make input -name D_30 -origin {1440 260}
+make input -name D_31 -origin {1440 280}
+make input -name D_32 -origin {1860 -340}
+make input -name D_33 -origin {1860 -320}
+make input -name D_34 -origin {1860 -300}
+make input -name D_35 -origin {1860 -280}
+make input -name D_36 -origin {1860 -260}
+make input -name D_37 -origin {1860 -240}
+make input -name D_38 -origin {1860 -220}
+make input -name D_39 -origin {1860 -200}
+make input -name D_40 -origin {1860 -180}
+make input -name D_41 -origin {1860 -160}
+make input -name D_42 -origin {1860 -140}
+make input -name D_43 -origin {1860 -120}
+make input -name D_44 -origin {1860 -100}
+make input -name D_45 -origin {1860 -80}
+make input -name D_46 -origin {1860 -60}
+make input -name D_47 -origin {1860 -40}
+make input -name D_48 -origin {1860 -20}
+make input -name D_49 -origin {1860 0}
+make input -name D_50 -origin {1860 20}
+make input -name D_51 -origin {1860 40}
+make input -name D_52 -origin {1860 60}
+make input -name D_53 -origin {1860 80}
+make input -name D_54 -origin {1860 100}
+make input -name D_55 -origin {1860 120}
+make input -name D_56 -origin {1860 140}
+make input -name D_57 -origin {1860 160}
+make input -name D_58 -origin {1860 180}
+make input -name D_59 -origin {1860 200}
+make input -name D_60 -origin {1860 220}
+make input -name D_61 -origin {1860 240}
+make input -name D_62 -origin {1860 260}
+make input -name D_63 -origin {1860 280}
+make output -name Q_0 -origin {1640 -360}
+make output -name Q_1 -origin {1640 -340}
+make output -name Q_2 -origin {1640 -320}
+make output -name Q_3 -origin {1640 -300}
+make output -name Q_4 -origin {1640 -280}
+make output -name Q_5 -origin {1640 -260}
+make output -name Q_6 -origin {1640 -240}
+make output -name Q_7 -origin {1640 -220}
+make output -name Q_8 -origin {1640 -200}
+make output -name Q_9 -origin {1640 -180}
+make output -name Q_10 -origin {1640 -160}
+make output -name Q_11 -origin {1640 -140}
+make output -name Q_12 -origin {1640 -120}
+make output -name Q_13 -origin {1640 -100}
+make output -name Q_14 -origin {1640 -80}
+make output -name Q_15 -origin {1640 -60}
+make output -name Q_16 -origin {1640 -40}
+make output -name Q_17 -origin {1640 -20}
+make output -name Q_18 -origin {1640 0}
+make output -name Q_19 -origin {1640 20}
+make output -name Q_20 -origin {1640 40}
+make output -name Q_21 -origin {1640 60}
+make output -name Q_22 -origin {1640 80}
+make output -name Q_23 -origin {1640 100}
+make output -name Q_24 -origin {1640 120}
+make output -name Q_25 -origin {1640 140}
+make output -name Q_26 -origin {1640 160}
+make output -name Q_27 -origin {1640 180}
+make output -name Q_28 -origin {1640 200}
+make output -name Q_29 -origin {1640 220}
+make output -name Q_30 -origin {1640 240}
+make output -name Q_31 -origin {1640 260}
+make output -name Q_32 -origin {2060 -360}
+make output -name Q_33 -origin {2060 -340}
+make output -name Q_34 -origin {2060 -320}
+make output -name Q_35 -origin {2060 -300}
+make output -name Q_36 -origin {2060 -280}
+make output -name Q_37 -origin {2060 -260}
+make output -name Q_38 -origin {2060 -240}
+make output -name Q_39 -origin {2060 -220}
+make output -name Q_40 -origin {2060 -200}
+make output -name Q_41 -origin {2060 -180}
+make output -name Q_42 -origin {2060 -160}
+make output -name Q_43 -origin {2060 -140}
+make output -name Q_44 -origin {2060 -120}
+make output -name Q_45 -origin {2060 -100}
+make output -name Q_46 -origin {2060 -80}
+make output -name Q_47 -origin {2060 -60}
+make output -name Q_48 -origin {2060 -40}
+make output -name Q_49 -origin {2060 -20}
+make output -name Q_50 -origin {2060 0}
+make output -name Q_51 -origin {2060 20}
+make output -name Q_52 -origin {2060 40}
+make output -name Q_53 -origin {2060 60}
+make output -name Q_54 -origin {2060 80}
+make output -name Q_55 -origin {2060 100}
+make output -name Q_56 -origin {2060 120}
+make output -name Q_57 -origin {2060 140}
+make output -name Q_58 -origin {2060 160}
+make output -name Q_59 -origin {2060 180}
+make output -name Q_60 -origin {2060 200}
+make output -name Q_61 -origin {2060 220}
+make output -name Q_62 -origin {2060 240}
+make output -name Q_63 -origin {2060 260}
+  make_wire 1840 -360 1860 -360
+  make_wire 1440 300 1360 300
+  make_wire 1830 300 1860 300
+  make_wire 1360 300 1360 400
+  make_wire 1360 -360 1140 -360
+  make_wire 1360 -360 1440 -360
+  make_wire 1360 -450 1840 -450
+  make_wire 1830 300 1830 400
+  make_wire 1840 -450 1840 -360
+  make_wire 1360 400 1830 400
+  make_wire 1360 -450 1360 -360
+}
+
+proc ICON_64_bit_register_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -640} -name reset_b
+icon_term -type input -origin {-100 -620} -name clk
+icon_term -type input -origin {-100 -600} -name D_0
+icon_term -type input -origin {-100 -580} -name D_1
+icon_term -type input -origin {-100 -560} -name D_2
+icon_term -type input -origin {-100 -540} -name D_3
+icon_term -type input -origin {-100 -520} -name D_4
+icon_term -type input -origin {-100 -500} -name D_5
+icon_term -type input -origin {-100 -480} -name D_6
+icon_term -type input -origin {-100 -460} -name D_7
+icon_term -type input -origin {-100 -440} -name D_8
+icon_term -type input -origin {-100 -420} -name D_9
+icon_term -type input -origin {-100 -400} -name D_10
+icon_term -type input -origin {-100 -380} -name D_11
+icon_term -type input -origin {-100 -360} -name D_12
+icon_term -type input -origin {-100 -340} -name D_13
+icon_term -type input -origin {-100 -320} -name D_14
+icon_term -type input -origin {-100 -300} -name D_15
+icon_term -type input -origin {-100 -280} -name D_16
+icon_term -type input -origin {-100 -260} -name D_17
+icon_term -type input -origin {-100 -240} -name D_18
+icon_term -type input -origin {-100 -220} -name D_19
+icon_term -type input -origin {-100 -200} -name D_20
+icon_term -type input -origin {-100 -180} -name D_21
+icon_term -type input -origin {-100 -160} -name D_22
+icon_term -type input -origin {-100 -140} -name D_23
+icon_term -type input -origin {-100 -120} -name D_24
+icon_term -type input -origin {-100 -100} -name D_25
+icon_term -type input -origin {-100 -80} -name D_26
+icon_term -type input -origin {-100 -60} -name D_27
+icon_term -type input -origin {-100 -40} -name D_28
+icon_term -type input -origin {-100 -20} -name D_29
+icon_term -type input -origin {-100 0} -name D_30
+icon_term -type input -origin {-100 20} -name D_31
+icon_term -type input -origin {-100 40} -name D_32
+icon_term -type input -origin {-100 60} -name D_33
+icon_term -type input -origin {-100 80} -name D_34
+icon_term -type input -origin {-100 100} -name D_35
+icon_term -type input -origin {-100 120} -name D_36
+icon_term -type input -origin {-100 140} -name D_37
+icon_term -type input -origin {-100 160} -name D_38
+icon_term -type input -origin {-100 180} -name D_39
+icon_term -type input -origin {-100 200} -name D_40
+icon_term -type input -origin {-100 220} -name D_41
+icon_term -type input -origin {-100 240} -name D_42
+icon_term -type input -origin {-100 260} -name D_43
+icon_term -type input -origin {-100 280} -name D_44
+icon_term -type input -origin {-100 300} -name D_45
+icon_term -type input -origin {-100 320} -name D_46
+icon_term -type input -origin {-100 340} -name D_47
+icon_term -type input -origin {-100 360} -name D_48
+icon_term -type input -origin {-100 380} -name D_49
+icon_term -type input -origin {-100 400} -name D_50
+icon_term -type input -origin {-100 420} -name D_51
+icon_term -type input -origin {-100 440} -name D_52
+icon_term -type input -origin {-100 460} -name D_53
+icon_term -type input -origin {-100 480} -name D_54
+icon_term -type input -origin {-100 500} -name D_55
+icon_term -type input -origin {-100 520} -name D_56
+icon_term -type input -origin {-100 540} -name D_57
+icon_term -type input -origin {-100 560} -name D_58
+icon_term -type input -origin {-100 580} -name D_59
+icon_term -type input -origin {-100 600} -name D_60
+icon_term -type input -origin {-100 620} -name D_61
+icon_term -type input -origin {-100 640} -name D_62
+icon_term -type input -origin {-100 660} -name D_63
+icon_term -type output -origin {100 -640} -name Q_0
+icon_term -type output -origin {100 -620} -name Q_1
+icon_term -type output -origin {100 -600} -name Q_2
+icon_term -type output -origin {100 -580} -name Q_3
+icon_term -type output -origin {100 -560} -name Q_4
+icon_term -type output -origin {100 -540} -name Q_5
+icon_term -type output -origin {100 -520} -name Q_6
+icon_term -type output -origin {100 -500} -name Q_7
+icon_term -type output -origin {100 -480} -name Q_8
+icon_term -type output -origin {100 -460} -name Q_9
+icon_term -type output -origin {100 -440} -name Q_10
+icon_term -type output -origin {100 -420} -name Q_11
+icon_term -type output -origin {100 -400} -name Q_12
+icon_term -type output -origin {100 -380} -name Q_13
+icon_term -type output -origin {100 -360} -name Q_14
+icon_term -type output -origin {100 -340} -name Q_15
+icon_term -type output -origin {100 -320} -name Q_16
+icon_term -type output -origin {100 -300} -name Q_17
+icon_term -type output -origin {100 -280} -name Q_18
+icon_term -type output -origin {100 -260} -name Q_19
+icon_term -type output -origin {100 -240} -name Q_20
+icon_term -type output -origin {100 -220} -name Q_21
+icon_term -type output -origin {100 -200} -name Q_22
+icon_term -type output -origin {100 -180} -name Q_23
+icon_term -type output -origin {100 -160} -name Q_24
+icon_term -type output -origin {100 -140} -name Q_25
+icon_term -type output -origin {100 -120} -name Q_26
+icon_term -type output -origin {100 -100} -name Q_27
+icon_term -type output -origin {100 -80} -name Q_28
+icon_term -type output -origin {100 -60} -name Q_29
+icon_term -type output -origin {100 -40} -name Q_30
+icon_term -type output -origin {100 -20} -name Q_31
+icon_term -type output -origin {100 0} -name Q_32
+icon_term -type output -origin {100 20} -name Q_33
+icon_term -type output -origin {100 40} -name Q_34
+icon_term -type output -origin {100 60} -name Q_35
+icon_term -type output -origin {100 80} -name Q_36
+icon_term -type output -origin {100 100} -name Q_37
+icon_term -type output -origin {100 120} -name Q_38
+icon_term -type output -origin {100 140} -name Q_39
+icon_term -type output -origin {100 160} -name Q_40
+icon_term -type output -origin {100 180} -name Q_41
+icon_term -type output -origin {100 200} -name Q_42
+icon_term -type output -origin {100 220} -name Q_43
+icon_term -type output -origin {100 240} -name Q_44
+icon_term -type output -origin {100 260} -name Q_45
+icon_term -type output -origin {100 280} -name Q_46
+icon_term -type output -origin {100 300} -name Q_47
+icon_term -type output -origin {100 320} -name Q_48
+icon_term -type output -origin {100 340} -name Q_49
+icon_term -type output -origin {100 360} -name Q_50
+icon_term -type output -origin {100 380} -name Q_51
+icon_term -type output -origin {100 400} -name Q_52
+icon_term -type output -origin {100 420} -name Q_53
+icon_term -type output -origin {100 440} -name Q_54
+icon_term -type output -origin {100 460} -name Q_55
+icon_term -type output -origin {100 480} -name Q_56
+icon_term -type output -origin {100 500} -name Q_57
+icon_term -type output -origin {100 520} -name Q_58
+icon_term -type output -origin {100 540} -name Q_59
+icon_term -type output -origin {100 560} -name Q_60
+icon_term -type output -origin {100 580} -name Q_61
+icon_term -type output -origin {100 600} -name Q_62
+icon_term -type output -origin {100 620} -name Q_63
+icon_property -origin {-90 -640} -label reset_b
+icon_property -origin {-90 -620} -label clk
+icon_property -origin {-90 -600} -label D_0
+icon_property -origin {-90 -580} -label D_1
+icon_property -origin {-90 -560} -label D_2
+icon_property -origin {-90 -540} -label D_3
+icon_property -origin {-90 -520} -label D_4
+icon_property -origin {-90 -500} -label D_5
+icon_property -origin {-90 -480} -label D_6
+icon_property -origin {-90 -460} -label D_7
+icon_property -origin {-90 -440} -label D_8
+icon_property -origin {-90 -420} -label D_9
+icon_property -origin {-90 -400} -label D_10
+icon_property -origin {-90 -380} -label D_11
+icon_property -origin {-90 -360} -label D_12
+icon_property -origin {-90 -340} -label D_13
+icon_property -origin {-90 -320} -label D_14
+icon_property -origin {-90 -300} -label D_15
+icon_property -origin {-90 -280} -label D_16
+icon_property -origin {-90 -260} -label D_17
+icon_property -origin {-90 -240} -label D_18
+icon_property -origin {-90 -220} -label D_19
+icon_property -origin {-90 -200} -label D_20
+icon_property -origin {-90 -180} -label D_21
+icon_property -origin {-90 -160} -label D_22
+icon_property -origin {-90 -140} -label D_23
+icon_property -origin {-90 -120} -label D_24
+icon_property -origin {-90 -100} -label D_25
+icon_property -origin {-90 -80} -label D_26
+icon_property -origin {-90 -60} -label D_27
+icon_property -origin {-90 -40} -label D_28
+icon_property -origin {-90 -20} -label D_29
+icon_property -origin {-90 0} -label D_30
+icon_property -origin {-90 20} -label D_31
+icon_property -origin {-90 40} -label D_32
+icon_property -origin {-90 60} -label D_33
+icon_property -origin {-90 80} -label D_34
+icon_property -origin {-90 100} -label D_35
+icon_property -origin {-90 120} -label D_36
+icon_property -origin {-90 140} -label D_37
+icon_property -origin {-90 160} -label D_38
+icon_property -origin {-90 180} -label D_39
+icon_property -origin {-90 200} -label D_40
+icon_property -origin {-90 220} -label D_41
+icon_property -origin {-90 240} -label D_42
+icon_property -origin {-90 260} -label D_43
+icon_property -origin {-90 280} -label D_44
+icon_property -origin {-90 300} -label D_45
+icon_property -origin {-90 320} -label D_46
+icon_property -origin {-90 340} -label D_47
+icon_property -origin {-90 360} -label D_48
+icon_property -origin {-90 380} -label D_49
+icon_property -origin {-90 400} -label D_50
+icon_property -origin {-90 420} -label D_51
+icon_property -origin {-90 440} -label D_52
+icon_property -origin {-90 460} -label D_53
+icon_property -origin {-90 480} -label D_54
+icon_property -origin {-90 500} -label D_55
+icon_property -origin {-90 520} -label D_56
+icon_property -origin {-90 540} -label D_57
+icon_property -origin {-90 560} -label D_58
+icon_property -origin {-90 580} -label D_59
+icon_property -origin {-90 600} -label D_60
+icon_property -origin {-90 620} -label D_61
+icon_property -origin {-90 640} -label D_62
+icon_property -origin {-90 660} -label D_63
+icon_property -origin {90 -640} -anchor e -label Q_0
+icon_property -origin {90 -620} -anchor e -label Q_1
+icon_property -origin {90 -600} -anchor e -label Q_2
+icon_property -origin {90 -580} -anchor e -label Q_3
+icon_property -origin {90 -560} -anchor e -label Q_4
+icon_property -origin {90 -540} -anchor e -label Q_5
+icon_property -origin {90 -520} -anchor e -label Q_6
+icon_property -origin {90 -500} -anchor e -label Q_7
+icon_property -origin {90 -480} -anchor e -label Q_8
+icon_property -origin {90 -460} -anchor e -label Q_9
+icon_property -origin {90 -440} -anchor e -label Q_10
+icon_property -origin {90 -420} -anchor e -label Q_11
+icon_property -origin {90 -400} -anchor e -label Q_12
+icon_property -origin {90 -380} -anchor e -label Q_13
+icon_property -origin {90 -360} -anchor e -label Q_14
+icon_property -origin {90 -340} -anchor e -label Q_15
+icon_property -origin {90 -320} -anchor e -label Q_16
+icon_property -origin {90 -300} -anchor e -label Q_17
+icon_property -origin {90 -280} -anchor e -label Q_18
+icon_property -origin {90 -260} -anchor e -label Q_19
+icon_property -origin {90 -240} -anchor e -label Q_20
+icon_property -origin {90 -220} -anchor e -label Q_21
+icon_property -origin {90 -200} -anchor e -label Q_22
+icon_property -origin {90 -180} -anchor e -label Q_23
+icon_property -origin {90 -160} -anchor e -label Q_24
+icon_property -origin {90 -140} -anchor e -label Q_25
+icon_property -origin {90 -120} -anchor e -label Q_26
+icon_property -origin {90 -100} -anchor e -label Q_27
+icon_property -origin {90 -80} -anchor e -label Q_28
+icon_property -origin {90 -60} -anchor e -label Q_29
+icon_property -origin {90 -40} -anchor e -label Q_30
+icon_property -origin {90 -20} -anchor e -label Q_31
+icon_property -origin {90 0} -anchor e -label Q_32
+icon_property -origin {90 20} -anchor e -label Q_33
+icon_property -origin {90 40} -anchor e -label Q_34
+icon_property -origin {90 60} -anchor e -label Q_35
+icon_property -origin {90 80} -anchor e -label Q_36
+icon_property -origin {90 100} -anchor e -label Q_37
+icon_property -origin {90 120} -anchor e -label Q_38
+icon_property -origin {90 140} -anchor e -label Q_39
+icon_property -origin {90 160} -anchor e -label Q_40
+icon_property -origin {90 180} -anchor e -label Q_41
+icon_property -origin {90 200} -anchor e -label Q_42
+icon_property -origin {90 220} -anchor e -label Q_43
+icon_property -origin {90 240} -anchor e -label Q_44
+icon_property -origin {90 260} -anchor e -label Q_45
+icon_property -origin {90 280} -anchor e -label Q_46
+icon_property -origin {90 300} -anchor e -label Q_47
+icon_property -origin {90 320} -anchor e -label Q_48
+icon_property -origin {90 340} -anchor e -label Q_49
+icon_property -origin {90 360} -anchor e -label Q_50
+icon_property -origin {90 380} -anchor e -label Q_51
+icon_property -origin {90 400} -anchor e -label Q_52
+icon_property -origin {90 420} -anchor e -label Q_53
+icon_property -origin {90 440} -anchor e -label Q_54
+icon_property -origin {90 460} -anchor e -label Q_55
+icon_property -origin {90 480} -anchor e -label Q_56
+icon_property -origin {90 500} -anchor e -label Q_57
+icon_property -origin {90 520} -anchor e -label Q_58
+icon_property -origin {90 540} -anchor e -label Q_59
+icon_property -origin {90 560} -anchor e -label Q_60
+icon_property -origin {90 580} -anchor e -label Q_61
+icon_property -origin {90 600} -anchor e -label Q_62
+icon_property -origin {90 620} -anchor e -label Q_63
+icon_property -origin {-90 -690} -label {$name}
+icon_property -origin {-90 -670} -label 64_bit_register_01
+  icon_line -100 -680 100 -680 100 680 -100 680 -100 -680
+  icon_property -origin {-100 700} -type user -name name -default x
+}
+

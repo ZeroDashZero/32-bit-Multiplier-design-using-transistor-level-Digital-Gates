@@ -1,0 +1,32 @@
+proc SCHEMATIC_tb_64_bit_register_01 {} {
+make output -name Q_4 -origin {540 -450}
+make output -name Q_44 -origin {540 350}
+make name_net -name v_in -origin {-20 -80}
+make name_net -name reset_b -origin {80 -560}
+make name_net -name clk -origin {80 -480}
+make global -name gnd -origin {-320 -400}
+make global -name gnd -origin {-240 -320}
+make global -name gnd -origin {-160 50}
+make 64_bit_register_01 -name xi0 -origin {440 110}
+make pulse -name V0 -origin {-160 10}
+make pulse -name V2 -pulse_width 200ns -period 400ns -origin {-320 -440}
+make pulse -name V1 -pulse_width 5ns -period 10ns -origin {-240 -360}
+  make_wire 80 -80 80 -410
+  make_wire 80 -410 340 -410
+  make_wire 80 -80 80 390
+  make_wire 80 390 340 390
+  make_wire -20 -80 80 -80
+  make_wire 140 -480 140 -510
+  make_wire 140 -510 340 -510
+  make_wire 140 -560 140 -530
+  make_wire 140 -530 340 -530
+  make_wire 80 -560 140 -560
+  make_wire 80 -480 140 -480
+  make_wire -160 -30 -160 -80
+  make_wire -160 -80 -20 -80
+  make_wire -240 -400 -240 -480
+  make_wire -240 -480 80 -480
+  make_wire -320 -480 -320 -560
+  make_wire -320 -560 80 -560
+}
+

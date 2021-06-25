@@ -1,0 +1,191 @@
+proc SCHEMATIC_tb_32_bit_multiplier_01 {} {
+make 32_bit_reg_01 -name xi0 -origin {700 250}
+make pulse -orient R90 -name V0 -origin {30 -70}
+make global -orient R90 -name gnd -origin {-10 -70}
+make global -orient R90 -name gnd -origin {-10 590}
+make global -orient R90 -name gnd -origin {-10 240}
+make pulse -orient R90 -name V2 -pulse_width 5ns -period 10ns -origin {30 240}
+make output -name Q_0 -origin {800 -70}
+make output -name Q_1 -origin {800 -50}
+make output -name Q_2 -origin {800 -30}
+make output -name Q_3 -origin {800 -10}
+make output -name Q_4 -origin {800 10}
+make output -name Q_5 -origin {800 30}
+make output -name Q_6 -origin {800 50}
+make output -name Q_7 -origin {800 70}
+make output -name Q_8 -origin {800 90}
+make output -name Q_9 -origin {800 110}
+make output -name Q_10 -origin {800 130}
+make output -name Q_11 -origin {800 150}
+make output -name Q_12 -origin {800 170}
+make output -name Q_13 -origin {800 190}
+make output -name Q_14 -origin {800 210}
+make output -name Q_15 -origin {800 230}
+make output -name Q_16 -origin {800 250}
+make output -name Q_17 -origin {800 270}
+make output -name Q_18 -origin {800 290}
+make output -name Q_19 -origin {800 310}
+make output -name Q_24 -origin {800 410}
+make output -name Q_25 -origin {800 430}
+make output -name Q_26 -origin {800 450}
+make output -name Q_27 -origin {800 470}
+make output -name Q_20 -origin {800 330}
+make output -name Q_21 -origin {800 350}
+make output -name Q_22 -origin {800 370}
+make output -name Q_23 -origin {800 390}
+make output -name Q_31 -origin {800 550}
+make output -name Q_30 -origin {800 530}
+make output -name Q_29 -origin {800 510}
+make output -name Q_28 -origin {800 490}
+make pulse -orient R90 -name V1 -delay_time 10ns -pulse_width 200ns -period 400ns -origin {30 590}
+make name_net -name clk -origin {120 -70}
+make name_net -name reset_b -origin {110 590}
+make name_net -name D_0 -origin {560 -50}
+make name_net -name D_1 -origin {560 -30}
+make name_net -name D_2 -origin {560 -10}
+  make_wire 600 10 240 10
+  make_wire 600 30 240 30
+  make_wire 600 50 240 50
+  make_wire 600 70 240 70
+  make_wire 600 90 240 90
+  make_wire 600 110 240 110
+  make_wire 600 130 240 130
+  make_wire 600 150 240 150
+  make_wire 600 170 240 170
+  make_wire 240 570 600 570
+  make_wire 600 230 240 230
+  make_wire 600 210 240 210
+  make_wire 600 190 240 190
+  make_wire 600 530 240 530
+  make_wire 600 430 240 430
+  make_wire 600 330 240 330
+  make_wire 600 250 240 250
+  make_wire 600 550 240 550
+  make_wire 600 450 240 450
+  make_wire 600 350 240 350
+  make_wire 600 270 240 270
+  make_wire 600 470 240 470
+  make_wire 600 390 240 390
+  make_wire 600 290 240 290
+  make_wire 600 490 240 490
+  make_wire 600 510 240 510
+  make_wire 600 410 240 410
+  make_wire 600 310 240 310
+  make_wire 240 370 600 370
+  make_wire 240 90 240 110
+  make_wire 240 510 240 530
+  make_wire 240 410 240 430
+  make_wire 240 -10 240 10
+  make_wire 240 430 240 450
+  make_wire 240 450 240 470
+  make_wire 240 330 240 350
+  make_wire 240 350 240 370
+  make_wire 240 10 240 30
+  make_wire 240 30 240 50
+  make_wire 240 -50 240 -30
+  make_wire 240 -30 240 -10
+  make_wire 240 270 240 290
+  make_wire 240 150 240 170
+  make_wire 240 170 240 190
+  make_wire 240 530 240 550
+  make_wire 240 550 240 570
+  make_wire 240 370 240 390
+  make_wire 240 390 240 410
+  make_wire 240 470 240 490
+  make_wire 240 490 240 510
+  make_wire 240 50 240 70
+  make_wire 240 70 240 90
+  make_wire 240 290 240 310
+  make_wire 240 310 240 330
+  make_wire 240 190 240 210
+  make_wire 240 210 240 230
+  make_wire 240 110 240 130
+  make_wire 240 130 240 150
+  make_wire 240 250 240 270
+  make_wire 240 230 240 240
+  make_wire 240 240 240 250
+  make_wire 560 -50 240 -50
+  make_wire 560 -50 600 -50
+  make_wire 560 -30 600 -30
+  make_wire 560 -30 240 -30
+  make_wire 560 -10 600 -10
+  make_wire 560 -10 240 -10
+  make_wire 120 -70 600 -70
+  make_wire 120 -70 70 -70
+  make_wire 110 590 600 590
+  make_wire 110 590 70 590
+  make_wire 240 240 70 240
+}
+
+proc ICON_tb_32_bit_multiplier_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type output -origin {100 -300} -name Q_0
+icon_term -type output -origin {100 -280} -name Q_1
+icon_term -type output -origin {100 -260} -name Q_2
+icon_term -type output -origin {100 -240} -name Q_3
+icon_term -type output -origin {100 -220} -name Q_4
+icon_term -type output -origin {100 -200} -name Q_5
+icon_term -type output -origin {100 -180} -name Q_6
+icon_term -type output -origin {100 -160} -name Q_7
+icon_term -type output -origin {100 -140} -name Q_8
+icon_term -type output -origin {100 -120} -name Q_9
+icon_term -type output -origin {100 -100} -name Q_10
+icon_term -type output -origin {100 -80} -name Q_11
+icon_term -type output -origin {100 -60} -name Q_12
+icon_term -type output -origin {100 -40} -name Q_13
+icon_term -type output -origin {100 -20} -name Q_14
+icon_term -type output -origin {100 0} -name Q_15
+icon_term -type output -origin {100 20} -name Q_16
+icon_term -type output -origin {100 40} -name Q_17
+icon_term -type output -origin {100 60} -name Q_18
+icon_term -type output -origin {100 80} -name Q_19
+icon_term -type output -origin {100 100} -name Q_24
+icon_term -type output -origin {100 120} -name Q_25
+icon_term -type output -origin {100 140} -name Q_26
+icon_term -type output -origin {100 160} -name Q_27
+icon_term -type output -origin {100 180} -name Q_20
+icon_term -type output -origin {100 200} -name Q_21
+icon_term -type output -origin {100 220} -name Q_22
+icon_term -type output -origin {100 240} -name Q_23
+icon_term -type output -origin {100 260} -name Q_31
+icon_term -type output -origin {100 280} -name Q_30
+icon_term -type output -origin {100 300} -name Q_29
+icon_term -type output -origin {100 320} -name Q_28
+icon_property -origin {90 -300} -anchor e -label Q_0
+icon_property -origin {90 -280} -anchor e -label Q_1
+icon_property -origin {90 -260} -anchor e -label Q_2
+icon_property -origin {90 -240} -anchor e -label Q_3
+icon_property -origin {90 -220} -anchor e -label Q_4
+icon_property -origin {90 -200} -anchor e -label Q_5
+icon_property -origin {90 -180} -anchor e -label Q_6
+icon_property -origin {90 -160} -anchor e -label Q_7
+icon_property -origin {90 -140} -anchor e -label Q_8
+icon_property -origin {90 -120} -anchor e -label Q_9
+icon_property -origin {90 -100} -anchor e -label Q_10
+icon_property -origin {90 -80} -anchor e -label Q_11
+icon_property -origin {90 -60} -anchor e -label Q_12
+icon_property -origin {90 -40} -anchor e -label Q_13
+icon_property -origin {90 -20} -anchor e -label Q_14
+icon_property -origin {90 0} -anchor e -label Q_15
+icon_property -origin {90 20} -anchor e -label Q_16
+icon_property -origin {90 40} -anchor e -label Q_17
+icon_property -origin {90 60} -anchor e -label Q_18
+icon_property -origin {90 80} -anchor e -label Q_19
+icon_property -origin {90 100} -anchor e -label Q_24
+icon_property -origin {90 120} -anchor e -label Q_25
+icon_property -origin {90 140} -anchor e -label Q_26
+icon_property -origin {90 160} -anchor e -label Q_27
+icon_property -origin {90 180} -anchor e -label Q_20
+icon_property -origin {90 200} -anchor e -label Q_21
+icon_property -origin {90 220} -anchor e -label Q_22
+icon_property -origin {90 240} -anchor e -label Q_23
+icon_property -origin {90 260} -anchor e -label Q_31
+icon_property -origin {90 280} -anchor e -label Q_30
+icon_property -origin {90 300} -anchor e -label Q_29
+icon_property -origin {90 320} -anchor e -label Q_28
+icon_property -origin {-90 -350} -label {$name}
+icon_property -origin {-90 -330} -label tb_32_bit_multiplier_01
+  icon_line -100 -340 100 -340 100 340 -100 340 -100 -340
+  icon_property -origin {-110 360} -type user -name name -default x
+}
+

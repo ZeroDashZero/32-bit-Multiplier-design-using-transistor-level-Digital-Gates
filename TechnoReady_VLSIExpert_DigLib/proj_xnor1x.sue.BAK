@@ -1,0 +1,11 @@
+proc SCHEMATIC_proj_xnor1x {} {
+make proj_xor1x -name xi0 -origin {900 380}
+make proj_inv1x -name xi1 -origin {1190 380}
+make output -name vout -origin {1250 380}
+make input -name vin_a -origin {750 370}
+make input -name vin_b -origin {750 390}
+  make_wire 1000 380 1110 380
+  make_wire 800 370 750 370
+  make_wire 800 390 750 390
+}
+
