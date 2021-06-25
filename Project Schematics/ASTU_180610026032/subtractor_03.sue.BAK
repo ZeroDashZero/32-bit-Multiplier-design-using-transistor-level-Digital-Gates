@@ -1,0 +1,39 @@
+proc SCHEMATIC_subtractor_03 {} {
+make name_net -name D -origin {350 310}
+make output -name carry -origin {950 390}
+make output -name sum_0 -origin {170 270}
+make output -name sum_1 -origin {870 270}
+make input -name vin_a1 -origin {-60 160}
+make input -name D -origin {-120 430}
+make input -name vin_b1 -origin {430 390}
+make subtractor_01 -name xi0 -origin {50 400}
+make subtractor_01 -name xi1 -origin {730 380}
+make mux_01 -name xi2 -origin {480 160}
+make inv_01 -name xi3 -origin {210 140}
+make input -name vin_a0 -origin {-120 390}
+make input -name vin_b0 -origin {-120 410}
+  make_wire 630 410 150 410
+  make_wire 830 370 870 370
+  make_wire 870 370 870 270
+  make_wire 830 390 950 390
+  make_wire 580 150 600 150
+  make_wire 600 370 630 370
+  make_wire 170 270 170 390
+  make_wire 600 150 600 370
+  make_wire 310 150 380 150
+  make_wire 380 170 330 170
+  make_wire 330 170 330 210
+  make_wire 330 210 70 210
+  make_wire 70 150 110 150
+  make_wire 350 190 350 310
+  make_wire 350 190 380 190
+  make_wire 630 390 430 390
+  make_wire 150 390 170 390
+  make_wire -60 160 70 160
+  make_wire 70 150 70 160
+  make_wire 70 160 70 210
+  make_wire -50 390 -120 390
+  make_wire -50 410 -120 410
+  make_wire -50 430 -120 430
+}
+

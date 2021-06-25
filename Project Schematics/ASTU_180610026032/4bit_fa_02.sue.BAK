@@ -1,0 +1,20 @@
+proc SCHEMATIC_4bit_fa_02 {} {
+make full_adder_4bit_01 -name xi0 -origin {-380 70}
+make full_adder_4bit_01 -name xi1 -origin {-60 70}
+make input -name a_0 -origin {-480 40}
+make input -name a_1 -origin {-480 120}
+make input -name a_2 -origin {-160 40}
+make input -name a_3 -origin {-160 120}
+make input -name b_0 -origin {-480 60}
+make input -name b_1 -origin {-480 100}
+make input -name b_2 -origin {-160 60}
+make input -name b_3 -origin {-160 100}
+make output -name s_0 -origin {-280 40}
+make output -name s_1 -origin {-280 60}
+make output -name s_3 -origin {40 60}
+make output -name s_2 -origin {40 40}
+make output -name carry -origin {40 80}
+make input -name c_in -origin {-480 80}
+  make_wire -280 80 -160 80
+}
+

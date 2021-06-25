@@ -1,0 +1,21 @@
+proc SCHEMATIC_my_file2 {} {
+make global -name gnd -origin {130 270}
+make global -name gnd -origin {560 320}
+make pulse -name V0 -pulse_voltage 1.3V -origin {130 230}
+make dc_voltage -name V1 -dc_voltage 1.3 -ac_voltage 1.3 -origin {560 280}
+make name_net -name vpulse_in -origin {210 50}
+make name_net -name vdc_in -origin {530 200}
+make global -name gnd -origin {270 190}
+make resistor -name R0 -origin {270 150}
+make resistor -name R1 -resistance 100 -origin {130 130}
+  make_wire 530 200 560 200
+  make_wire 560 200 560 240
+  make_wire 560 160 680 160
+  make_wire 560 160 560 200
+  make_wire 270 50 270 110
+  make_wire 130 90 130 50
+  make_wire 130 50 210 50
+  make_wire 210 50 270 50
+  make_wire 130 170 130 190
+}
+

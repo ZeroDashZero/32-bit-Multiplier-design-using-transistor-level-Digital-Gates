@@ -1,0 +1,310 @@
+proc SCHEMATIC_32bit_fa_01 {} {
+make 16bit_fa_01 -name xi0 -origin {-60 -290}
+make 16bit_fa_01 -name xi1 -origin {420 -290}
+make input -name a_0 -origin {-160 -600}
+make input -name a_1 -origin {-160 -580}
+make input -name a_2 -origin {-160 -560}
+make input -name a_3 -origin {-160 -540}
+make input -name a_4 -origin {-160 -520}
+make input -name a_5 -origin {-160 -500}
+make input -name a_6 -origin {-160 -480}
+make input -name a_7 -origin {-160 -460}
+make input -name b_0 -origin {-160 -280}
+make input -name b_1 -origin {-160 -260}
+make input -name b_2 -origin {-160 -240}
+make input -name b_3 -origin {-160 -220}
+make input -name c_in -origin {-160 40}
+make input -name b_4 -origin {-160 -200}
+make input -name b_5 -origin {-160 -180}
+make input -name b_6 -origin {-160 -160}
+make input -name b_7 -origin {-160 -140}
+make input -name a_8 -origin {-160 -440}
+make input -name a_9 -origin {-160 -420}
+make input -name a_10 -origin {-160 -400}
+make input -name a_11 -origin {-160 -380}
+make input -name a_12 -origin {-160 -360}
+make input -name a_13 -origin {-160 -340}
+make input -name a_14 -origin {-160 -320}
+make input -name a_15 -origin {-160 -300}
+make input -name b_8 -origin {-160 -120}
+make input -name b_9 -origin {-160 -100}
+make input -name b_10 -origin {-160 -80}
+make input -name b_11 -origin {-160 -60}
+make input -name b_12 -origin {-160 -40}
+make input -name b_13 -origin {-160 -20}
+make input -name b_14 -origin {-160 0}
+make input -name b_15 -origin {-160 20}
+make input -name a_16 -origin {320 -600}
+make input -name a_17 -origin {320 -580}
+make input -name a_18 -origin {320 -560}
+make input -name a_19 -origin {320 -540}
+make input -name a_20 -origin {320 -520}
+make input -name a_21 -origin {320 -500}
+make input -name a_22 -origin {320 -480}
+make input -name a_23 -origin {320 -460}
+make input -name a_24 -origin {320 -440}
+make input -name a_25 -origin {320 -420}
+make input -name a_26 -origin {320 -400}
+make input -name a_27 -origin {320 -380}
+make input -name a_28 -origin {320 -360}
+make input -name a_29 -origin {320 -340}
+make input -name a_30 -origin {320 -320}
+make input -name a_31 -origin {320 -300}
+make input -name b_16 -origin {320 -280}
+make input -name b_17 -origin {320 -260}
+make input -name b_18 -origin {320 -240}
+make input -name b_19 -origin {320 -220}
+make input -name b_20 -origin {320 -200}
+make input -name b_21 -origin {320 -180}
+make input -name b_22 -origin {320 -160}
+make input -name b_23 -origin {320 -140}
+make input -name b_24 -origin {320 -120}
+make input -name b_25 -origin {320 -100}
+make input -name b_26 -origin {320 -80}
+make input -name b_27 -origin {320 -60}
+make input -name b_28 -origin {320 -40}
+make input -name b_29 -origin {320 -20}
+make input -name b_30 -origin {320 0}
+make input -name b_31 -origin {320 20}
+make output -name s_0 -origin {40 -600}
+make output -name s_1 -origin {40 -580}
+make output -name s_3 -origin {40 -560}
+make output -name s_2 -origin {40 -540}
+make output -name s_4 -origin {40 -520}
+make output -name s_5 -origin {40 -500}
+make output -name s_6 -origin {40 -480}
+make output -name s_7 -origin {40 -460}
+make output -name s_8 -origin {40 -440}
+make output -name s_9 -origin {40 -420}
+make output -name s_10 -origin {40 -400}
+make output -name s_11 -origin {40 -380}
+make output -name s_12 -origin {40 -360}
+make output -name s_13 -origin {40 -340}
+make output -name s_14 -origin {40 -320}
+make output -name s_15 -origin {40 -300}
+make output -name carry -origin {520 -280}
+make output -name s_16 -origin {520 -600}
+make output -name s_17 -origin {520 -580}
+make output -name s_18 -origin {520 -560}
+make output -name s_19 -origin {520 -540}
+make output -name s_20 -origin {520 -520}
+make output -name s_21 -origin {520 -500}
+make output -name s_22 -origin {520 -480}
+make output -name s_23 -origin {520 -460}
+make output -name s_24 -origin {520 -440}
+make output -name s_25 -origin {520 -420}
+make output -name s_26 -origin {520 -400}
+make output -name s_27 -origin {520 -380}
+make output -name s_28 -origin {520 -360}
+make output -name s_29 -origin {520 -340}
+make output -name s_30 -origin {520 -320}
+make output -name s_31 -origin {520 -300}
+  make_wire 40 -280 160 -280
+  make_wire 160 -280 160 40
+  make_wire 320 40 160 40
+}
+
+proc ICON_32bit_fa_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -630} -name a_0
+icon_term -type input -origin {-100 -610} -name a_1
+icon_term -type input -origin {-100 -590} -name a_2
+icon_term -type input -origin {-100 -570} -name a_3
+icon_term -type input -origin {-100 -550} -name a_4
+icon_term -type input -origin {-100 -530} -name a_5
+icon_term -type input -origin {-100 -510} -name a_6
+icon_term -type input -origin {-100 -490} -name a_7
+icon_term -type input -origin {-100 10} -name b_0
+icon_term -type input -origin {-100 30} -name b_1
+icon_term -type input -origin {-100 50} -name b_2
+icon_term -type input -origin {-100 70} -name b_3
+icon_term -type input -origin {-100 650} -name c_in
+icon_term -type input -origin {-100 90} -name b_4
+icon_term -type input -origin {-100 110} -name b_5
+icon_term -type input -origin {-100 130} -name b_6
+icon_term -type input -origin {-100 150} -name b_7
+icon_term -type input -origin {-100 -470} -name a_8
+icon_term -type input -origin {-100 -450} -name a_9
+icon_term -type input -origin {-100 -430} -name a_10
+icon_term -type input -origin {-100 -410} -name a_11
+icon_term -type input -origin {-100 -390} -name a_12
+icon_term -type input -origin {-100 -370} -name a_13
+icon_term -type input -origin {-100 -350} -name a_14
+icon_term -type input -origin {-100 -330} -name a_15
+icon_term -type input -origin {-100 170} -name b_8
+icon_term -type input -origin {-100 190} -name b_9
+icon_term -type input -origin {-100 210} -name b_10
+icon_term -type input -origin {-100 230} -name b_11
+icon_term -type input -origin {-100 250} -name b_12
+icon_term -type input -origin {-100 270} -name b_13
+icon_term -type input -origin {-100 290} -name b_14
+icon_term -type input -origin {-100 310} -name b_15
+icon_term -type input -origin {-100 -310} -name a_16
+icon_term -type input -origin {-100 -290} -name a_17
+icon_term -type input -origin {-100 -270} -name a_18
+icon_term -type input -origin {-100 -250} -name a_19
+icon_term -type input -origin {-100 -230} -name a_20
+icon_term -type input -origin {-100 -210} -name a_21
+icon_term -type input -origin {-100 -190} -name a_22
+icon_term -type input -origin {-100 -170} -name a_23
+icon_term -type input -origin {-100 -150} -name a_24
+icon_term -type input -origin {-100 -130} -name a_25
+icon_term -type input -origin {-100 -110} -name a_26
+icon_term -type input -origin {-100 -90} -name a_27
+icon_term -type input -origin {-100 -70} -name a_28
+icon_term -type input -origin {-100 -50} -name a_29
+icon_term -type input -origin {-100 -30} -name a_30
+icon_term -type input -origin {-100 -10} -name a_31
+icon_term -type input -origin {-100 330} -name b_16
+icon_term -type input -origin {-100 350} -name b_17
+icon_term -type input -origin {-100 370} -name b_18
+icon_term -type input -origin {-100 390} -name b_19
+icon_term -type input -origin {-100 410} -name b_20
+icon_term -type input -origin {-100 430} -name b_21
+icon_term -type input -origin {-100 450} -name b_22
+icon_term -type input -origin {-100 470} -name b_23
+icon_term -type input -origin {-100 490} -name b_24
+icon_term -type input -origin {-100 510} -name b_25
+icon_term -type input -origin {-100 530} -name b_26
+icon_term -type input -origin {-100 550} -name b_27
+icon_term -type input -origin {-100 570} -name b_28
+icon_term -type input -origin {-100 590} -name b_29
+icon_term -type input -origin {-100 610} -name b_30
+icon_term -type input -origin {-100 630} -name b_31
+icon_term -type output -origin {100 -630} -name s_0
+icon_term -type output -origin {100 -610} -name s_1
+icon_term -type output -origin {100 -590} -name s_3
+icon_term -type output -origin {100 -570} -name s_2
+icon_term -type output -origin {100 -550} -name s_4
+icon_term -type output -origin {100 -530} -name s_5
+icon_term -type output -origin {100 -510} -name s_6
+icon_term -type output -origin {100 -490} -name s_7
+icon_term -type output -origin {100 -470} -name s_8
+icon_term -type output -origin {100 -450} -name s_9
+icon_term -type output -origin {100 -430} -name s_10
+icon_term -type output -origin {100 -410} -name s_11
+icon_term -type output -origin {100 -390} -name s_12
+icon_term -type output -origin {100 -370} -name s_13
+icon_term -type output -origin {100 -350} -name s_14
+icon_term -type output -origin {100 -330} -name s_15
+icon_term -type output -origin {100 10} -name carry
+icon_term -type output -origin {100 -310} -name s_16
+icon_term -type output -origin {100 -290} -name s_17
+icon_term -type output -origin {100 -270} -name s_18
+icon_term -type output -origin {100 -250} -name s_19
+icon_term -type output -origin {100 -230} -name s_20
+icon_term -type output -origin {100 -210} -name s_21
+icon_term -type output -origin {100 -190} -name s_22
+icon_term -type output -origin {100 -170} -name s_23
+icon_term -type output -origin {100 -150} -name s_24
+icon_term -type output -origin {100 -130} -name s_25
+icon_term -type output -origin {100 -110} -name s_26
+icon_term -type output -origin {100 -90} -name s_27
+icon_term -type output -origin {100 -70} -name s_28
+icon_term -type output -origin {100 -50} -name s_29
+icon_term -type output -origin {100 -30} -name s_30
+icon_term -type output -origin {100 -10} -name s_31
+icon_property -origin {-90 -630} -label a_0
+icon_property -origin {-90 -610} -label a_1
+icon_property -origin {-90 -590} -label a_2
+icon_property -origin {-90 -570} -label a_3
+icon_property -origin {-90 -550} -label a_4
+icon_property -origin {-90 -530} -label a_5
+icon_property -origin {-90 -510} -label a_6
+icon_property -origin {-90 -490} -label a_7
+icon_property -origin {-90 10} -label b_0
+icon_property -origin {-90 30} -label b_1
+icon_property -origin {-90 50} -label b_2
+icon_property -origin {-90 70} -label b_3
+icon_property -origin {-90 650} -label c_in
+icon_property -origin {-90 90} -label b_4
+icon_property -origin {-90 110} -label b_5
+icon_property -origin {-90 130} -label b_6
+icon_property -origin {-90 150} -label b_7
+icon_property -origin {-90 -470} -label a_8
+icon_property -origin {-90 -450} -label a_9
+icon_property -origin {-90 -430} -label a_10
+icon_property -origin {-90 -410} -label a_11
+icon_property -origin {-90 -390} -label a_12
+icon_property -origin {-90 -370} -label a_13
+icon_property -origin {-90 -350} -label a_14
+icon_property -origin {-90 -330} -label a_15
+icon_property -origin {-90 170} -label b_8
+icon_property -origin {-90 190} -label b_9
+icon_property -origin {-90 210} -label b_10
+icon_property -origin {-90 230} -label b_11
+icon_property -origin {-90 250} -label b_12
+icon_property -origin {-90 270} -label b_13
+icon_property -origin {-90 290} -label b_14
+icon_property -origin {-90 310} -label b_15
+icon_property -origin {-90 -310} -label a_16
+icon_property -origin {-90 -290} -label a_17
+icon_property -origin {-90 -270} -label a_18
+icon_property -origin {-90 -250} -label a_19
+icon_property -origin {-90 -230} -label a_20
+icon_property -origin {-90 -210} -label a_21
+icon_property -origin {-90 -190} -label a_22
+icon_property -origin {-90 -170} -label a_23
+icon_property -origin {-90 -150} -label a_24
+icon_property -origin {-90 -130} -label a_25
+icon_property -origin {-90 -110} -label a_26
+icon_property -origin {-90 -90} -label a_27
+icon_property -origin {-90 -70} -label a_28
+icon_property -origin {-90 -50} -label a_29
+icon_property -origin {-90 -30} -label a_30
+icon_property -origin {-90 -10} -label a_31
+icon_property -origin {-90 330} -label b_16
+icon_property -origin {-90 350} -label b_17
+icon_property -origin {-90 370} -label b_18
+icon_property -origin {-90 390} -label b_19
+icon_property -origin {-90 410} -label b_20
+icon_property -origin {-90 430} -label b_21
+icon_property -origin {-90 450} -label b_22
+icon_property -origin {-90 470} -label b_23
+icon_property -origin {-90 490} -label b_24
+icon_property -origin {-90 510} -label b_25
+icon_property -origin {-90 530} -label b_26
+icon_property -origin {-90 550} -label b_27
+icon_property -origin {-90 570} -label b_28
+icon_property -origin {-90 590} -label b_29
+icon_property -origin {-90 610} -label b_30
+icon_property -origin {-90 630} -label b_31
+icon_property -origin {90 -630} -anchor e -label s_0
+icon_property -origin {90 -610} -anchor e -label s_1
+icon_property -origin {90 -590} -anchor e -label s_3
+icon_property -origin {90 -570} -anchor e -label s_2
+icon_property -origin {90 -550} -anchor e -label s_4
+icon_property -origin {90 -530} -anchor e -label s_5
+icon_property -origin {90 -510} -anchor e -label s_6
+icon_property -origin {90 -490} -anchor e -label s_7
+icon_property -origin {90 -470} -anchor e -label s_8
+icon_property -origin {90 -450} -anchor e -label s_9
+icon_property -origin {90 -430} -anchor e -label s_10
+icon_property -origin {90 -410} -anchor e -label s_11
+icon_property -origin {90 -390} -anchor e -label s_12
+icon_property -origin {90 -370} -anchor e -label s_13
+icon_property -origin {90 -350} -anchor e -label s_14
+icon_property -origin {90 -330} -anchor e -label s_15
+icon_property -origin {90 10} -anchor e -label carry
+icon_property -origin {90 -310} -anchor e -label s_16
+icon_property -origin {90 -290} -anchor e -label s_17
+icon_property -origin {90 -270} -anchor e -label s_18
+icon_property -origin {90 -250} -anchor e -label s_19
+icon_property -origin {90 -230} -anchor e -label s_20
+icon_property -origin {90 -210} -anchor e -label s_21
+icon_property -origin {90 -190} -anchor e -label s_22
+icon_property -origin {90 -170} -anchor e -label s_23
+icon_property -origin {90 -150} -anchor e -label s_24
+icon_property -origin {90 -130} -anchor e -label s_25
+icon_property -origin {90 -110} -anchor e -label s_26
+icon_property -origin {90 -90} -anchor e -label s_27
+icon_property -origin {90 -70} -anchor e -label s_28
+icon_property -origin {90 -50} -anchor e -label s_29
+icon_property -origin {90 -30} -anchor e -label s_30
+icon_property -origin {90 -10} -anchor e -label s_31
+icon_property -origin {-90 -680} -label {$name}
+icon_property -origin {-90 -660} -label 32bit_fa_01
+  icon_line -100 -670 100 -670 100 670 -100 670 -100 -670
+  icon_property -origin {-100 690} -type user -name name -default x
+}
+

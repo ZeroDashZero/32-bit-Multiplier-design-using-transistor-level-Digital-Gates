@@ -1,0 +1,26 @@
+proc SCHEMATIC_tb_nand_01 {} {
+make global -name gnd -origin {160 330}
+make global -name gnd -origin {320 330}
+make pulse -name V0 -pulse_voltage 1.3V -origin {160 280}
+make output -name v_out -origin {800 200}
+make global -name gnd -origin {720 290}
+make name_net -name vin_a -origin {240 180}
+make name_net -name vin_b -origin {370 170}
+make nand_02 -name xi0 -origin {510 200}
+make capacitor -name C0 -origin {720 240}
+make pulse -name V1 -pulse_voltage 1.3V -delay_time 1ns -origin {320 280}
+  make_wire 320 320 320 330
+  make_wire 160 320 160 330
+  make_wire 160 200 160 240
+  make_wire 610 200 720 200
+  make_wire 720 200 800 200
+  make_wire 720 280 720 290
+  make_wire 240 200 160 200
+  make_wire 240 200 410 200
+  make_wire 370 220 320 220
+  make_wire 370 220 410 220
+  make_wire 320 220 320 240
+  make_wire 240 180 240 200
+  make_wire 370 170 370 220
+}
+

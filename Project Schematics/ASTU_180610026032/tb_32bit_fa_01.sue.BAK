@@ -1,0 +1,171 @@
+proc SCHEMATIC_tb_32bit_fa_01 {} {
+make 32bit_fa_01 -name xi0 -origin {20 30}
+make global -name gnd -origin {-800 160}
+make global -name gnd -origin {-640 800}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-800 120}
+make output -name s_0 -origin {120 -600}
+make output -name s_1 -origin {120 -580}
+make output -name s_3 -origin {120 -560}
+make output -name s_2 -origin {120 -540}
+make output -name s_4 -origin {120 -520}
+make output -name s_5 -origin {120 -500}
+make output -name s_6 -origin {120 -480}
+make output -name s_7 -origin {120 -460}
+make output -name s_8 -origin {120 -440}
+make output -name s_9 -origin {120 -420}
+make output -name s_10 -origin {120 -400}
+make output -name s_11 -origin {120 -380}
+make output -name s_12 -origin {120 -360}
+make output -name s_13 -origin {120 -340}
+make output -name s_14 -origin {120 -320}
+make output -name s_15 -origin {120 -300}
+make output -name carry -origin {120 40}
+make output -name s_16 -origin {120 -280}
+make output -name s_17 -origin {120 -260}
+make output -name s_18 -origin {120 -240}
+make output -name s_19 -origin {120 -220}
+make output -name s_20 -origin {120 -200}
+make output -name s_21 -origin {120 -180}
+make output -name s_22 -origin {120 -160}
+make output -name s_23 -origin {120 -140}
+make output -name s_24 -origin {120 -120}
+make output -name s_25 -origin {120 -100}
+make output -name s_26 -origin {120 -80}
+make output -name s_27 -origin {120 -60}
+make output -name s_28 -origin {120 -40}
+make output -name s_29 -origin {120 -20}
+make output -name s_30 -origin {120 0}
+make output -name s_31 -origin {120 20}
+  make_wire -800 80 -800 20
+  make_wire -720 -20 -80 -20
+  make_wire -720 20 -800 20
+  make_wire -720 20 -80 20
+  make_wire -80 0 -720 0
+  make_wire -720 -600 -80 -600
+  make_wire -80 -560 -720 -560
+  make_wire -80 -580 -720 -580
+  make_wire -80 -540 -720 -540
+  make_wire -720 -540 -720 -560
+  make_wire -80 -520 -720 -520
+  make_wire -80 -500 -720 -500
+  make_wire -80 -460 -720 -460
+  make_wire -720 -460 -720 -500
+  make_wire -80 -440 -720 -440
+  make_wire -80 -420 -720 -420
+  make_wire -80 -380 -720 -380
+  make_wire -80 -360 -720 -360
+  make_wire -80 -340 -720 -340
+  make_wire -80 -300 -720 -300
+  make_wire -80 -260 -720 -260
+  make_wire -80 -220 -720 -220
+  make_wire -720 -20 -720 0
+  make_wire -720 -420 -720 -380
+  make_wire -720 -380 -720 -360
+  make_wire -720 -460 -720 -440
+  make_wire -720 -440 -720 -420
+  make_wire -720 -540 -720 -520
+  make_wire -720 -520 -720 -500
+  make_wire -720 -600 -720 -580
+  make_wire -720 -580 -720 -560
+  make_wire -720 -300 -720 -260
+  make_wire -720 -260 -720 -220
+  make_wire -720 -360 -720 -340
+  make_wire -720 -340 -720 -300
+  make_wire -720 0 -720 20
+  make_wire -80 -200 -720 -200
+  make_wire -720 -200 -720 -220
+  make_wire -80 -180 -720 -180
+  make_wire -720 -180 -720 -200
+  make_wire -80 -120 -720 -120
+  make_wire -720 -120 -720 -180
+  make_wire -80 -100 -720 -100
+  make_wire -720 -100 -720 -120
+  make_wire -720 -100 -720 -20
+  make_wire -720 400 -80 400
+  make_wire -720 660 -80 660
+  make_wire -80 40 -720 40
+  make_wire -720 40 -720 20
+  make_wire -80 120 -720 120
+  make_wire -720 120 -720 40
+  make_wire -80 220 -720 220
+  make_wire -720 220 -720 120
+  make_wire -80 300 -720 300
+  make_wire -720 300 -720 220
+  make_wire -720 300 -720 400
+  make_wire -80 520 -720 520
+  make_wire -720 520 -720 400
+  make_wire -720 520 -720 660
+  make_wire -640 60 -80 60
+  make_wire -80 80 -640 80
+  make_wire -640 80 -640 60
+  make_wire -80 100 -640 100
+  make_wire -640 100 -640 80
+  make_wire -80 140 -640 140
+  make_wire -640 140 -640 100
+  make_wire -80 160 -640 160
+  make_wire -640 160 -640 140
+  make_wire -80 180 -640 180
+  make_wire -640 180 -640 160
+  make_wire -80 200 -640 200
+  make_wire -640 200 -640 180
+  make_wire -80 240 -640 240
+  make_wire -640 240 -640 200
+  make_wire -80 260 -640 260
+  make_wire -640 260 -640 240
+  make_wire -80 280 -640 280
+  make_wire -640 280 -640 260
+  make_wire -80 320 -640 320
+  make_wire -640 320 -640 280
+  make_wire -80 340 -640 340
+  make_wire -640 340 -640 320
+  make_wire -80 380 -640 380
+  make_wire -80 360 -640 360
+  make_wire -640 360 -640 340
+  make_wire -640 360 -640 380
+  make_wire -80 440 -640 440
+  make_wire -80 420 -640 420
+  make_wire -640 420 -640 440
+  make_wire -640 420 -640 380
+  make_wire -80 480 -640 480
+  make_wire -80 460 -640 460
+  make_wire -640 460 -640 480
+  make_wire -640 460 -640 440
+  make_wire -80 500 -640 500
+  make_wire -640 500 -640 480
+  make_wire -80 540 -640 540
+  make_wire -640 540 -640 500
+  make_wire -80 560 -640 560
+  make_wire -640 560 -640 540
+  make_wire -80 580 -640 580
+  make_wire -640 580 -640 560
+  make_wire -80 600 -640 600
+  make_wire -640 600 -640 580
+  make_wire -80 620 -640 620
+  make_wire -640 620 -640 600
+  make_wire -80 640 -640 640
+  make_wire -640 640 -640 620
+  make_wire -80 680 -640 680
+  make_wire -640 680 -640 640
+  make_wire -640 680 -640 800
+  make_wire -640 -480 -80 -480
+  make_wire -80 -400 -640 -400
+  make_wire -640 -400 -640 -480
+  make_wire -80 -320 -640 -320
+  make_wire -640 -320 -640 -400
+  make_wire -80 -280 -640 -280
+  make_wire -640 -280 -640 -320
+  make_wire -80 -240 -640 -240
+  make_wire -640 -240 -640 -280
+  make_wire -80 -140 -640 -140
+  make_wire -80 -160 -640 -160
+  make_wire -640 -160 -640 -140
+  make_wire -640 -160 -640 -240
+  make_wire -80 -80 -640 -80
+  make_wire -640 -80 -640 -140
+  make_wire -80 -60 -640 -60
+  make_wire -640 -60 -640 -80
+  make_wire -80 -40 -640 -40
+  make_wire -640 -40 -640 -60
+  make_wire -640 -40 -640 60
+}
+

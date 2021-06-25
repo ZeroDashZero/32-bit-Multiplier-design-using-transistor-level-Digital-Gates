@@ -1,0 +1,100 @@
+proc SCHEMATIC_ff_01 {} {
+make pmos -orient R90 -name M0 -origin {520 240}
+make input -name reset_b -origin {-70 160}
+make input -name clk -origin {40 120}
+make name_net -orient RX -name clk_b -origin {490 120}
+make inv_01 -name x1 -origin {260 270}
+make input -name D -origin {40 280}
+make name_net -name clk -origin {520 180}
+make name_net -orient RXY -name clk_b -origin {520 380}
+make inv_01 -name x2 -origin {900 270}
+make name_net -name clk_b -origin {800 400}
+make name_net -orient RXY -name clk -origin {800 600}
+make name_net -name reset_b -origin {1200 420}
+make nand_02 -orient RXY -name x3 -origin {1070 510}
+make name_net -name clk_b -origin {1460 180}
+make name_net -orient RXY -name clk -origin {1460 380}
+make name_net -orient RXY -name reset_b -origin {1600 330}
+make nand_02 -name x4 -origin {1780 280}
+make inv_01 -orient RXY -name x5 -origin {1900 510}
+make inv_01 -name x6 -origin {2180 270}
+make name_net -name clk -origin {1680 400}
+make name_net -orient RXY -name clk_b -origin {1680 600}
+make inv_01 -name x7 -origin {2460 430}
+make inv_01 -name xi0 -origin {260 110}
+make nmos -orient R270 -name M1 -origin {520 320}
+make pmos -orient R90 -name M2 -origin {800 460}
+make nmos -orient R270 -name M3 -origin {800 540}
+make pmos -orient R90 -name M4 -origin {1460 240}
+make nmos -orient R270 -name M5 -origin {1460 320}
+make pmos -orient R90 -name M6 -origin {1680 460}
+make nmos -orient R270 -name M7 -origin {1680 540}
+make output -name Q -origin {2640 280}
+make output -name Q_b -origin {2640 440}
+  make_wire 160 120 40 120
+  make_wire 360 120 490 120
+  make_wire 360 280 480 280
+  make_wire 560 280 560 240
+  make_wire 560 280 560 320
+  make_wire 640 500 760 500
+  make_wire 760 500 760 460
+  make_wire 760 500 760 540
+  make_wire 640 280 800 280
+  make_wire 640 280 560 280
+  make_wire 970 510 840 510
+  make_wire 1000 280 1280 280
+  make_wire 1280 510 1170 510
+  make_wire 1280 280 1420 280
+  make_wire 1420 280 1420 240
+  make_wire 1420 280 1420 320
+  make_wire 1500 280 1500 240
+  make_wire 1500 280 1500 320
+  make_wire 1800 500 1720 500
+  make_wire 1720 500 1720 460
+  make_wire 1720 500 1720 540
+  make_wire 1640 500 1570 500
+  make_wire 1570 500 1570 280
+  make_wire 1570 280 1680 280
+  make_wire 1570 280 1500 280
+  make_wire 1640 500 1640 460
+  make_wire 1640 500 1640 540
+  make_wire 2000 500 2040 500
+  make_wire 2040 280 2080 280
+  make_wire 1880 280 2040 280
+  make_wire 2360 440 2320 440
+  make_wire 2320 280 2280 280
+  make_wire 480 240 480 280
+  make_wire 480 280 480 320
+  make_wire 40 280 160 280
+  make_wire 640 280 640 500
+  make_wire 1170 490 1200 490
+  make_wire 840 460 840 510
+  make_wire 840 510 840 540
+  make_wire 1200 420 1200 490
+  make_wire 1280 280 1280 510
+  make_wire 1600 300 1600 330
+  make_wire 1600 300 1680 300
+  make_wire 2040 280 2040 500
+  make_wire 2320 280 2320 440
+  make_wire 2640 280 2320 280
+  make_wire 2640 440 2560 440
+}
+
+proc ICON_ff_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -10} -name reset_b
+icon_term -type input -origin {-100 10} -name clk
+icon_term -type input -origin {-100 30} -name D
+icon_term -type output -origin {100 -10} -name Q
+icon_term -type output -origin {100 10} -name Q_b
+icon_property -origin {-90 -10} -label reset_b
+icon_property -origin {-90 10} -label clk
+icon_property -origin {-90 30} -label D
+icon_property -origin {90 -10} -anchor e -label Q
+icon_property -origin {90 10} -anchor e -label Q_b
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label ff_01
+  icon_line -100 -50 100 -50 100 50 -100 50 -100 -50
+  icon_property -origin {-90 60} -type user -name name -default x
+}
+

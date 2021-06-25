@@ -1,0 +1,43 @@
+proc SCHEMATIC_1bit_fa_02 {} {
+make 1_bit_ha_02 -name xi0 -origin {-60 -40}
+make 1_bit_ha_02 -name xi1 -origin {-380 120}
+make input -name in_01 -origin {-560 120}
+make input -name in_02 -origin {-560 140}
+make output -name op_01 -origin {720 -40}
+make output -name carry -origin {720 120}
+make nor_01 -name xi2 -origin {260 120}
+make inv_01 -name xi3 -origin {550 110}
+make input -name c_in -origin {-560 -40}
+  make_wire -560 120 -480 120
+  make_wire -560 140 -480 140
+  make_wire -160 -40 -560 -40
+  make_wire -280 120 -240 120
+  make_wire -240 120 -240 -20
+  make_wire -240 -20 -160 -20
+  make_wire -280 140 160 140
+  make_wire 40 -20 80 -20
+  make_wire 80 -20 80 120
+  make_wire 80 120 160 120
+  make_wire 40 -40 720 -40
+  make_wire 360 120 450 120
+  make_wire 720 120 650 120
+}
+
+proc ICON_1bit_fa_02 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -10} -name in_01
+icon_term -type input -origin {-100 10} -name in_02
+icon_term -type input -origin {-100 30} -name carry
+icon_term -type output -origin {100 -10} -name op_01
+icon_term -type output -origin {100 10} -name carry
+icon_property -origin {-90 -10} -label in_01
+icon_property -origin {-90 10} -label in_02
+icon_property -origin {-90 30} -label carry
+icon_property -origin {90 -10} -anchor e -label op_01
+icon_property -origin {90 10} -anchor e -label carry
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label 1bit_fa_02
+  icon_line -100 -50 100 -50 100 50 -100 50 -100 -50
+  icon_property -origin {-90 60} -type user -name name -default x
+}
+

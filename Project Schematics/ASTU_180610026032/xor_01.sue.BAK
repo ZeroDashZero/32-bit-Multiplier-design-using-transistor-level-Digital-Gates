@@ -1,0 +1,30 @@
+proc SCHEMATIC_xor_01 {} {
+make nand_02 -name xi0 -origin {660 1000}
+make nand_02 -name xi1 -origin {660 1160}
+make nand_02 -name xi2 -origin {380 1080}
+make nand_02 -name xi3 -origin {980 1080}
+make input -name vin_a -origin {170 1000}
+make input -name vin_b -origin {170 1180}
+make output -name vout -origin {1120 1080}
+  make_wire 280 1080 240 1080
+  make_wire 240 1080 240 1000
+  make_wire 240 1000 170 1000
+  make_wire 240 1000 560 1000
+  make_wire 280 1100 240 1100
+  make_wire 240 1100 240 1180
+  make_wire 240 1180 170 1180
+  make_wire 240 1180 560 1180
+  make_wire 480 1080 530 1080
+  make_wire 530 1080 530 1020
+  make_wire 530 1020 560 1020
+  make_wire 560 1160 530 1160
+  make_wire 530 1160 530 1080
+  make_wire 760 1000 800 1000
+  make_wire 800 1000 800 1080
+  make_wire 800 1080 880 1080
+  make_wire 760 1160 800 1160
+  make_wire 800 1160 800 1100
+  make_wire 800 1100 880 1100
+  make_wire 1080 1080 1120 1080
+}
+

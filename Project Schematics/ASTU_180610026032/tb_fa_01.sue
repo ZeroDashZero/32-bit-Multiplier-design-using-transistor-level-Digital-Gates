@@ -1,0 +1,17 @@
+proc SCHEMATIC_tb_fa_01 {} {
+make full_adder_01 -name xi0 -origin {-140 -110}
+make name_net -name v_in -origin {-350 -120}
+make global -name gnd -origin {-400 0}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-400 -40}
+make output -name sum -origin {-40 -120}
+make output -name carry -origin {-40 -100}
+make global -name gnd -origin {-300 -80}
+  make_wire -400 -80 -400 -120
+  make_wire -320 -120 -320 -100
+  make_wire -320 -100 -240 -100
+  make_wire -320 -120 -240 -120
+  make_wire -350 -120 -320 -120
+  make_wire -350 -120 -400 -120
+  make_wire -240 -80 -300 -80
+}
+

@@ -1,0 +1,14 @@
+proc SCHEMATIC_xnor_01 {} {
+make xor_01 -name xi0 -origin {-300 40}
+make inv_01 -name xi1 -origin {-60 30}
+make name_net -name vin_a -origin {-480 40}
+make name_net -name vin_b -origin {-560 60}
+make input -name vin_a -origin {-680 -80}
+make input -name vin_b -origin {-680 -50}
+make output -name vout -origin {100 40}
+  make_wire -400 40 -480 40
+  make_wire -400 60 -560 60
+  make_wire -160 40 -200 40
+  make_wire 40 40 100 40
+}
+

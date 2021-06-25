@@ -1,0 +1,48 @@
+proc SCHEMATIC_nand_01 {} {
+make global -name gnd -origin {80 270}
+make global -orient RXY -name vdd -origin {80 -120}
+make name_net -name vin_a -origin {-60 -60}
+make name_net -name vin_b -origin {100 -60}
+make name_net -name vin_a -origin {20 90}
+make name_net -name vin_b -origin {20 200}
+make input -name vin_a -origin {-160 80}
+make input -name vin_b -origin {-160 110}
+make nmos -name M0 -w 2.0u -origin {80 120}
+make nmos -name M1 -w 2.0u -origin {80 230}
+make pmos -name M2 -w 2.0u -origin {160 -40}
+make pmos -name M3 -w 2.0u -origin {0 -40}
+make output -name v_out -origin {120 60}
+make output -name v_out -origin {260 40}
+  make_wire 0 0 0 30
+  make_wire 160 30 160 0
+  make_wire 100 -60 100 -40
+  make_wire -60 -60 -60 -40
+  make_wire 0 30 80 30
+  make_wire 80 30 160 30
+  make_wire 0 -110 80 -110
+  make_wire 80 -110 160 -110
+  make_wire 0 -110 0 -80
+  make_wire 160 -110 160 -80
+  make_wire 80 -120 80 -110
+  make_wire 20 90 20 120
+  make_wire 80 160 80 190
+  make_wire 20 200 20 230
+  make_wire 120 60 80 60
+  make_wire 80 60 80 80
+  make_wire 80 60 80 30
+}
+
+proc ICON_nand_01 args {
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 0} -name vin_a
+icon_term -type input -origin {-100 20} -name vin_b
+icon_property -origin {-90 0} -label vin_a
+icon_property -origin {-90 20} -label vin_b
+icon_property -origin {-90 -50} -label {$name}
+icon_property -origin {-90 -30} -label nand_01
+  icon_line -100 -40 100 -40 100 40 -100 40 -100 -40
+  icon_property -origin {-90 60} -type user -name name -default x
+
+}
+

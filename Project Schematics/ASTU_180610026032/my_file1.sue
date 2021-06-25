@@ -1,0 +1,9 @@
+proc SCHEMATIC_my_file1 {} {
+make global -name gnd -origin {260 480}
+make pulse -name V0 -origin {260 440}
+make name_net -name vpositive -origin {190 360}
+  make_wire 260 360 190 360
+  make_wire 260 320 260 360
+  make_wire 260 360 260 400
+}
+

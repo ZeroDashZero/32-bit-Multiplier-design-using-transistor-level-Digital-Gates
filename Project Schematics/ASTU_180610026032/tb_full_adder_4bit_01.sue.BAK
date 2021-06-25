@@ -1,0 +1,34 @@
+proc SCHEMATIC_tb_full_adder_4bit_01 {} {
+make global -name gnd -origin {-280 240}
+make global -name gnd -origin {-320 240}
+make name_net -name sum_0 -origin {170 40}
+make name_net -name sum_1 -origin {200 60}
+make name_net -name carry -origin {220 80}
+make global -name gnd -origin {-400 240}
+make global -name gnd -origin {-360 360}
+make global -name gnd -origin {-240 360}
+make full_adder_4bit_01 -name xi0 -origin {-60 70}
+make pulse -name V0 -origin {-360 320}
+make name_net -name vin_a1 -origin {-230 120}
+make name_net -name vin_b0 -origin {-240 60}
+make pulse -name V1 -pulse_width 6ns -period 12ns -origin {-240 320}
+  make_wire -400 40 -160 40
+  make_wire -280 100 -280 240
+  make_wire -280 100 -160 100
+  make_wire -160 80 -320 80
+  make_wire -320 80 -320 240
+  make_wire -400 40 -400 240
+  make_wire 170 40 40 40
+  make_wire 170 40 240 40
+  make_wire 200 60 40 60
+  make_wire 200 60 240 60
+  make_wire 220 80 40 80
+  make_wire 220 80 240 80
+  make_wire -360 280 -360 60
+  make_wire -240 280 -240 120
+  make_wire -240 60 -160 60
+  make_wire -240 60 -360 60
+  make_wire -230 120 -160 120
+  make_wire -230 120 -240 120
+}
+

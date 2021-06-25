@@ -1,0 +1,44 @@
+proc SCHEMATIC_xor_01 {} {
+make nand_02 -name xi0 -origin {660 1000}
+make nand_02 -name xi1 -origin {660 1160}
+make nand_02 -name xi2 -origin {380 1080}
+make nand_02 -name xi3 -origin {980 1080}
+make input -name vin_a -origin {170 1000}
+make input -name vin_b -origin {170 1180}
+make output -name vout -origin {1120 1080}
+  make_wire 280 1080 240 1080
+  make_wire 240 1080 240 1000
+  make_wire 240 1000 170 1000
+  make_wire 240 1000 560 1000
+  make_wire 280 1100 240 1100
+  make_wire 240 1100 240 1180
+  make_wire 240 1180 170 1180
+  make_wire 240 1180 560 1180
+  make_wire 480 1080 530 1080
+  make_wire 530 1080 530 1020
+  make_wire 530 1020 560 1020
+  make_wire 560 1160 530 1160
+  make_wire 530 1160 530 1080
+  make_wire 760 1000 800 1000
+  make_wire 800 1000 800 1080
+  make_wire 800 1080 880 1080
+  make_wire 760 1160 800 1160
+  make_wire 800 1160 800 1100
+  make_wire 800 1100 880 1100
+  make_wire 1080 1080 1120 1080
+}
+
+proc ICON_xor_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 0} -name vin_a
+icon_term -type input -origin {-100 20} -name vin_b
+icon_term -type output -origin {100 0} -name vout
+icon_property -origin {-90 0} -label vin_a
+icon_property -origin {-90 20} -label vin_b
+icon_property -origin {90 0} -anchor e -label vout
+icon_property -origin {-90 -50} -label {$name}
+icon_property -origin {-90 -30} -label xor_01
+  icon_line -100 -40 100 -40 100 40 -100 40 -100 -40
+  icon_property -origin {-90 60} -type user -name name -default x
+}
+

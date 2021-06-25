@@ -1,0 +1,25 @@
+proc SCHEMATIC_1_bit_ha_02 {} {
+make output -name sum -origin {710 110}
+make output -name carry -origin {900 270}
+make input -name vin_a -origin {170 110}
+make input -name vin_b -origin {170 150}
+make name_net -name vin_a -origin {270 110}
+make name_net -name vin_b -origin {310 130}
+make name_net -name vin_a -origin {270 270}
+make name_net -name vin_b -origin {310 290}
+make xor_01 -name xi0 -origin {510 110}
+make nand_02 -name xi1 -origin {510 270}
+make inv_01 -name xi2 -origin {740 260}
+  make_wire 610 110 710 110
+  make_wire 270 110 410 110
+  make_wire 270 110 250 110
+  make_wire 310 130 410 130
+  make_wire 310 130 250 130
+  make_wire 270 270 250 270
+  make_wire 310 290 250 290
+  make_wire 410 270 270 270
+  make_wire 410 290 310 290
+  make_wire 610 270 640 270
+  make_wire 840 270 900 270
+}
+

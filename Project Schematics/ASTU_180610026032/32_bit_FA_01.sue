@@ -1,0 +1,500 @@
+proc SCHEMATIC_32_bit_FA_01 {} {
+make full_adder_01 -name xi1 -origin {660 370}
+make full_adder_01 -name xi0 -origin {980 370}
+make full_adder_01 -name xi2 -origin {1300 370}
+make full_adder_01 -name xi3 -origin {1620 370}
+make full_adder_01 -name xi4 -origin {1940 370}
+make full_adder_01 -name xi5 -origin {2260 370}
+make full_adder_01 -name xi6 -origin {2580 370}
+make full_adder_01 -name xi7 -origin {2900 370}
+make full_adder_01 -name xi8 -origin {660 530}
+make full_adder_01 -name xi9 -origin {980 530}
+make full_adder_01 -name xi10 -origin {1300 530}
+make full_adder_01 -name xi11 -origin {1620 530}
+make full_adder_01 -name xi12 -origin {1940 530}
+make full_adder_01 -name xi13 -origin {2260 530}
+make full_adder_01 -name xi14 -origin {2580 530}
+make full_adder_01 -name xi15 -origin {2900 530}
+make input -name c_01 -origin {560 400}
+make output -name op_01 -origin {770 300}
+make output -name op_02 -origin {1090 300}
+make input -name in1_03 -origin {1200 360}
+make input -name in2_03 -origin {1200 380}
+make input -name in1_02 -origin {880 360}
+make input -name in2_02 -origin {880 380}
+make input -name in1_01 -origin {560 360}
+make input -name in2_01 -origin {560 380}
+make output -name op_03 -origin {1410 300}
+make input -name in1_04 -origin {1520 360}
+make input -name in1_05 -origin {1840 360}
+make input -name in2_04 -origin {1520 380}
+make input -name in2_05 -origin {1840 380}
+make output -name op_04 -origin {1730 300}
+make output -name op_05 -origin {2050 300}
+make input -name in1_06 -origin {2160 360}
+make input -name in2_06 -origin {2160 380}
+make output -name op_06 -origin {2370 300}
+make input -name in2_07 -origin {2480 380}
+make input -name in1_07 -origin {2480 360}
+make output -name op_07 -origin {2690 300}
+make input -name in2_08 -origin {2800 380}
+make input -name in1_08 -origin {2800 360}
+make output -name op_08 -origin {3010 300}
+make input -name in1_09 -origin {560 520}
+make input -name in2_09 -origin {560 540}
+make output -name op_09 -origin {770 460}
+make output -name op_10 -origin {1090 460}
+make input -name in1_10 -origin {880 520}
+make input -name in2_10 -origin {880 540}
+make input -name in1_11 -origin {1200 520}
+make input -name in2_11 -origin {1200 540}
+make input -name in1_12 -origin {1520 520}
+make input -name in2_12 -origin {1520 540}
+make input -name in1_13 -origin {1840 520}
+make input -name in2_13 -origin {1840 540}
+make output -name op_11 -origin {1410 460}
+make output -name op_12 -origin {1730 460}
+make output -name op_13 -origin {2050 460}
+make input -name in1_14 -origin {2160 520}
+make input -name in2_14 -origin {2160 540}
+make output -name op_14 -origin {2370 460}
+make input -name in1_15 -origin {2480 520}
+make input -name in2_15 -origin {2480 540}
+make output -name op_15 -origin {2690 460}
+make input -name in1_16 -origin {2800 520}
+make input -name in2_16 -origin {2800 540}
+make output -name op_16 -origin {3010 460}
+make input -name in1_17 -origin {560 680}
+make input -name in2_17 -origin {560 700}
+make input -name in1_18 -origin {880 680}
+make input -name in2_18 -origin {880 700}
+make input -name in1_19 -origin {1200 680}
+make input -name in2_19 -origin {1200 700}
+make input -name in1_20 -origin {1520 680}
+make input -name in2_20 -origin {1520 700}
+make output -name op_17 -origin {770 620}
+make output -name op_18 -origin {1090 620}
+make output -name op_19 -origin {1410 620}
+make output -name op_20 -origin {1730 620}
+make input -name in1_21 -origin {1840 680}
+make input -name in2_21 -origin {1840 700}
+make input -name in1_22 -origin {2160 680}
+make input -name in2_22 -origin {2160 700}
+make output -name op_21 -origin {2050 620}
+make output -name op_22 -origin {2370 620}
+make input -name in1_23 -origin {2480 680}
+make input -name in2_23 -origin {2480 700}
+make output -name op_23 -origin {2690 620}
+make input -name in1_24 -origin {2800 680}
+make input -name in2_24 -origin {2800 700}
+make output -name op_24 -origin {3010 620}
+make output -name op_32 -origin {3010 780}
+make output -name op_31 -origin {2690 780}
+make input -name in1_32 -origin {2800 840}
+make input -name in2_32 -origin {2800 860}
+make output -name op_30 -origin {2370 780}
+make input -name in1_31 -origin {2480 840}
+make input -name in2_31 -origin {2480 860}
+make input -name in1_30 -origin {2160 840}
+make input -name in2_30 -origin {2160 860}
+make output -name op_29 -origin {2050 780}
+make output -name op_28 -origin {1730 780}
+make input -name in1_29 -origin {1840 840}
+make input -name in2_29 -origin {1840 860}
+make input -name in1_28 -origin {1520 840}
+make input -name in2_28 -origin {1520 860}
+make output -name op_27 -origin {1410 780}
+make input -name in1_27 -origin {1200 840}
+make input -name in2_27 -origin {1200 860}
+make output -name op_26 -origin {1090 780}
+make input -name in1_26 -origin {880 840}
+make input -name in2_26 -origin {880 860}
+make input -name in1_25 -origin {560 840}
+make input -name in2_25 -origin {560 860}
+make output -name op_25 -origin {770 780}
+make full_adder_01 -name xi16 -origin {660 690}
+make full_adder_01 -name xi17 -origin {980 690}
+make full_adder_01 -name xi18 -origin {1300 690}
+make full_adder_01 -name xi19 -origin {1620 690}
+make full_adder_01 -name xi20 -origin {1940 690}
+make full_adder_01 -name xi21 -origin {2260 690}
+make full_adder_01 -name xi22 -origin {2580 690}
+make full_adder_01 -name xi23 -origin {2900 690}
+make full_adder_01 -name xi24 -origin {660 850}
+make full_adder_01 -name xi25 -origin {980 850}
+make full_adder_01 -name xi26 -origin {1300 850}
+make full_adder_01 -name xi27 -origin {1620 850}
+make full_adder_01 -name xi28 -origin {1940 850}
+make full_adder_01 -name xi29 -origin {2260 850}
+make full_adder_01 -name xi30 -origin {2580 850}
+make full_adder_01 -name xi31 -origin {2900 850}
+make output -name op_33 -origin {3000 860}
+  make_wire 760 380 800 380
+  make_wire 800 380 800 400
+  make_wire 800 400 880 400
+  make_wire 1080 380 1120 380
+  make_wire 1120 380 1120 400
+  make_wire 1120 400 1200 400
+  make_wire 1400 380 1440 380
+  make_wire 1440 380 1440 400
+  make_wire 1440 400 1520 400
+  make_wire 1720 380 1760 380
+  make_wire 1760 380 1760 400
+  make_wire 1760 400 1840 400
+  make_wire 2040 380 2080 380
+  make_wire 2080 380 2080 400
+  make_wire 2080 400 2160 400
+  make_wire 2360 380 2400 380
+  make_wire 2400 380 2400 400
+  make_wire 2400 400 2480 400
+  make_wire 2680 380 2720 380
+  make_wire 2720 380 2720 400
+  make_wire 2720 400 2800 400
+  make_wire 3000 380 3040 380
+  make_wire 3040 380 3040 450
+  make_wire 480 450 480 560
+  make_wire 480 560 560 560
+  make_wire 480 450 3040 450
+  make_wire 760 540 800 540
+  make_wire 800 540 800 560
+  make_wire 800 560 880 560
+  make_wire 1080 540 1120 540
+  make_wire 1120 540 1120 560
+  make_wire 1120 560 1200 560
+  make_wire 1400 540 1440 540
+  make_wire 1440 540 1440 560
+  make_wire 1440 560 1520 560
+  make_wire 1720 540 1760 540
+  make_wire 1760 540 1760 560
+  make_wire 1760 560 1840 560
+  make_wire 2040 540 2080 540
+  make_wire 2080 540 2080 560
+  make_wire 2080 560 2160 560
+  make_wire 2360 540 2400 540
+  make_wire 2400 540 2400 560
+  make_wire 2400 560 2480 560
+  make_wire 2680 540 2720 540
+  make_wire 2720 560 2800 560
+  make_wire 770 300 770 360
+  make_wire 1090 300 1090 360
+  make_wire 1410 300 1410 360
+  make_wire 1720 360 1730 360
+  make_wire 1730 300 1730 360
+  make_wire 2050 300 2050 360
+  make_wire 2040 360 2050 360
+  make_wire 2370 300 2370 360
+  make_wire 2360 360 2370 360
+  make_wire 1400 360 1410 360
+  make_wire 2690 300 2690 360
+  make_wire 2680 360 2690 360
+  make_wire 3000 360 3010 360
+  make_wire 3010 300 3010 360
+  make_wire 760 360 770 360
+  make_wire 1080 360 1090 360
+  make_wire 760 520 770 520
+  make_wire 1080 520 1090 520
+  make_wire 1400 520 1410 520
+  make_wire 1720 520 1730 520
+  make_wire 2040 520 2050 520
+  make_wire 2360 520 2370 520
+  make_wire 2680 520 2690 520
+  make_wire 760 700 800 700
+  make_wire 800 700 800 720
+  make_wire 800 720 880 720
+  make_wire 1080 700 1120 700
+  make_wire 1120 700 1120 720
+  make_wire 1120 720 1200 720
+  make_wire 1400 700 1440 700
+  make_wire 1440 700 1440 720
+  make_wire 1440 720 1520 720
+  make_wire 1720 700 1760 700
+  make_wire 1760 700 1760 720
+  make_wire 1760 720 1840 720
+  make_wire 2040 700 2080 700
+  make_wire 2080 700 2080 720
+  make_wire 2080 720 2160 720
+  make_wire 2360 700 2400 700
+  make_wire 2400 700 2400 720
+  make_wire 2400 720 2480 720
+  make_wire 2680 700 2720 700
+  make_wire 2720 700 2720 720
+  make_wire 2720 720 2800 720
+  make_wire 3000 700 3040 700
+  make_wire 3040 700 3040 770
+  make_wire 480 770 480 880
+  make_wire 480 880 560 880
+  make_wire 480 770 3040 770
+  make_wire 760 860 800 860
+  make_wire 800 860 800 880
+  make_wire 800 880 880 880
+  make_wire 1080 860 1120 860
+  make_wire 1120 860 1120 880
+  make_wire 1120 880 1200 880
+  make_wire 1400 860 1440 860
+  make_wire 1440 860 1440 880
+  make_wire 1440 880 1520 880
+  make_wire 1720 860 1760 860
+  make_wire 1760 860 1760 880
+  make_wire 1760 880 1840 880
+  make_wire 2040 860 2080 860
+  make_wire 2080 860 2080 880
+  make_wire 2080 880 2160 880
+  make_wire 2360 860 2400 860
+  make_wire 2400 860 2400 880
+  make_wire 2400 880 2480 880
+  make_wire 2680 860 2720 860
+  make_wire 2720 860 2720 880
+  make_wire 2720 880 2800 880
+  make_wire 2360 680 2370 680
+  make_wire 2680 680 2690 680
+  make_wire 760 680 770 680
+  make_wire 770 780 770 840
+  make_wire 760 840 770 840
+  make_wire 1080 840 1090 840
+  make_wire 1090 780 1090 840
+  make_wire 1410 780 1410 840
+  make_wire 1400 840 1410 840
+  make_wire 1730 780 1730 840
+  make_wire 1720 840 1730 840
+  make_wire 2050 780 2050 840
+  make_wire 2040 840 2050 840
+  make_wire 2360 840 2370 840
+  make_wire 2370 780 2370 840
+  make_wire 2680 840 2690 840
+  make_wire 2690 780 2690 840
+  make_wire 3000 840 3010 840
+  make_wire 3010 780 3010 840
+  make_wire 2690 460 2690 520
+  make_wire 2050 460 2050 520
+  make_wire 1410 460 1410 520
+  make_wire 770 460 770 520
+  make_wire 2370 460 2370 520
+  make_wire 1730 460 1730 520
+  make_wire 1090 460 1090 520
+  make_wire 1080 680 1090 680
+  make_wire 1400 680 1410 680
+  make_wire 1720 680 1730 680
+  make_wire 2040 680 2050 680
+  make_wire 3000 680 3010 680
+  make_wire 2720 540 2720 560
+  make_wire 3000 520 3010 520
+  make_wire 3010 460 3010 520
+  make_wire 3040 540 3040 610
+  make_wire 770 620 770 680
+  make_wire 1090 620 1090 680
+  make_wire 1730 620 1730 680
+  make_wire 2050 620 2050 680
+  make_wire 2370 620 2370 680
+  make_wire 2690 620 2690 680
+  make_wire 3010 620 3010 680
+  make_wire 3040 610 480 610
+  make_wire 480 610 480 720
+  make_wire 3000 540 3040 540
+  make_wire 480 720 560 720
+  make_wire 1410 620 1410 680
+}
+
+proc ICON_32_bit_FA_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -630} -name c_01
+icon_term -type input -origin {-100 -530} -name in1_03
+icon_term -type input -origin {-100 -510} -name in2_03
+icon_term -type input -origin {-100 -570} -name in1_02
+icon_term -type input -origin {-100 -550} -name in2_02
+icon_term -type input -origin {-100 -610} -name in1_01
+icon_term -type input -origin {-100 -590} -name in2_01
+icon_term -type input -origin {-100 -490} -name in1_04
+icon_term -type input -origin {-100 -450} -name in1_05
+icon_term -type input -origin {-100 -470} -name in2_04
+icon_term -type input -origin {-100 -430} -name in2_05
+icon_term -type input -origin {-100 -410} -name in1_06
+icon_term -type input -origin {-100 -390} -name in2_06
+icon_term -type input -origin {-100 -350} -name in2_07
+icon_term -type input -origin {-100 -370} -name in1_07
+icon_term -type input -origin {-100 -310} -name in2_08
+icon_term -type input -origin {-100 -330} -name in1_08
+icon_term -type input -origin {-100 -290} -name in1_09
+icon_term -type input -origin {-100 -270} -name in2_09
+icon_term -type input -origin {-100 -250} -name in1_10
+icon_term -type input -origin {-100 -230} -name in2_10
+icon_term -type input -origin {-100 -210} -name in1_11
+icon_term -type input -origin {-100 -190} -name in2_11
+icon_term -type input -origin {-100 -170} -name in1_12
+icon_term -type input -origin {-100 -150} -name in2_12
+icon_term -type input -origin {-100 -130} -name in1_13
+icon_term -type input -origin {-100 -110} -name in2_13
+icon_term -type input -origin {-100 -90} -name in1_14
+icon_term -type input -origin {-100 -70} -name in2_14
+icon_term -type input -origin {-100 -50} -name in1_15
+icon_term -type input -origin {-100 -30} -name in2_15
+icon_term -type input -origin {-100 -10} -name in1_16
+icon_term -type input -origin {-100 10} -name in2_16
+icon_term -type input -origin {-100 30} -name in1_17
+icon_term -type input -origin {-100 50} -name in2_17
+icon_term -type input -origin {-100 70} -name in1_18
+icon_term -type input -origin {-100 90} -name in2_18
+icon_term -type input -origin {-100 110} -name in1_19
+icon_term -type input -origin {-100 130} -name in2_19
+icon_term -type input -origin {-100 150} -name in1_20
+icon_term -type input -origin {-100 170} -name in2_20
+icon_term -type input -origin {-100 190} -name in1_21
+icon_term -type input -origin {-100 210} -name in2_21
+icon_term -type input -origin {-100 230} -name in1_22
+icon_term -type input -origin {-100 250} -name in2_22
+icon_term -type input -origin {-100 270} -name in1_23
+icon_term -type input -origin {-100 290} -name in2_23
+icon_term -type input -origin {-100 310} -name in1_24
+icon_term -type input -origin {-100 330} -name in2_24
+icon_term -type input -origin {-100 630} -name in1_32
+icon_term -type input -origin {-100 650} -name in2_32
+icon_term -type input -origin {-100 590} -name in1_31
+icon_term -type input -origin {-100 610} -name in2_31
+icon_term -type input -origin {-100 550} -name in1_30
+icon_term -type input -origin {-100 570} -name in2_30
+icon_term -type input -origin {-100 510} -name in1_29
+icon_term -type input -origin {-100 530} -name in2_29
+icon_term -type input -origin {-100 470} -name in1_28
+icon_term -type input -origin {-100 490} -name in2_28
+icon_term -type input -origin {-100 430} -name in1_27
+icon_term -type input -origin {-100 450} -name in2_27
+icon_term -type input -origin {-100 390} -name in1_26
+icon_term -type input -origin {-100 410} -name in2_26
+icon_term -type input -origin {-100 350} -name in1_25
+icon_term -type input -origin {-100 370} -name in2_25
+icon_term -type output -origin {100 -630} -name op_01
+icon_term -type output -origin {100 -610} -name op_02
+icon_term -type output -origin {100 -590} -name op_03
+icon_term -type output -origin {100 -570} -name op_04
+icon_term -type output -origin {100 -550} -name op_05
+icon_term -type output -origin {100 -530} -name op_06
+icon_term -type output -origin {100 -510} -name op_07
+icon_term -type output -origin {100 -490} -name op_08
+icon_term -type output -origin {100 -470} -name op_09
+icon_term -type output -origin {100 -450} -name op_10
+icon_term -type output -origin {100 -430} -name op_11
+icon_term -type output -origin {100 -410} -name op_12
+icon_term -type output -origin {100 -390} -name op_13
+icon_term -type output -origin {100 -370} -name op_14
+icon_term -type output -origin {100 -350} -name op_15
+icon_term -type output -origin {100 -330} -name op_16
+icon_term -type output -origin {100 -310} -name op_17
+icon_term -type output -origin {100 -290} -name op_18
+icon_term -type output -origin {100 -270} -name op_19
+icon_term -type output -origin {100 -250} -name op_20
+icon_term -type output -origin {100 -230} -name op_21
+icon_term -type output -origin {100 -210} -name op_22
+icon_term -type output -origin {100 -190} -name op_23
+icon_term -type output -origin {100 -170} -name op_24
+icon_term -type output -origin {100 -10} -name op_32
+icon_term -type output -origin {100 -30} -name op_31
+icon_term -type output -origin {100 -50} -name op_30
+icon_term -type output -origin {100 -70} -name op_29
+icon_term -type output -origin {100 -90} -name op_28
+icon_term -type output -origin {100 -110} -name op_27
+icon_term -type output -origin {100 -130} -name op_26
+icon_term -type output -origin {100 -150} -name op_25
+icon_term -type output -origin {100 10} -name op_33
+icon_property -origin {-90 -630} -label c_01
+icon_property -origin {-90 -530} -label in1_03
+icon_property -origin {-90 -510} -label in2_03
+icon_property -origin {-90 -570} -label in1_02
+icon_property -origin {-90 -550} -label in2_02
+icon_property -origin {-90 -610} -label in1_01
+icon_property -origin {-90 -590} -label in2_01
+icon_property -origin {-90 -490} -label in1_04
+icon_property -origin {-90 -450} -label in1_05
+icon_property -origin {-90 -470} -label in2_04
+icon_property -origin {-90 -430} -label in2_05
+icon_property -origin {-90 -410} -label in1_06
+icon_property -origin {-90 -390} -label in2_06
+icon_property -origin {-90 -350} -label in2_07
+icon_property -origin {-90 -370} -label in1_07
+icon_property -origin {-90 -310} -label in2_08
+icon_property -origin {-90 -330} -label in1_08
+icon_property -origin {-90 -290} -label in1_09
+icon_property -origin {-90 -270} -label in2_09
+icon_property -origin {-90 -250} -label in1_10
+icon_property -origin {-90 -230} -label in2_10
+icon_property -origin {-90 -210} -label in1_11
+icon_property -origin {-90 -190} -label in2_11
+icon_property -origin {-90 -170} -label in1_12
+icon_property -origin {-90 -150} -label in2_12
+icon_property -origin {-90 -130} -label in1_13
+icon_property -origin {-90 -110} -label in2_13
+icon_property -origin {-90 -90} -label in1_14
+icon_property -origin {-90 -70} -label in2_14
+icon_property -origin {-90 -50} -label in1_15
+icon_property -origin {-90 -30} -label in2_15
+icon_property -origin {-90 -10} -label in1_16
+icon_property -origin {-90 10} -label in2_16
+icon_property -origin {-90 30} -label in1_17
+icon_property -origin {-90 50} -label in2_17
+icon_property -origin {-90 70} -label in1_18
+icon_property -origin {-90 90} -label in2_18
+icon_property -origin {-90 110} -label in1_19
+icon_property -origin {-90 130} -label in2_19
+icon_property -origin {-90 150} -label in1_20
+icon_property -origin {-90 170} -label in2_20
+icon_property -origin {-90 190} -label in1_21
+icon_property -origin {-90 210} -label in2_21
+icon_property -origin {-90 230} -label in1_22
+icon_property -origin {-90 250} -label in2_22
+icon_property -origin {-90 270} -label in1_23
+icon_property -origin {-90 290} -label in2_23
+icon_property -origin {-90 310} -label in1_24
+icon_property -origin {-90 330} -label in2_24
+icon_property -origin {-90 630} -label in1_32
+icon_property -origin {-90 650} -label in2_32
+icon_property -origin {-90 590} -label in1_31
+icon_property -origin {-90 610} -label in2_31
+icon_property -origin {-90 550} -label in1_30
+icon_property -origin {-90 570} -label in2_30
+icon_property -origin {-90 510} -label in1_29
+icon_property -origin {-90 530} -label in2_29
+icon_property -origin {-90 470} -label in1_28
+icon_property -origin {-90 490} -label in2_28
+icon_property -origin {-90 430} -label in1_27
+icon_property -origin {-90 450} -label in2_27
+icon_property -origin {-90 390} -label in1_26
+icon_property -origin {-90 410} -label in2_26
+icon_property -origin {-90 350} -label in1_25
+icon_property -origin {-90 370} -label in2_25
+icon_property -origin {90 -630} -anchor e -label op_01
+icon_property -origin {90 -610} -anchor e -label op_02
+icon_property -origin {90 -590} -anchor e -label op_03
+icon_property -origin {90 -570} -anchor e -label op_04
+icon_property -origin {90 -550} -anchor e -label op_05
+icon_property -origin {90 -530} -anchor e -label op_06
+icon_property -origin {90 -510} -anchor e -label op_07
+icon_property -origin {90 -490} -anchor e -label op_08
+icon_property -origin {90 -470} -anchor e -label op_09
+icon_property -origin {90 -450} -anchor e -label op_10
+icon_property -origin {90 -430} -anchor e -label op_11
+icon_property -origin {90 -410} -anchor e -label op_12
+icon_property -origin {90 -390} -anchor e -label op_13
+icon_property -origin {90 -370} -anchor e -label op_14
+icon_property -origin {90 -350} -anchor e -label op_15
+icon_property -origin {90 -330} -anchor e -label op_16
+icon_property -origin {90 -310} -anchor e -label op_17
+icon_property -origin {90 -290} -anchor e -label op_18
+icon_property -origin {90 -270} -anchor e -label op_19
+icon_property -origin {90 -250} -anchor e -label op_20
+icon_property -origin {90 -230} -anchor e -label op_21
+icon_property -origin {90 -210} -anchor e -label op_22
+icon_property -origin {90 -190} -anchor e -label op_23
+icon_property -origin {90 -170} -anchor e -label op_24
+icon_property -origin {90 -10} -anchor e -label op_32
+icon_property -origin {90 -30} -anchor e -label op_31
+icon_property -origin {90 -50} -anchor e -label op_30
+icon_property -origin {90 -70} -anchor e -label op_29
+icon_property -origin {90 -90} -anchor e -label op_28
+icon_property -origin {90 -110} -anchor e -label op_27
+icon_property -origin {90 -130} -anchor e -label op_26
+icon_property -origin {90 -150} -anchor e -label op_25
+icon_property -origin {90 10} -anchor e -label op_33
+icon_property -origin {-90 -680} -label {$name}
+icon_property -origin {-90 -660} -label 32_bit_FA_01
+  icon_line -100 -670 100 -670 100 670 -100 670 -100 -670
+  icon_property -origin {-100 690} -type user -name name -default x
+}
+

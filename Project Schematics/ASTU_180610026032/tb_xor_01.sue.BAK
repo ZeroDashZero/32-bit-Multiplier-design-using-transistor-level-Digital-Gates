@@ -1,0 +1,22 @@
+proc SCHEMATIC_tb_xor_01 {} {
+make global -name gnd -origin {-320 0}
+make global -name gnd -origin {-240 0}
+make output -name vout -origin {180 40}
+make xor_01 -name xi0 -origin {20 40}
+make pulse -name V0 -pulse_voltage 1.3V -origin {-320 -40}
+make pulse -name V1 -pulse_voltage 1.3V -delay_time 1ns -origin {-240 -40}
+make name_net -name vin_a -origin {-260 -160}
+make name_net -name vin_b -origin {-210 -110}
+  make_wire -160 -160 -160 40
+  make_wire -160 40 -80 40
+  make_wire -320 -160 -320 -80
+  make_wire -240 -80 -240 -110
+  make_wire -190 -110 -190 60
+  make_wire -190 60 -80 60
+  make_wire 120 40 180 40
+  make_wire -260 -160 -160 -160
+  make_wire -260 -160 -320 -160
+  make_wire -210 -110 -240 -110
+  make_wire -210 -110 -190 -110
+}
+

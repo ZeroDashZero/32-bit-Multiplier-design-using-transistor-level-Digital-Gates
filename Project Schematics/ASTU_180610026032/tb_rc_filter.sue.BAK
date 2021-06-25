@@ -1,0 +1,13 @@
+proc SCHEMATIC_tb_rc_filter {} {
+make rc_filter -name xi0 -origin {420 190}
+make global -name gnd -origin {160 300}
+make name_net -name v_in -origin {240 200}
+make name_net -name v_out -origin {620 200}
+make dc_voltage -name V0 -ac_voltage 1 -origin {160 260}
+  make_wire 240 200 160 200
+  make_wire 240 200 320 200
+  make_wire 620 200 520 200
+  make_wire 620 200 690 200
+  make_wire 160 220 160 200
+}
+

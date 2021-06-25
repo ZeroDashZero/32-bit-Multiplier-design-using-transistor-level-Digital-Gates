@@ -1,0 +1,20 @@
+proc SCHEMATIC_tb_half_adder_01 {} {
+make global -name gnd -origin {-560 160}
+make global -name gnd -origin {-640 160}
+make output -name sum -origin {-130 40}
+make output -name carry -origin {-130 60}
+make half_adder_01 -name xi0 -origin {-300 40}
+make pulse -name V0 -origin {-640 120}
+make pulse -name V1 -delay_time 3ns -origin {-560 120}
+make name_net -name vin_a -origin {-500 40}
+make name_net -name vin_b -origin {-480 60}
+  make_wire -640 80 -640 40
+  make_wire -560 80 -560 60
+  make_wire -200 40 -130 40
+  make_wire -200 60 -130 60
+  make_wire -500 40 -640 40
+  make_wire -500 40 -400 40
+  make_wire -480 60 -560 60
+  make_wire -480 60 -400 60
+}
+

@@ -1,0 +1,43 @@
+proc SCHEMATIC_mux_01 {} {
+make input -name vin_0 -origin {-400 -40}
+make input -name vin_1 -origin {-400 140}
+make input -name S -origin {-400 40}
+make inv_01 -name xi0 -origin {-140 30}
+make nand_02 -name xi1 -origin {100 -40}
+make nand_02 -name xi2 -origin {100 120}
+make nand_02 -name xi3 -origin {340 40}
+make output -name vout -origin {460 40}
+  make_wire -40 40 -20 40
+  make_wire -20 40 -20 -20
+  make_wire -20 -20 0 -20
+  make_wire -400 140 0 140
+  make_wire 0 120 -320 120
+  make_wire -320 40 -240 40
+  make_wire -320 40 -400 40
+  make_wire 200 -40 220 -40
+  make_wire 220 -40 220 40
+  make_wire 220 40 240 40
+  make_wire 200 120 220 120
+  make_wire 220 120 220 60
+  make_wire 220 60 240 60
+  make_wire 440 40 460 40
+  make_wire -400 -40 0 -40
+  make_wire -320 40 -320 120
+}
+
+proc ICON_mux_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -10} -name vin_0
+icon_term -type input -origin {-100 10} -name vin_1
+icon_term -type input -origin {-100 30} -name S
+icon_term -type output -origin {100 -10} -name vout
+icon_property -origin {-90 -10} -label vin_0
+icon_property -origin {-90 10} -label vin_1
+icon_property -origin {-90 30} -label S
+icon_property -origin {90 -10} -anchor e -label vout
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label mux_01
+  icon_line -100 -50 100 -50 100 50 -100 50 -100 -50
+  icon_property -origin {-90 70} -type user -name name -default x
+}
+

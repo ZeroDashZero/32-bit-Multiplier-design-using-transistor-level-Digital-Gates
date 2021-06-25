@@ -1,0 +1,42 @@
+proc SCHEMATIC_or_01 {} {
+make global -name gnd -origin {-80 240}
+make global -orient RXY -name vdd -origin {-80 -80}
+make name_net -name vin_a -origin {-160 -40}
+make name_net -name vin_b -origin {-150 40}
+make name_net -name vin_a -origin {-250 150}
+make name_net -name vin_b -origin {-80 150}
+make input -name vin_a -origin {-320 50}
+make input -name vin_b -origin {-320 90}
+make output -name vout -origin {-80 80}
+make pmos -name M0 -origin {-80 -40}
+make pmos -name M1 -origin {-80 40}
+make nmos -name M2 -origin {-180 150}
+make nmos -name M3 -origin {0 150}
+  make_wire -160 -40 -140 -40
+  make_wire -150 40 -140 40
+  make_wire -80 110 -180 110
+  make_wire -80 80 -80 110
+  make_wire -80 190 -80 240
+  make_wire -80 190 -180 190
+  make_wire -80 190 0 190
+  make_wire -80 150 -60 150
+  make_wire -250 150 -240 150
+  make_wire 0 110 -80 110
+}
+
+proc ICON_or_01 args {
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 0} -name vin_a
+icon_term -type input -origin {-100 20} -name vin_b
+icon_term -type output -origin {100 0} -name vout
+icon_property -origin {-90 0} -label vin_a
+icon_property -origin {-90 20} -label vin_b
+icon_property -origin {90 0} -anchor e -label vout
+icon_property -origin {-90 -50} -label {$name}
+icon_property -origin {-90 -30} -label or_01
+  icon_line -100 -40 100 -40 100 40 -100 40 -100 -40
+  icon_property -origin {-80 60} -type user -name name -default x
+
+}
+

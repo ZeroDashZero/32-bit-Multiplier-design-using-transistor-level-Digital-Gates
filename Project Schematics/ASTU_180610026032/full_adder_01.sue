@@ -1,0 +1,45 @@
+proc SCHEMATIC_full_adder_01 {} {
+make half_adder_01 -name xi0 -origin {-110 20}
+make half_adder_01 -name xi1 -origin {-380 120}
+make output -name sum -origin {350 20}
+make output -name carry -origin {350 120}
+make input -name vin_a -origin {-640 120}
+make input -name vin_b -origin {-640 140}
+make input -name vin_c -origin {-640 20}
+make or_02 -name xi2 -origin {140 120}
+  make_wire -640 120 -480 120
+  make_wire -480 140 -640 140
+  make_wire -10 40 0 40
+  make_wire 0 120 40 120
+  make_wire -280 140 40 140
+  make_wire -640 20 -210 20
+  make_wire -280 120 -240 120
+  make_wire -240 120 -240 40
+  make_wire -240 40 -210 40
+  make_wire 0 40 0 120
+  make_wire 240 120 350 120
+  make_wire 350 20 -10 20
+}
+
+proc ICON_full_adder_01 args {
+
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -10} -name vin_a
+icon_term -type input -origin {-100 10} -name vin_b
+icon_term -type input -origin {-100 30} -name vin_c
+icon_term -type output -origin {100 -10} -name sum
+icon_term -type output -origin {100 10} -name carry
+icon_property -origin {-90 -10} -label vin_a
+icon_property -origin {-90 10} -label vin_b
+icon_property -origin {-90 30} -label vin_c
+icon_property -origin {90 -10} -anchor e -label sum
+icon_property -origin {90 10} -anchor e -label carry
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label full_adder_01
+  icon_line -100 -50 100 -50 100 50 -100 50 -100 -50
+  icon_property -origin {-80 70} -type user -name name -default x
+
+
+}
+

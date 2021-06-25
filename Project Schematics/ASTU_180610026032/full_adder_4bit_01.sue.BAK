@@ -1,0 +1,16 @@
+proc SCHEMATIC_full_adder_4bit_01 {} {
+make full_adder_01 -name xi0 -origin {420 370}
+make full_adder_01 -name xi1 -origin {760 350}
+make output -name sum_0 -origin {540 300}
+make output -name sum_1 -origin {860 340}
+make output -name carry -origin {860 360}
+make input -name vin_a0 -origin {320 360}
+make input -name vin_b0 -origin {320 380}
+make input -name vin_c -origin {320 400}
+make input -name vin_b1 -origin {660 360}
+make input -name vin_a1 -origin {660 340}
+  make_wire 520 380 660 380
+  make_wire 520 360 540 360
+  make_wire 540 360 540 300
+}
+

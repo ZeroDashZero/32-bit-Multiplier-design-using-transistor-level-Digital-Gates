@@ -1,0 +1,31 @@
+proc SCHEMATIC_tb_mux {} {
+make global -name gnd -origin {-240 -80}
+make global -name gnd -origin {-320 -80}
+make global -name gnd -origin {-400 -80}
+make name_net -name vin_0 -origin {-280 -270}
+make name_net -name vin_1 -origin {-240 -220}
+make name_net -name S -origin {-210 -180}
+make name_net -name vout -origin {200 -40}
+make mux_01 -name xi0 -origin {20 -30}
+make pulse -name V0 -pulse_voltage 1.3V -origin {-400 -120}
+make pulse -name V1 -pulse_voltage 1.3V -delay_time 4ns -origin {-320 -120}
+make pulse -name V2 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-240 -120}
+  make_wire -400 -160 -400 -270
+  make_wire -110 -270 -110 -40
+  make_wire -110 -40 -80 -40
+  make_wire -320 -160 -320 -220
+  make_wire -140 -220 -140 -20
+  make_wire -140 -20 -80 -20
+  make_wire -240 -160 -240 -180
+  make_wire -170 -180 -170 0
+  make_wire -170 0 -80 0
+  make_wire -280 -270 -400 -270
+  make_wire -280 -270 -110 -270
+  make_wire -240 -220 -320 -220
+  make_wire -240 -220 -140 -220
+  make_wire -210 -180 -240 -180
+  make_wire -210 -180 -170 -180
+  make_wire 200 -40 120 -40
+  make_wire 200 -40 240 -40
+}
+

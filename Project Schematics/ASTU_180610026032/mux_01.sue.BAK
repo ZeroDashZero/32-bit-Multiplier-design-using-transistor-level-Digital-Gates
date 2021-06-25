@@ -1,0 +1,27 @@
+proc SCHEMATIC_mux_01 {} {
+make input -name vin_0 -origin {-400 -40}
+make input -name vin_1 -origin {-400 140}
+make input -name S -origin {-400 40}
+make inv_01 -name xi0 -origin {-140 30}
+make nand_02 -name xi1 -origin {100 -40}
+make nand_02 -name xi2 -origin {100 120}
+make nand_02 -name xi3 -origin {340 40}
+make output -name vout -origin {460 40}
+  make_wire -40 40 -20 40
+  make_wire -20 40 -20 -20
+  make_wire -20 -20 0 -20
+  make_wire -400 140 0 140
+  make_wire 0 120 -320 120
+  make_wire -320 40 -240 40
+  make_wire -320 40 -400 40
+  make_wire 200 -40 220 -40
+  make_wire 220 -40 220 40
+  make_wire 220 40 240 40
+  make_wire 200 120 220 120
+  make_wire 220 120 220 60
+  make_wire 220 60 240 60
+  make_wire 440 40 460 40
+  make_wire -400 -40 0 -40
+  make_wire -320 40 -320 120
+}
+

@@ -1,0 +1,21 @@
+proc SCHEMATIC_tb_xnor {} {
+make global -name gnd -origin {-400 0}
+make global -name gnd -origin {-320 0}
+make name_net -name vin_a -origin {-290 -160}
+make name_net -name vin_b -origin {-280 -80}
+make output -name vout -origin {140 40}
+make xnor_01 -name xi0 -origin {-60 40}
+make pulse -name V1 -pulse_voltage 1.3V -delay_time 4ns -origin {-320 -40}
+make pulse -name V0 -pulse_voltage 1.3V -origin {-400 -40}
+  make_wire -400 -80 -400 -160
+  make_wire -190 -160 -190 40
+  make_wire -190 40 -160 40
+  make_wire -240 -80 -240 60
+  make_wire -240 60 -160 60
+  make_wire -290 -160 -400 -160
+  make_wire -290 -160 -190 -160
+  make_wire -280 -80 -320 -80
+  make_wire -280 -80 -240 -80
+  make_wire 40 40 140 40
+}
+

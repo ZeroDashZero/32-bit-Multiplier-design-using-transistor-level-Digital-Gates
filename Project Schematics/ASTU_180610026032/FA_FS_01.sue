@@ -1,0 +1,43 @@
+proc SCHEMATIC_FA_FS_01 {} {
+make name_net -name D -origin {460 380}
+make output -name carry -origin {1060 460}
+make output -name sum_0 -origin {280 340}
+make output -name sum_1 -origin {980 340}
+make input -name vin_a1 -origin {50 230}
+make input -name D -origin {-10 500}
+make input -name vin_b1 -origin {540 460}
+make subtractor_01 -name xi0 -origin {160 470}
+make subtractor_01 -name xi1 -origin {840 450}
+make mux_01 -name xi2 -origin {590 230}
+make inv_01 -name xi3 -origin {320 210}
+make input -name vin_a0 -origin {-10 460}
+make input -name vin_b0 -origin {-10 480}
+  make_wire 740 480 260 480
+  make_wire 940 440 980 440
+  make_wire 980 440 980 340
+  make_wire 940 460 1060 460
+  make_wire 690 220 710 220
+  make_wire 710 440 740 440
+  make_wire 280 340 280 460
+  make_wire 710 220 710 440
+  make_wire 420 220 490 220
+  make_wire 490 240 440 240
+  make_wire 440 240 440 280
+  make_wire 440 280 180 280
+  make_wire 180 220 220 220
+  make_wire 460 260 460 380
+  make_wire 460 260 490 260
+  make_wire 740 460 540 460
+  make_wire 260 460 280 460
+  make_wire 50 230 180 230
+  make_wire 180 220 180 230
+  make_wire 180 230 180 280
+  make_wire 60 460 -10 460
+  make_wire 60 480 -10 480
+  make_wire 60 500 -10 500
+}
+
+proc ICON_FA_FS_01 args {
+  icon_setup $args {{origin {0 0}} {orient R0}}
+}
+

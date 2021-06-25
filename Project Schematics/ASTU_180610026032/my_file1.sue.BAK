@@ -1,0 +1,6 @@
+proc SCHEMATIC_my_file1 {} {
+make pulse -name V0 -origin {260 440}
+make global -name gnd -origin {260 480}
+  make_wire 260 400 260 320
+}
+

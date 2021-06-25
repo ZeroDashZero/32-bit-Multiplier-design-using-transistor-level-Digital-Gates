@@ -1,0 +1,39 @@
+proc SCHEMATIC_tb_combinational {} {
+make and_01 -name xi0 -origin {660 920}
+make or_01 -name xi1 -origin {660 1080}
+make nor_01 -name xi2 -origin {660 1240}
+make pulse -name V0 -pulse_voltage 1.3V -origin {240 920}
+make pulse -name V1 -pulse_voltage 1.3V -origin {320 920}
+make global -name gnd -origin {240 960}
+make global -name gnd -origin {320 960}
+make name_net -name vin_a -origin {220 840}
+make name_net -name vin_b -origin {300 840}
+make name_net -name vin_a -origin {480 920}
+make name_net -name vin_a -origin {480 1080}
+make name_net -name vin_a -origin {480 1240}
+make name_net -name vin_b -origin {400 940}
+make name_net -name vin_b -origin {400 1100}
+make name_net -name vin_b -origin {400 1260}
+make name_net -name vout_and -origin {850 920}
+make name_net -name vout_or -origin {850 1080}
+make name_net -name vout_nor -origin {850 1240}
+  make_wire 560 920 480 920
+  make_wire 560 940 400 940
+  make_wire 240 840 220 840
+  make_wire 320 840 300 840
+  make_wire 320 810 320 840
+  make_wire 320 840 320 880
+  make_wire 480 1080 560 1080
+  make_wire 400 1100 560 1100
+  make_wire 400 1260 560 1260
+  make_wire 480 1240 560 1240
+  make_wire 240 810 240 840
+  make_wire 240 840 240 880
+  make_wire 850 920 760 920
+  make_wire 850 920 880 920
+  make_wire 850 1080 760 1080
+  make_wire 850 1080 880 1080
+  make_wire 850 1240 760 1240
+  make_wire 850 1240 880 1240
+}
+

@@ -1,0 +1,26 @@
+proc SCHEMATIC_tb_ff_01 {} {
+make ff_01 -name xi0 -origin {580 290}
+make global -name gnd -origin {320 480}
+make global -name gnd -origin {240 480}
+make global -name gnd -origin {160 480}
+make output -name Q -origin {770 280}
+make output -name Q_b -origin {770 300}
+make name_net -orient RXY -name D -origin {400 320}
+make name_net -orient RXY -name clk -origin {280 300}
+make name_net -orient RXY -name reset_b -origin {180 280}
+make pulse -name V1 -origin {240 440}
+make pulse -name V2 -delay_time 25ns -pulse_width 200ns -period 400ns -origin {160 440}
+make pulse -name V0 -delay_time 2ns -pulse_width 10ns -period 20ns -origin {320 440}
+  make_wire 160 400 160 280
+  make_wire 240 400 240 300
+  make_wire 320 400 320 320
+  make_wire 680 300 770 300
+  make_wire 680 280 770 280
+  make_wire 280 300 240 300
+  make_wire 280 300 480 300
+  make_wire 180 280 160 280
+  make_wire 180 280 480 280
+  make_wire 320 320 400 320
+  make_wire 400 320 480 320
+}
+

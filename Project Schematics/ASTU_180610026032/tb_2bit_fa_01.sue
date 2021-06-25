@@ -1,0 +1,22 @@
+proc SCHEMATIC_tb_2bit_fa_01 {} {
+make 2_bit_fa_01 -name xi0 -origin {-140 -10}
+make output -name op_01 -origin {-40 -40}
+make output -name op_02 -origin {-40 -20}
+make output -name carry -origin {-40 0}
+make global -name gnd -origin {-400 160}
+make global -name gnd -origin {-290 0}
+make global -name gnd -origin {-270 20}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-400 120}
+make name_net -name v_in -origin {-340 -40}
+  make_wire -400 80 -400 -40
+  make_wire -320 40 -240 40
+  make_wire -320 -40 -240 -40
+  make_wire -240 -20 -320 -20
+  make_wire -320 -20 -320 -40
+  make_wire -320 -20 -320 40
+  make_wire -240 0 -290 0
+  make_wire -240 20 -270 20
+  make_wire -340 -40 -320 -40
+  make_wire -340 -40 -400 -40
+}
+

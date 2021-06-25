@@ -1,0 +1,58 @@
+proc SCHEMATIC_16bit_fa_01 {} {
+make 8bit_fa_01 -name xi0 -origin {-460 30}
+make 8bit_fa_01 -name xi1 -origin {-60 30}
+make input -name a_0 -origin {-560 -120}
+make input -name a_1 -origin {-560 -100}
+make input -name a_2 -origin {-560 -80}
+make input -name a_3 -origin {-560 -60}
+make input -name a_4 -origin {-560 -40}
+make input -name a_5 -origin {-560 -20}
+make input -name a_6 -origin {-560 0}
+make input -name a_7 -origin {-560 20}
+make input -name b_0 -origin {-560 40}
+make input -name b_1 -origin {-560 60}
+make input -name b_2 -origin {-560 80}
+make input -name b_3 -origin {-560 100}
+make input -name c_in -origin {-560 200}
+make input -name b_4 -origin {-560 120}
+make input -name b_5 -origin {-560 140}
+make input -name b_6 -origin {-560 160}
+make input -name b_7 -origin {-560 180}
+make input -name a_8 -origin {-160 -120}
+make input -name a_9 -origin {-160 -100}
+make input -name a_10 -origin {-160 -80}
+make input -name a_11 -origin {-160 -60}
+make input -name a_12 -origin {-160 -40}
+make input -name a_13 -origin {-160 -20}
+make input -name a_14 -origin {-160 0}
+make input -name a_15 -origin {-160 20}
+make input -name b_8 -origin {-160 40}
+make input -name b_9 -origin {-160 60}
+make input -name b_10 -origin {-160 80}
+make input -name b_11 -origin {-160 100}
+make input -name b_12 -origin {-160 120}
+make input -name b_13 -origin {-160 140}
+make input -name b_14 -origin {-160 160}
+make input -name b_15 -origin {-160 180}
+make output -name s_0 -origin {-360 -120}
+make output -name s_1 -origin {-360 -100}
+make output -name s_3 -origin {-360 -60}
+make output -name s_2 -origin {-360 -80}
+make output -name s_4 -origin {-360 -40}
+make output -name s_5 -origin {-360 -20}
+make output -name s_6 -origin {-360 0}
+make output -name s_7 -origin {-360 20}
+make output -name carry -origin {40 40}
+make output -name s_8 -origin {40 -120}
+make output -name s_9 -origin {40 -100}
+make output -name s_10 -origin {40 -80}
+make output -name s_11 -origin {40 -60}
+make output -name s_12 -origin {40 -40}
+make output -name s_13 -origin {40 -20}
+make output -name s_14 -origin {40 0}
+make output -name s_15 -origin {40 20}
+  make_wire -360 40 -240 40
+  make_wire -240 40 -240 200
+  make_wire -240 200 -160 200
+}
+

@@ -1,0 +1,93 @@
+proc SCHEMATIC_tb_16bit_fa_01 {} {
+make 16bit_fa_01 -name xi0 -origin {340 -610}
+make global -name gnd -origin {-80 -240}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-320 -200}
+make global -name gnd -origin {-320 -160}
+make output -name s_0 -origin {440 -920}
+make output -name s_1 -origin {440 -900}
+make output -name s_3 -origin {440 -880}
+make output -name s_2 -origin {440 -860}
+make output -name s_4 -origin {440 -840}
+make output -name s_5 -origin {440 -820}
+make output -name s_6 -origin {440 -800}
+make output -name s_7 -origin {440 -780}
+make output -name carry -origin {440 -600}
+make output -name s_8 -origin {440 -760}
+make output -name s_9 -origin {440 -740}
+make output -name s_10 -origin {440 -720}
+make output -name s_11 -origin {440 -700}
+make output -name s_12 -origin {440 -680}
+make output -name s_13 -origin {440 -660}
+make output -name s_14 -origin {440 -640}
+make output -name s_15 -origin {440 -620}
+make name_net -name v_in -origin {-240 -900}
+  make_wire -320 -240 -320 -900
+  make_wire -160 -900 -160 -880
+  make_wire -160 -880 240 -880
+  make_wire -160 -880 -160 -860
+  make_wire -160 -860 240 -860
+  make_wire -160 -860 -160 -820
+  make_wire -160 -820 240 -820
+  make_wire -160 -820 -160 -780
+  make_wire -160 -780 240 -780
+  make_wire -160 -780 -160 -760
+  make_wire -160 -760 240 -760
+  make_wire -160 -760 -160 -720
+  make_wire -160 -720 240 -720
+  make_wire -160 -720 -160 -700
+  make_wire -160 -700 240 -700
+  make_wire -160 -700 -160 -660
+  make_wire -160 -660 240 -660
+  make_wire -160 -660 -160 -620
+  make_wire -160 -620 240 -620
+  make_wire -160 -620 -160 -600
+  make_wire -160 -600 240 -600
+  make_wire -160 -600 -160 -580
+  make_wire -160 -580 240 -580
+  make_wire -160 -580 -160 -560
+  make_wire -160 -560 240 -560
+  make_wire -160 -560 -160 -520
+  make_wire -160 -520 240 -520
+  make_wire -160 -520 -160 -480
+  make_wire -160 -480 240 -480
+  make_wire -160 -480 -160 -460
+  make_wire -160 -460 240 -460
+  make_wire -160 -460 -160 -440
+  make_wire -160 -440 240 -440
+  make_wire -160 -440 -160 -360
+  make_wire -160 -360 240 -360
+  make_wire -160 -360 -160 -320
+  make_wire -160 -320 240 -320
+  make_wire -160 -320 -160 -300
+  make_wire -160 -300 240 -300
+  make_wire -80 -920 240 -920
+  make_wire 240 -840 -80 -840
+  make_wire -80 -840 -80 -920
+  make_wire 240 -800 -80 -800
+  make_wire -80 -800 -80 -840
+  make_wire 240 -740 -80 -740
+  make_wire -80 -740 -80 -800
+  make_wire 240 -680 -80 -680
+  make_wire -80 -680 -80 -740
+  make_wire 240 -640 -80 -640
+  make_wire -80 -640 -80 -680
+  make_wire 240 -540 -80 -540
+  make_wire -80 -540 -80 -640
+  make_wire 240 -500 -80 -500
+  make_wire -80 -500 -80 -540
+  make_wire 240 -420 -80 -420
+  make_wire -80 -420 -80 -500
+  make_wire 240 -400 -80 -400
+  make_wire -80 -400 -80 -420
+  make_wire 240 -380 -80 -380
+  make_wire -80 -380 -80 -400
+  make_wire 240 -340 -80 -340
+  make_wire -80 -340 -80 -380
+  make_wire 240 -280 -80 -280
+  make_wire -80 -280 -80 -340
+  make_wire -80 -280 -80 -240
+  make_wire -160 -900 240 -900
+  make_wire -240 -900 -320 -900
+  make_wire -240 -900 -160 -900
+}
+
