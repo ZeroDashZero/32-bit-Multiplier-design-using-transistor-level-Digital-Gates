@@ -1,0 +1,201 @@
+proc SCHEMATIC_tb_multiplier_32_by_32 {} {
+make global -name gnd -origin {7760 1840}
+make multiplier_32_by_32 -name xi0 -origin {8340 1140}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {7360 1880}
+make global -name gnd -origin {7360 1920}
+make output -name Z0 -origin {8440 520}
+make output -name Z1 -origin {8440 540}
+make output -name Z2 -origin {8440 560}
+make output -name Z3 -origin {8440 580}
+make output -name Z4 -origin {8440 600}
+make output -name Z5 -origin {8440 620}
+make output -name Z6 -origin {8440 640}
+make output -name Z7 -origin {8440 660}
+make output -name Z8 -origin {8440 680}
+make output -name Z9 -origin {8440 700}
+make output -name Z10 -origin {8440 720}
+make output -name Z11 -origin {8440 740}
+make output -name Z12 -origin {8440 760}
+make output -name Z13 -origin {8440 780}
+make output -name Z14 -origin {8440 800}
+make output -name Z15 -origin {8440 820}
+make output -name Z16 -origin {8440 840}
+make output -name Z17 -origin {8440 860}
+make output -name Z18 -origin {8440 880}
+make output -name Z19 -origin {8440 900}
+make output -name Z20 -origin {8440 920}
+make output -name Z21 -origin {8440 940}
+make output -name Z22 -origin {8440 960}
+make output -name Z23 -origin {8440 980}
+make output -name Z24 -origin {8440 1000}
+make output -name Z25 -origin {8440 1020}
+make output -name Z26 -origin {8440 1040}
+make output -name Z27 -origin {8440 1060}
+make output -name Z28 -origin {8440 1080}
+make output -name Z29 -origin {8440 1100}
+make output -name Z30 -origin {8440 1120}
+make output -name Z31 -origin {8440 1140}
+make output -name Z32 -origin {8440 1160}
+make output -name Z33 -origin {8440 1180}
+make output -name Z34 -origin {8440 1200}
+make output -name Z36 -origin {8440 1240}
+make output -name Z35 -origin {8440 1220}
+make output -name Z37 -origin {8440 1260}
+make output -name Z38 -origin {8440 1280}
+make output -name Z39 -origin {8440 1300}
+make output -name Z40 -origin {8440 1320}
+make output -name Z41 -origin {8440 1340}
+make output -name Z42 -origin {8440 1360}
+make output -name Z43 -origin {8440 1380}
+make output -name Z44 -origin {8440 1400}
+make output -name Z45 -origin {8440 1420}
+make output -name Z46 -origin {8440 1440}
+make output -name Z47 -origin {8440 1460}
+make output -name Z48 -origin {8440 1480}
+make output -name Z49 -origin {8440 1500}
+make output -name Z50 -origin {8440 1520}
+make output -name Z51 -origin {8440 1540}
+make output -name Z52 -origin {8440 1560}
+make output -name Z53 -origin {8440 1580}
+make output -name Z54 -origin {8440 1600}
+make output -name Z55 -origin {8440 1620}
+make output -name Z56 -origin {8440 1640}
+make output -name Z57 -origin {8440 1660}
+make output -name Z58 -origin {8440 1680}
+make output -name Z59 -origin {8440 1700}
+make output -name Z60 -origin {8440 1720}
+make output -name Z61 -origin {8440 1740}
+make output -name Z62 -origin {8440 1760}
+make output -name Z63 -origin {8440 1780}
+make name_net -orient R90 -name v_in -origin {7360 1820}
+  make_wire 7760 600 8240 600
+  make_wire 7360 520 8240 520
+  make_wire 8240 540 7360 540
+  make_wire 7360 540 7360 520
+  make_wire 8240 560 7360 560
+  make_wire 7360 560 7360 540
+  make_wire 8240 580 7360 580
+  make_wire 7360 580 7360 560
+  make_wire 8240 680 7360 680
+  make_wire 7360 580 7360 680
+  make_wire 8240 700 7360 700
+  make_wire 7360 700 7360 680
+  make_wire 8240 740 7360 740
+  make_wire 8240 720 7360 720
+  make_wire 7360 720 7360 740
+  make_wire 7360 720 7360 700
+  make_wire 8240 840 7360 840
+  make_wire 7360 840 7360 740
+  make_wire 8240 860 7360 860
+  make_wire 7360 860 7360 840
+  make_wire 8240 900 7360 900
+  make_wire 8240 880 7360 880
+  make_wire 7360 880 7360 900
+  make_wire 7360 880 7360 860
+  make_wire 8240 1000 7360 1000
+  make_wire 7360 1000 7360 900
+  make_wire 8240 1020 7360 1020
+  make_wire 7360 1020 7360 1000
+  make_wire 8240 1060 7360 1060
+  make_wire 8240 1040 7360 1040
+  make_wire 7360 1040 7360 1060
+  make_wire 7360 1040 7360 1020
+  make_wire 8240 620 7760 620
+  make_wire 7760 620 7760 600
+  make_wire 8240 640 7760 640
+  make_wire 7760 640 7760 620
+  make_wire 8240 660 7760 660
+  make_wire 7760 660 7760 640
+  make_wire 8240 760 7760 760
+  make_wire 7760 760 7760 660
+  make_wire 8240 780 7760 780
+  make_wire 7760 780 7760 760
+  make_wire 8240 820 7760 820
+  make_wire 8240 800 7760 800
+  make_wire 7760 800 7760 820
+  make_wire 7760 800 7760 780
+  make_wire 8240 920 7760 920
+  make_wire 7760 920 7760 820
+  make_wire 8240 940 7760 940
+  make_wire 7760 940 7760 920
+  make_wire 8240 960 7760 960
+  make_wire 7760 960 7760 940
+  make_wire 8240 980 7760 980
+  make_wire 7760 980 7760 960
+  make_wire 8240 1080 7760 1080
+  make_wire 7760 1080 7760 980
+  make_wire 8240 1120 7760 1120
+  make_wire 8240 1100 7760 1100
+  make_wire 7760 1100 7760 1120
+  make_wire 7760 1100 7760 1080
+  make_wire 8240 1140 7760 1140
+  make_wire 7760 1140 7760 1120
+  make_wire 8240 1180 7760 1180
+  make_wire 8240 1160 7760 1160
+  make_wire 7760 1160 7760 1180
+  make_wire 7760 1160 7760 1140
+  make_wire 8240 1200 7760 1200
+  make_wire 7760 1200 7760 1180
+  make_wire 8240 1220 7760 1220
+  make_wire 7760 1220 7760 1200
+  make_wire 8240 1320 7760 1320
+  make_wire 7760 1320 7760 1220
+  make_wire 8240 1340 7760 1340
+  make_wire 7760 1340 7760 1320
+  make_wire 8240 1360 7760 1360
+  make_wire 7760 1360 7760 1340
+  make_wire 7760 1380 7760 1360
+  make_wire 8240 1480 7760 1480
+  make_wire 7760 1480 7760 1380
+  make_wire 8240 1500 7760 1500
+  make_wire 7760 1500 7760 1480
+  make_wire 8240 1520 7760 1520
+  make_wire 7760 1520 7760 1500
+  make_wire 8240 1540 7760 1540
+  make_wire 7760 1540 7760 1520
+  make_wire 8240 1640 7760 1640
+  make_wire 7760 1640 7760 1540
+  make_wire 8240 1660 7760 1660
+  make_wire 7760 1660 7760 1640
+  make_wire 8240 1700 7760 1700
+  make_wire 7760 1700 7760 1840
+  make_wire 8240 1680 7760 1680
+  make_wire 7760 1680 7760 1700
+  make_wire 7760 1680 7760 1660
+  make_wire 8240 1240 7360 1240
+  make_wire 7360 1240 7360 1060
+  make_wire 8240 1260 7360 1260
+  make_wire 7360 1260 7360 1240
+  make_wire 8240 1280 7360 1280
+  make_wire 7360 1280 7360 1260
+  make_wire 8240 1300 7360 1300
+  make_wire 7360 1300 7360 1280
+  make_wire 7760 1380 8240 1380
+  make_wire 8240 1400 7360 1400
+  make_wire 7360 1400 7360 1300
+  make_wire 8240 1420 7360 1420
+  make_wire 7360 1420 7360 1400
+  make_wire 8240 1440 7360 1440
+  make_wire 7360 1440 7360 1420
+  make_wire 8240 1460 7360 1460
+  make_wire 7360 1460 7360 1440
+  make_wire 8240 1560 7360 1560
+  make_wire 7360 1560 7360 1460
+  make_wire 7360 1580 7360 1560
+  make_wire 8240 1600 7360 1600
+  make_wire 7360 1600 7360 1580
+  make_wire 8240 1620 7360 1620
+  make_wire 7360 1620 7360 1600
+  make_wire 8240 1720 7360 1720
+  make_wire 7360 1720 7360 1620
+  make_wire 8240 1740 7360 1740
+  make_wire 7360 1740 7360 1720
+  make_wire 8240 1780 7360 1780
+  make_wire 8240 1760 7360 1760
+  make_wire 7360 1760 7360 1740
+  make_wire 7360 1760 7360 1780
+  make_wire 7360 1580 8240 1580
+  make_wire 7360 1780 7360 1820
+  make_wire 7360 1820 7360 1840
+}
+

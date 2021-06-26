@@ -1,0 +1,57 @@
+proc SCHEMATIC_tb_8bit_multiplier_01 {} {
+make 8bit_multiplier_01 -name xi0 -origin {100 20}
+make global -name gnd -origin {-240 320}
+make global -name gnd -origin {-640 320}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-640 280}
+make output -name z0 -origin {200 -120}
+make output -name z1 -origin {200 -100}
+make output -name z2 -origin {200 -80}
+make output -name z3 -origin {200 -60}
+make output -name z4 -origin {200 -40}
+make output -name z5 -origin {200 -20}
+make output -name z6 -origin {200 0}
+make output -name z7 -origin {200 20}
+make output -name z8 -origin {200 40}
+make output -name z9 -origin {200 60}
+make output -name z10 -origin {200 80}
+make output -name z11 -origin {200 100}
+make output -name z12 -origin {200 120}
+make output -name z13 -origin {200 140}
+make output -name z14 -origin {200 160}
+make output -name z15 -origin {200 180}
+make name_net -orient R90 -name v_in -origin {-640 200}
+  make_wire -640 -100 0 -100
+  make_wire 0 -60 -640 -60
+  make_wire -640 -60 -640 -100
+  make_wire 0 -20 -640 -20
+  make_wire -640 -20 -640 -60
+  make_wire 0 20 -640 20
+  make_wire -640 20 -640 -20
+  make_wire 0 80 -640 80
+  make_wire -640 80 -640 20
+  make_wire 0 100 -640 100
+  make_wire -640 100 -640 80
+  make_wire -640 160 -640 100
+  make_wire 0 180 -640 180
+  make_wire -640 180 -640 160
+  make_wire 0 160 -640 160
+  make_wire -240 -120 0 -120
+  make_wire 0 -80 -240 -80
+  make_wire -240 -80 -240 -120
+  make_wire 0 -40 -240 -40
+  make_wire -240 -40 -240 -80
+  make_wire 0 0 -240 0
+  make_wire -240 0 -240 -40
+  make_wire 0 40 -240 40
+  make_wire -240 40 -240 0
+  make_wire 0 60 -240 60
+  make_wire -240 60 -240 40
+  make_wire 0 140 -240 140
+  make_wire -240 140 -240 320
+  make_wire 0 120 -240 120
+  make_wire -240 120 -240 140
+  make_wire -240 120 -240 60
+  make_wire -640 200 -640 180
+  make_wire -640 200 -640 240
+}
+
