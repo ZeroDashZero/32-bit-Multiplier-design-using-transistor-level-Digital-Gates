@@ -39,7 +39,7 @@ for the display of outputin CPPsim and for the general purpose of multiplication
 ### BLOCK DIAGRAM OF DESIGN : ARCHITECTURE
 
 <p align="center">
-  <img alt="circuit" src="./images/block_dig.jpg" width="600px"/>
+  <img alt="circuit" src="./32 BIT MULTIPLIER_block_diagram.jpg" width="800px"/>
 </p>
  
 The design consists of feeding 1st 32 bit number with 1st bit of 2nd 32 bit number to 32*1 AND gate then extracting the 1st bit of the 64bit output ( A0B0 ) then again doing same operation with B1 i.e., 2nd bit of the 2nd 32 bit number and then adding the two partial products with the help of 32bit Full Adder circuit to get the 2nd bit of the 64 bit output i.e., A1B1 + A0B1., and then iterating these steps for 31 times to get the left part of the 64 bit number and the rest bits are extracted from the last full adder (Number 31) output.
