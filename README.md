@@ -12,10 +12,10 @@ This project was performed on the completion of our four-week-long B. Tech 4th S
 * [Project_Schematics](./Project_Schematics) - multiplier schematics used in the project
 * [TechnoReady_VLSIExpert_DigLib](./TechnoReady_VLSIExpert_DigLib) - schematics provided by VLSI Expert
 * [images](./images) - 16/32-bit multiplier schematics and simulation images
-* [`32 BIT MULTIPLIER_block_diagram.jpg`](#32%20BIT%20MULTIPLIER_block_diagram.jpg)
-* [`32-bit Multiplier Design Presentation.pptx`](#32-bit%20Multiplier%20Design%20Presentation.pptx)
-* [`32-bit Multiplier design.docx`](#32-bit%20Multiplier%20design.docx)
-* [`Final Report.pdf`](#Final%20Report.pdf)
+* `32 BIT MULTIPLIER_block_diagram.jpg`
+* `32-bit Multiplier Design Presentation.pptx`
+* `32-bit Multiplier design.docx`
+* `Final Report.pdf`
 
 ### Quickview
 
