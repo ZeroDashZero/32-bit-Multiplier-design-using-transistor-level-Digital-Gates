@@ -1,0 +1,7 @@
+proc SCHEMATIC_32_bit_multiplier_01 {} {
+make 32_bit_reg_01 -name xi1 -origin {460 1000}
+make 32_bit_reg_01 -name xi0 -origin {460 200}
+make 32_bit_FA_01 -name xi3 -origin {1700 510}
+make 32_bit_and_01 -name xi2 -origin {1250 490}
+}
+

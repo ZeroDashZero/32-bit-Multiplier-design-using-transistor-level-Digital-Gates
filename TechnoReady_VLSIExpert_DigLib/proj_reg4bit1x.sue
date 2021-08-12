@@ -1,0 +1,72 @@
+proc SCHEMATIC_proj_reg4bit1x {} {
+
+make proj_dff_1x -name xi0 -origin {2820 -240}
+make proj_dff_1x -name xi1 -origin {2820 -70}
+make proj_dff_1x -name xi2 -origin {2820 110}
+make proj_dff_1x -name xi3 -origin {2820 -410}
+make input -name Data_0 -origin {2720 -430}
+make input -name Data_1 -origin {2720 -260}
+make input -name Data_2 -origin {2720 -90}
+make input -name Data_3 -origin {2720 90}
+make input -name clk -origin {2550 -150}
+make output -name Q_0 -origin {2920 -430}
+make output -name Q_1 -origin {2920 -260}
+make output -name Q_2 -origin {2920 -90}
+make output -name Q_3 -origin {2920 90}
+make output -name Qb_0 -origin {2920 -410}
+make output -name Qb_1 -origin {2920 -240}
+make output -name Qb_2 -origin {2920 -70}
+make output -name Qb_3 -origin {2920 110}
+make input -orient R90 -name reset_b -origin {2850 -490}
+  make_wire 2550 -150 2610 -150
+  make_wire 2610 -390 2720 -390
+  make_wire 2720 -220 2610 -220
+  make_wire 2610 -50 2720 -50
+  make_wire 2610 130 2720 130
+  make_wire 2610 -50 2610 -150
+  make_wire 2610 -50 2610 130
+  make_wire 2850 -490 2850 -470
+  make_wire 2610 -390 2610 -220
+  make_wire 2610 -220 2610 -150
+  make_wire 2850 -300 2850 -470
+  make_wire 2850 -130 2850 -300
+  make_wire 2850 -130 2850 50
+
+}
+
+proc ICON_proj_reg4bit1x args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 -60} -name Data_0
+icon_term -type input -origin {-100 -40} -name Data_1
+icon_term -type input -origin {-100 -20} -name Data_2
+icon_term -type input -origin {-100 0} -name Data_3
+icon_term -type input -origin {-100 20} -name clk
+icon_term -type input -origin {-100 40} -name reset_b
+icon_term -type output -origin {100 -60} -name Q_0
+icon_term -type output -origin {100 -40} -name Q_1
+icon_term -type output -origin {100 -20} -name Q_2
+icon_term -type output -origin {100 0} -name Q_3
+icon_term -type output -origin {100 20} -name Qb_0
+icon_term -type output -origin {100 40} -name Qb_1
+icon_term -type output -origin {100 60} -name Qb_2
+icon_term -type output -origin {100 80} -name Qb_3
+icon_property -origin {-90 -60} -label Data_0
+icon_property -origin {-90 -40} -label Data_1
+icon_property -origin {-90 -20} -label Data_2
+icon_property -origin {-90 0} -label Data_3
+icon_property -origin {-90 20} -label clk
+icon_property -origin {-90 40} -label reset_b
+icon_property -origin {90 -60} -anchor e -label Q_0
+icon_property -origin {90 -40} -anchor e -label Q_1
+icon_property -origin {90 -20} -anchor e -label Q_2
+icon_property -origin {90 0} -anchor e -label Q_3
+icon_property -origin {90 20} -anchor e -label Qb_0
+icon_property -origin {90 40} -anchor e -label Qb_1
+icon_property -origin {90 60} -anchor e -label Qb_2
+icon_property -origin {90 80} -anchor e -label Qb_3
+icon_property -origin {-90 -110} -label {$name}
+icon_property -origin {-90 -90} -label proj_reg4bit1x
+  icon_line -100 -100 100 -100 100 100 -100 100 -100 -100
+  icon_property -origin {-90 110} -type user -name name -default x
+}
+

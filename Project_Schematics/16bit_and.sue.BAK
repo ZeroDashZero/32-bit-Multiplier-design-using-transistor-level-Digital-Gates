@@ -1,0 +1,84 @@
+proc SCHEMATIC_16bit_and {} {
+make input -name B0 -origin {110 -550}
+make input -name B1 -origin {110 -470}
+make input -name B2 -origin {110 -390}
+make input -name B3 -origin {110 -310}
+make input -name B4 -origin {110 -230}
+make input -name B5 -origin {110 -150}
+make input -name B6 -origin {110 -70}
+make input -name B7 -origin {110 10}
+make input -name B8 -origin {110 90}
+make input -name B9 -origin {110 170}
+make input -name B10 -origin {110 250}
+make input -name B11 -origin {110 330}
+make input -name B12 -origin {110 410}
+make input -name B13 -origin {110 490}
+make input -name B14 -origin {110 570}
+make input -name B15 -origin {110 650}
+make output -name M0 -origin {310 -570}
+make output -name M1 -origin {310 -490}
+make output -name M2 -origin {310 -410}
+make output -name M3 -origin {310 -330}
+make output -name M4 -origin {310 -250}
+make output -name M5 -origin {310 -170}
+make output -name M6 -origin {310 -90}
+make output -name M7 -origin {310 -10}
+make output -name M8 -origin {310 70}
+make output -name M9 -origin {310 150}
+make output -name M10 -origin {310 230}
+make output -name M11 -origin {310 310}
+make output -name M12 -origin {310 390}
+make output -name M13 -origin {310 470}
+make output -name M14 -origin {310 550}
+make output -name M15 -origin {310 630}
+make input -name A0 -origin {-30 -570}
+make and_01 -name xi0 -origin {210 -570}
+make and_01 -name xi1 -origin {210 -490}
+make and_01 -name xi2 -origin {210 -410}
+make and_01 -name xi3 -origin {210 -330}
+make and_01 -name xi4 -origin {210 -250}
+make and_01 -name xi5 -origin {210 -170}
+make and_01 -name xi6 -origin {210 -90}
+make and_01 -name xi7 -origin {210 -10}
+make and_01 -name xi8 -origin {210 70}
+make and_01 -name xi9 -origin {210 150}
+make and_01 -name xi10 -origin {210 230}
+make and_01 -name xi11 -origin {210 310}
+make and_01 -name xi12 -origin {210 390}
+make and_01 -name xi13 -origin {210 470}
+make and_01 -name xi14 -origin {210 550}
+make and_01 -name xi15 -origin {210 630}
+  make_wire 10 310 10 390
+  make_wire 10 390 10 470
+  make_wire 10 390 110 390
+  make_wire 10 470 110 470
+  make_wire 10 -410 10 -330
+  make_wire 10 -410 110 -410
+  make_wire 10 -330 110 -330
+  make_wire 10 -490 110 -490
+  make_wire 10 470 10 550
+  make_wire 10 550 10 630
+  make_wire 10 550 110 550
+  make_wire 10 630 110 630
+  make_wire 10 -330 10 -250
+  make_wire 10 -250 10 -170
+  make_wire 10 -250 110 -250
+  make_wire 10 -170 110 -170
+  make_wire 10 -170 10 -90
+  make_wire 10 -90 10 -10
+  make_wire 10 -90 110 -90
+  make_wire 10 -10 110 -10
+  make_wire 10 -10 10 70
+  make_wire 10 70 10 150
+  make_wire 10 70 110 70
+  make_wire 10 150 110 150
+  make_wire 10 150 10 230
+  make_wire 10 230 10 310
+  make_wire 10 230 110 230
+  make_wire 10 310 110 310
+  make_wire 10 -570 10 -490
+  make_wire 10 -570 110 -570
+  make_wire 10 -570 -30 -570
+  make_wire 10 -490 10 -410
+}
+

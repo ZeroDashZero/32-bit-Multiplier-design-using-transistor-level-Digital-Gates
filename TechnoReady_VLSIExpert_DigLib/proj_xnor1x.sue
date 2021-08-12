@@ -1,0 +1,25 @@
+proc SCHEMATIC_proj_xnor1x {} {
+make proj_xor1x -name xi0 -origin {900 380}
+make proj_inv1x -name xi1 -origin {1190 380}
+make output -name vout -origin {1250 380}
+make input -name vin_a -origin {750 370}
+make input -name vin_b -origin {750 390}
+  make_wire 1000 380 1110 380
+  make_wire 800 370 750 370
+  make_wire 800 390 750 390
+}
+
+proc ICON_proj_xnor1x args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 0} -name vin_a
+icon_term -type input -origin {-100 20} -name vin_b
+icon_term -type output -origin {100 0} -name vout
+icon_property -origin {-90 0} -label vin_a
+icon_property -origin {-90 20} -label vin_b
+icon_property -origin {90 0} -anchor e -label vout
+icon_property -origin {-90 -50} -label {$name}
+icon_property -origin {-90 -30} -label proj_xnor1x
+  icon_line -100 -40 100 -40 100 40 -100 40 -100 -40
+  icon_property -origin {-80 50} -type user -name name -default x
+}
+

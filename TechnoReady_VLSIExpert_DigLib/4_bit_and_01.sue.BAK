@@ -1,0 +1,91 @@
+proc SCHEMATIC_4_bit_and_01 {} {
+make global -orient RXY -name vdd -origin {290 -90}
+make global -name gnd -origin {290 360}
+make input -name in1_01 -origin {210 -20}
+make input -name in2_01 -origin {210 60}
+make name_net -name in1_01 -origin {230 -50}
+make name_net -name in1_01 -origin {230 30}
+make name_net -name in1_01 -origin {150 190}
+make name_net -name in2_01 -origin {310 190}
+make output -name op_01 -origin {290 100}
+make global -orient RXY -name vdd -origin {610 -90}
+make global -name gnd -origin {610 360}
+make global -orient RXY -name vdd -origin {930 -90}
+make global -name gnd -origin {930 360}
+make input -name in1_02 -origin {530 -20}
+make input -name in2_02 -origin {530 60}
+make name_net -name in1_02 -origin {550 -50}
+make name_net -name in1_02 -origin {550 30}
+make name_net -name in1_02 -origin {470 190}
+make name_net -name in2_02 -origin {630 190}
+make input -name in1_03 -origin {850 -20}
+make input -name in2_03 -origin {850 60}
+make name_net -name in1_03 -origin {870 -50}
+make name_net -name in1_03 -origin {870 30}
+make name_net -name in1_03 -origin {790 190}
+make name_net -name in2_03 -origin {950 190}
+make output -name op_02 -origin {610 100}
+make output -name op_03 -origin {930 100}
+make global -orient RXY -name vdd -origin {1250 -90}
+make global -name gnd -origin {1250 360}
+make input -name in1_04 -origin {1170 -20}
+make input -name in2_04 -origin {1170 60}
+make name_net -name in1_04 -origin {1110 190}
+make name_net -name in2_04 -origin {1270 190}
+make output -name op_04 -origin {1250 100}
+make name_net -name in1_04 -origin {1190 -50}
+make name_net -name in1_04 -origin {1190 30}
+make pmos -name M0 -origin {850 190}
+make pmos -name M1 -origin {1010 190}
+make nmos -name M2 -origin {930 30}
+make nmos -name M3 -origin {930 -50}
+make pmos -name M4 -origin {530 190}
+make pmos -name M5 -origin {690 190}
+make nmos -name M6 -origin {610 30}
+make nmos -name M7 -origin {610 -50}
+make pmos -name M8 -origin {1170 190}
+make pmos -name M9 -origin {1330 190}
+make nmos -name M10 -origin {1250 30}
+make nmos -name M11 -origin {1250 -50}
+make pmos -name M12 -origin {210 190}
+make pmos -name M13 -origin {370 190}
+make nmos -name M14 -origin {290 30}
+make nmos -name M15 -origin {290 -50}
+  make_wire 210 230 210 260
+  make_wire 370 260 370 230
+  make_wire 290 360 290 260
+  make_wire 290 260 210 260
+  make_wire 290 260 370 260
+  make_wire 290 150 210 150
+  make_wire 290 150 370 150
+  make_wire 290 70 290 100
+  make_wire 290 100 290 150
+  make_wire 530 230 530 260
+  make_wire 690 260 690 230
+  make_wire 610 360 610 260
+  make_wire 610 260 530 260
+  make_wire 610 260 690 260
+  make_wire 610 150 690 150
+  make_wire 610 70 610 100
+  make_wire 610 100 610 150
+  make_wire 850 230 850 260
+  make_wire 1010 260 1010 230
+  make_wire 930 360 930 260
+  make_wire 930 260 850 260
+  make_wire 930 260 1010 260
+  make_wire 930 150 850 150
+  make_wire 930 150 1010 150
+  make_wire 930 70 930 100
+  make_wire 930 100 930 150
+  make_wire 530 150 610 150
+  make_wire 1170 230 1170 260
+  make_wire 1330 260 1330 230
+  make_wire 1250 360 1250 260
+  make_wire 1250 260 1170 260
+  make_wire 1250 260 1330 260
+  make_wire 1250 150 1170 150
+  make_wire 1250 150 1330 150
+  make_wire 1250 70 1250 100
+  make_wire 1250 100 1250 150
+}
+

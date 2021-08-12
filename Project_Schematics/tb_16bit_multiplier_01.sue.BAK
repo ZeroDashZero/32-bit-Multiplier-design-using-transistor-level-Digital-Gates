@@ -1,0 +1,103 @@
+proc SCHEMATIC_tb_16bit_multiplier_01 {} {
+make 16bit_multiplier_01 -name xi0 -origin {3370 240}
+make global -name gnd -origin {2800 720}
+make global -name gnd -origin {2960 640}
+make pulse -name V0 -pulse_voltage 1.3V -origin {2800 680}
+make output -name Z0 -origin {3470 -60}
+make output -name Z1 -origin {3470 -40}
+make output -name Z2 -origin {3470 -20}
+make output -name Z3 -origin {3470 0}
+make output -name Z4 -origin {3470 20}
+make output -name Z5 -origin {3470 40}
+make output -name Z6 -origin {3470 60}
+make output -name Z7 -origin {3470 80}
+make output -name Z8 -origin {3470 100}
+make output -name Z9 -origin {3470 120}
+make output -name Z10 -origin {3470 140}
+make output -name Z11 -origin {3470 160}
+make output -name Z12 -origin {3470 180}
+make output -name Z13 -origin {3470 200}
+make output -name Z14 -origin {3470 220}
+make output -name Z15 -origin {3470 240}
+make output -name Z16 -origin {3470 260}
+make output -name Z18 -origin {3470 280}
+make output -name Z17 -origin {3470 300}
+make output -name Z19 -origin {3470 320}
+make output -name Z20 -origin {3470 340}
+make output -name Z21 -origin {3470 360}
+make output -name Z22 -origin {3470 380}
+make output -name Z23 -origin {3470 400}
+make output -name Z24 -origin {3470 420}
+make output -name Z25 -origin {3470 440}
+make output -name Z26 -origin {3470 460}
+make output -name Z27 -origin {3470 480}
+make output -name Z28 -origin {3470 500}
+make output -name Z29 -origin {3470 520}
+make output -name Z30 -origin {3470 540}
+make output -name Z31 -origin {3470 560}
+  make_wire 2800 -60 3270 -60
+  make_wire 3270 240 2800 240
+  make_wire 3270 -40 2800 -40
+  make_wire 2800 -40 2800 -60
+  make_wire 3270 -20 2800 -20
+  make_wire 2800 -20 2800 -40
+  make_wire 3270 0 2800 0
+  make_wire 2800 0 2800 -20
+  make_wire 3270 60 2800 60
+  make_wire 2800 60 2800 0
+  make_wire 3270 100 2800 100
+  make_wire 3270 80 2800 80
+  make_wire 2800 80 2800 100
+  make_wire 2800 80 2800 60
+  make_wire 3270 120 2800 120
+  make_wire 2800 120 2800 100
+  make_wire 3270 200 2800 200
+  make_wire 3270 180 2800 180
+  make_wire 2800 180 2800 200
+  make_wire 2800 120 2800 180
+  make_wire 3270 220 2800 220
+  make_wire 2800 220 2800 200
+  make_wire 2800 220 2800 240
+  make_wire 3270 280 2800 280
+  make_wire 2800 280 2800 240
+  make_wire 3270 560 2800 560
+  make_wire 2800 560 2800 640
+  make_wire 3270 320 2800 320
+  make_wire 2800 320 2800 280
+  make_wire 3270 360 2800 360
+  make_wire 2800 360 2800 320
+  make_wire 3270 400 2800 400
+  make_wire 2800 400 2800 360
+  make_wire 3270 440 2800 440
+  make_wire 2800 440 2800 400
+  make_wire 3270 480 2800 480
+  make_wire 2800 480 2800 440
+  make_wire 3270 520 2800 520
+  make_wire 2800 520 2800 480
+  make_wire 2800 520 2800 560
+  make_wire 2960 20 3270 20
+  make_wire 3270 40 2960 40
+  make_wire 2960 40 2960 20
+  make_wire 3270 140 2960 140
+  make_wire 2960 140 2960 40
+  make_wire 3270 160 2960 160
+  make_wire 2960 160 2960 140
+  make_wire 3270 260 2960 260
+  make_wire 2960 260 2960 160
+  make_wire 3270 300 2960 300
+  make_wire 2960 300 2960 260
+  make_wire 3270 340 2960 340
+  make_wire 2960 340 2960 300
+  make_wire 3270 380 2960 380
+  make_wire 2960 380 2960 340
+  make_wire 2960 420 3270 420
+  make_wire 2960 420 2960 380
+  make_wire 3270 460 2960 460
+  make_wire 2960 460 2960 420
+  make_wire 3270 500 2960 500
+  make_wire 2960 500 2960 460
+  make_wire 3270 540 2960 540
+  make_wire 2960 540 2960 500
+  make_wire 2960 540 2960 640
+}
+

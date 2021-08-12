@@ -1,0 +1,17 @@
+proc SCHEMATIC_32_bit_multiplier_01 {} {
+make 32_bit_reg_01 -name xi1 -origin {500 1080}
+make 32_bit_reg_01 -name xi0 -origin {500 280}
+make and_01 -name xi2 -origin {980 -40}
+make 32_bit_FA_01 -name xi3 -origin {1700 510}
+make and_01 -name xi4 -origin {980 70}
+make and_01 -name xi5 -origin {980 180}
+make and_01 -name xi6 -origin {980 280}
+make and_01 -name xi7 -origin {980 380}
+make and_01 -name xi8 -origin {980 480}
+make and_01 -name xi9 -origin {980 590}
+  make_wire 600 -40 880 -40
+  make_wire 600 760 800 760
+  make_wire 800 760 800 -20
+  make_wire 800 -20 880 -20
+}
+

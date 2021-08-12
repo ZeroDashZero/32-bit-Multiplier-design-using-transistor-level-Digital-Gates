@@ -1,0 +1,146 @@
+proc SCHEMATIC_64_bit_register_01 {} {
+make 32_bit_reg_01 -name xi0 -origin {1540 -40}
+make 32_bit_reg_01 -name xi1 -origin {1960 -40}
+make input -name reset_b -origin {1360 300}
+make input -name clk -origin {1140 -360}
+make input -name D_0 -origin {1440 -340}
+make input -name D_1 -origin {1440 -320}
+make input -name D_2 -origin {1440 -300}
+make input -name D_3 -origin {1440 -280}
+make input -name D_4 -origin {1440 -260}
+make input -name D_5 -origin {1440 -240}
+make input -name D_6 -origin {1440 -220}
+make input -name D_7 -origin {1440 -200}
+make input -name D_8 -origin {1440 -180}
+make input -name D_9 -origin {1440 -160}
+make input -name D_10 -origin {1440 -140}
+make input -name D_11 -origin {1440 -120}
+make input -name D_12 -origin {1440 -100}
+make input -name D_13 -origin {1440 -80}
+make input -name D_14 -origin {1440 -60}
+make input -name D_15 -origin {1440 -40}
+make input -name D_16 -origin {1440 -20}
+make input -name D_17 -origin {1440 0}
+make input -name D_18 -origin {1440 20}
+make input -name D_19 -origin {1440 40}
+make input -name D_20 -origin {1440 60}
+make input -name D_21 -origin {1440 80}
+make input -name D_22 -origin {1440 100}
+make input -name D_23 -origin {1440 120}
+make input -name D_24 -origin {1440 140}
+make input -name D_25 -origin {1440 160}
+make input -name D_26 -origin {1440 180}
+make input -name D_27 -origin {1440 200}
+make input -name D_28 -origin {1440 220}
+make input -name D_29 -origin {1440 240}
+make input -name D_30 -origin {1440 260}
+make input -name D_31 -origin {1440 280}
+make input -name D_32 -origin {1860 -340}
+make input -name D_33 -origin {1860 -320}
+make input -name D_34 -origin {1860 -300}
+make input -name D_35 -origin {1860 -280}
+make input -name D_36 -origin {1860 -260}
+make input -name D_37 -origin {1860 -240}
+make input -name D_38 -origin {1860 -220}
+make input -name D_39 -origin {1860 -200}
+make input -name D_40 -origin {1860 -180}
+make input -name D_41 -origin {1860 -160}
+make input -name D_42 -origin {1860 -140}
+make input -name D_43 -origin {1860 -120}
+make input -name D_44 -origin {1860 -100}
+make input -name D_45 -origin {1860 -80}
+make input -name D_46 -origin {1860 -60}
+make input -name D_47 -origin {1860 -40}
+make input -name D_48 -origin {1860 -20}
+make input -name D_49 -origin {1860 0}
+make input -name D_50 -origin {1860 20}
+make input -name D_51 -origin {1860 40}
+make input -name D_52 -origin {1860 60}
+make input -name D_53 -origin {1860 80}
+make input -name D_54 -origin {1860 100}
+make input -name D_55 -origin {1860 120}
+make input -name D_56 -origin {1860 140}
+make input -name D_57 -origin {1860 160}
+make input -name D_58 -origin {1860 180}
+make input -name D_59 -origin {1860 200}
+make input -name D_60 -origin {1860 220}
+make input -name D_61 -origin {1860 240}
+make input -name D_62 -origin {1860 260}
+make input -name D_63 -origin {1860 280}
+make output -name Q_0 -origin {1640 -360}
+make output -name Q_1 -origin {1640 -340}
+make output -name Q_2 -origin {1640 -320}
+make output -name Q_3 -origin {1640 -300}
+make output -name Q_4 -origin {1640 -280}
+make output -name Q_5 -origin {1640 -260}
+make output -name Q_6 -origin {1640 -240}
+make output -name Q_7 -origin {1640 -220}
+make output -name Q_8 -origin {1640 -200}
+make output -name Q_9 -origin {1640 -180}
+make output -name Q_10 -origin {1640 -160}
+make output -name Q_11 -origin {1640 -140}
+make output -name Q_12 -origin {1640 -120}
+make output -name Q_13 -origin {1640 -100}
+make output -name Q_14 -origin {1640 -80}
+make output -name Q_15 -origin {1640 -60}
+make output -name Q_16 -origin {1640 -40}
+make output -name Q_17 -origin {1640 -20}
+make output -name Q_18 -origin {1640 0}
+make output -name Q_19 -origin {1640 20}
+make output -name Q_20 -origin {1640 40}
+make output -name Q_21 -origin {1640 60}
+make output -name Q_22 -origin {1640 80}
+make output -name Q_23 -origin {1640 100}
+make output -name Q_24 -origin {1640 120}
+make output -name Q_25 -origin {1640 140}
+make output -name Q_26 -origin {1640 160}
+make output -name Q_27 -origin {1640 180}
+make output -name Q_28 -origin {1640 200}
+make output -name Q_29 -origin {1640 220}
+make output -name Q_30 -origin {1640 240}
+make output -name Q_31 -origin {1640 260}
+make output -name Q_32 -origin {2060 -360}
+make output -name Q_33 -origin {2060 -340}
+make output -name Q_34 -origin {2060 -320}
+make output -name Q_35 -origin {2060 -300}
+make output -name Q_36 -origin {2060 -280}
+make output -name Q_37 -origin {2060 -260}
+make output -name Q_38 -origin {2060 -240}
+make output -name Q_39 -origin {2060 -220}
+make output -name Q_40 -origin {2060 -200}
+make output -name Q_41 -origin {2060 -180}
+make output -name Q_42 -origin {2060 -160}
+make output -name Q_43 -origin {2060 -140}
+make output -name Q_44 -origin {2060 -120}
+make output -name Q_45 -origin {2060 -100}
+make output -name Q_46 -origin {2060 -80}
+make output -name Q_47 -origin {2060 -60}
+make output -name Q_48 -origin {2060 -40}
+make output -name Q_49 -origin {2060 -20}
+make output -name Q_50 -origin {2060 0}
+make output -name Q_51 -origin {2060 20}
+make output -name Q_52 -origin {2060 40}
+make output -name Q_53 -origin {2060 60}
+make output -name Q_54 -origin {2060 80}
+make output -name Q_55 -origin {2060 100}
+make output -name Q_56 -origin {2060 120}
+make output -name Q_57 -origin {2060 140}
+make output -name Q_58 -origin {2060 160}
+make output -name Q_59 -origin {2060 180}
+make output -name Q_60 -origin {2060 200}
+make output -name Q_61 -origin {2060 220}
+make output -name Q_62 -origin {2060 240}
+make output -name Q_63 -origin {2060 260}
+  make_wire 1840 -360 1860 -360
+  make_wire 1440 300 1360 300
+  make_wire 1830 300 1860 300
+  make_wire 1360 300 1360 400
+  make_wire 1360 -360 1140 -360
+  make_wire 1360 -360 1440 -360
+  make_wire 1360 -450 1840 -450
+  make_wire 1830 300 1830 400
+  make_wire 1840 -450 1840 -360
+  make_wire 1360 400 1830 400
+  make_wire 1360 -450 1360 -360
+}
+

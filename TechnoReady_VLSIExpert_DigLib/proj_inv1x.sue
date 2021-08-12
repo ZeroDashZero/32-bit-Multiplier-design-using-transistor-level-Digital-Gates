@@ -1,0 +1,32 @@
+proc SCHEMATIC_proj_inv1x {} {
+make global -orient RXY -name vdd -origin {760 120}
+make global -name gnd -origin {760 370}
+make input -name vin -origin {700 250}
+make output -name vout -origin {760 250}
+make pmos -name M1 -w 2.0u -origin {760 190}
+make nmos -name M0 -origin {760 310}
+  make_wire 760 120 760 150
+  make_wire 760 230 760 250
+  make_wire 760 250 760 270
+  make_wire 700 190 700 250
+  make_wire 700 250 700 310
+  make_wire 760 350 760 370
+}
+
+proc ICON_proj_inv1x args {
+
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-80 0} -name vin
+icon_term -type output -origin {60 0} -name vout
+icon_property -origin {-70 0} -label vin
+icon_property -origin {50 0} -anchor e -label vout
+icon_property -origin {-70 -50} -label {$name}
+icon_property -origin {-70 -30} -label proj_inv1x
+  icon_property -origin {-70 90} -type user -name name -default x
+  icon_line -80 -40 -80 20 -80 50 40 0 -80 -40
+  icon_arc 40 -10 60 10 -start 271 -extent 359
+
+
+}
+
