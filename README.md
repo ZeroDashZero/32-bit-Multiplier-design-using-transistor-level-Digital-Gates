@@ -8,7 +8,7 @@ This project was performed on the completion of our four-week-long B. Tech 4th S
 
 * [ASTU__180610026032](./ASTU__180610026032) - schematics for basic digital gates, adders, mux, filters, multipliers, etc.
 * [Figures](./Figures) - all the figures used in the final report.
-* [Output Images](./Output-Images) - schematics/test-bench images and simulated signal outputs
+* [Output Images](./Output%20Images) - schematics/test-bench images and simulated signal outputs
 * [Project_Schematics](./Project_Schematics) - multiplier schematics used in the project
 * [TechnoReady_VLSIExpert_DigLib](./TechnoReady_VLSIExpert_DigLib) - schematics provided by VLSI Expert
 * [images](./images) - 16/32-bit multiplier schematics and simulation images
