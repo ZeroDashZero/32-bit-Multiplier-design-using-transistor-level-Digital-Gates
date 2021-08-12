@@ -8,12 +8,25 @@ Our mini project submission for 4th semester summer training done by:
 
 under the guidance of [Vlsi Expert Private Ltd.](https://www.vlsiexpert.com/)
 
+## FEATURES
+
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Architecture](#block-diagram-of-design--architecture)
+- [Software Used](#software-used)
+- [Circuit Schematics](#circuit-schematics)
+- [Achieved Results](#achieved-results)
+- [Result Outputs](#result-outputs)
+- [Files](#files)
+
+
 ### ABSTRACT
 This project is based on the designing and simulation of 32 bit multiplier using transistor level digital Gates in SPICE. The design is structured with AND operation of one 32 bit number with first bit of 2nd 32 bit number to get the 1st bit of the 64bit product and again doing the same with second bit of the second 32 bit number then adding the result to get the second bit of 64 bit product and further iterating these steps for the next bits of second 32 bit number and adding it to get the next bit of 64 bit product. After successfully achieving the output for the logic in 16 bit multiplier, 32 bit model of the multiplier could not be tested due to the under performance of the low-end device. This implies, the logic which has been used to tackle the problem was correct.
 
 
  
 ### INTRODUCTION
+
 A multiplier follows the normal mathematical operation where two numbers are multiplied, now the technical thing about it is that, the multiplication is what the most fundamental operation in most digital signal processing(DSP) algorithms to perform functions like convolution, filtering and processing ,so on... The major recent statics shows that more than 69.90% of the instructions perform addition and multiplication in most of the microprocessor and DSP algorithms .i.e., these operations consume most of the execution time on after simulation on compiling. In a system comprising of multiplier, the system performance usually determined by the performance of the multiplier as it being the slowest element of all. Henceforth, optimizing the speed of the multiplier is a major design issue.Here due to the complexity and design of different logical circuits combine together to form the implementation of the basic 32-bit Multiplier , the speed of running or execution becomes slower , and that’s why, the prior multiplication process can be divided into three steps, namely, generating the partial products, reducing the partial product and the last addition to get the final product , and also for the speed of multiplication can be improved by reduction in the generated number of partial products or thus by increasing the speed at which these partial products are accumulated.The main proposed solution of the good multiplier is to provide a compact utilization, high speed and low power consumption unit at a certain level of implementation for the betterment of the speed and power usage.
 
 The combinational logical components, we use for the implementation and designing of the 32-Bit Multiplier are 32-bit full adder, 32-bit AND gate ,the inputs and output lines and 
@@ -31,13 +44,13 @@ for the display of outputin CPPsim and for the general purpose of multiplication
  
 The design consists of feeding 1st 32 bit number with 1st bit of 2nd 32 bit number to 32*1 AND gate then extracting the 1st bit of the 64bit output ( A0B0 ) then again doing same operation with B1 i.e., 2nd bit of the 2nd 32 bit number and then adding the two partial products with the help of 32bit Full Adder circuit to get the 2nd bit of the 64 bit output i.e., A1B1 + A0B1., and then iterating these steps for 31 times to get the left part of the 64 bit number and the rest bits are extracted from the last full adder (Number 31) output.
 
-### SOFTWARES USED - [CppSim](https://www.cppsim.com/)
-* Sue2
+### SOFTWARE USED
+* [Sue2](https://www.cppsim.com/)
 <p>
   <img alt="circuit" src="./images/Sue2.PNG" />
 </p>
 
-* CppSimView
+* [CppSimView](https://www.cppsim.com/)
 <p>
   <img alt="circuit" src="./images/CppSimView.PNG" />
 </p>
@@ -121,5 +134,4 @@ and
 * [ASTU__180610026032](./ASTU__180610026032) - contains schematics for or gate, and gate, full adder etc. 
 * [Figures](./Figures) - contains all figures used in the final report. 
 * [Project_Schematics](./Project_Schematics) - contains the multiplier schematics.
-
 
